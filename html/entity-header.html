@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Entity Header Fields</title>
+</head>
+<body>
+    <h1>Entity Header Fields</h1>
+    <p>Entity header fields are those pertaining to the entity or payload in a message, and thus, will only appear to messages containing an entity. Entity headers are listed below:   </p>
+    <ul>
+        <li>Allow
+            <p>Allow identifies methods that can be called to a specified resource. It must always be present in 405 (Method Not Allowed) response.</p>
+        </li>
+        <li>Content-Encoding
+            <p>Content-Encoding is used when the server changed the form of the entity. It is also used for the server to compress the resource for fast delivery.</p>
+        </li>
+        <li>Content-Language
+            <p>Content-Language is used for accessibility purposes. It identifies the languages the resource is available on.</p>
+        </li>
+        <li>Content-Length
+            <p>Content-Length specifies the size of the payload.</p>
+        </li>
+        <li>Content-Location
+            <p>Content-Location is used when the entity is from somewhere else or when it is from a location other than the specified URI. It shows the actual location of the resource.</p>
+        </li>
+        <li>Content-MD5
+            <p>Content-MD5 is a deprecated header field that can be used to check the integrity of an entity.</p>
+        </li>
+        <li>Content-Range
+            <p>Content-Range is used when a range request was generated. It specifies where in the full entity the partial entity should be applied.</p>
+        </li>
+        <li>Content-Type
+            <p>Content-Type specifies the MIME type of the entity.</p>
+        </li>
+        <li>Expires
+            <p>Expires is used for controlling cache access and is used along with the header field Cache-Control. Its value is an HTTP-date specifying until what time and date the resource is considered fresh.</p>
+        </li>
+        <li>Last-Modified
+            <p>Last-Modified is another header field, aside from Expires, that can be a possible reference value to check if the resource is fresh. It shows when the resource was last changed.</p>
+        </li>
+    </ul>
+</body>
+</html>

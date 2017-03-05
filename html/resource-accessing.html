@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTTP Resource Accessing</title>
+</head>
+<body>
+    <h1>HTTP Resource Accessing</h1>
+    <p>HTTP resources are identified using URIs, which tells what the resource is, or more, specifically HTTP URL. URL, which stands for Uniform Resource Locator, tells where in the web the resource is. A URL contains different components such as:</p>
+    <ul>
+        <li>Scheme
+            <p>The scheme specifies the protocol to be used to access the specified resource from the internet. Different protocols are used to access specific types of resources but to get a hypertext document, HTTP or HTTPS protocols are used. HTTP is for accessing resources without SSL, or Secure Sockets Layer, while HTTPS is for accessing with SSL.</p>
+        </li>
+        
+        <li>Authority
+            <p>The authority specifies the host that has the resource. It can consist of three parts: </p>
+            <ul>
+                <li>User information/ information credentials – it contains the information of the user, such as the username and the password.</li>
+                <li>Host – it is the domain name of the server where the resource resides, or will be created if it does not exist yet. The domain name is resolved to an IP address using DNS, or Domain Name System.</li>
+                <li>Port number – it identifies the port which the server listens to for the specific request. The default is 80 and is usually omitted when well-known. </li>
+            </ul>
+        </li>
+        
+        <li>Path to Resource
+            <p>This simply refers to the resource to be accessed and it may refer to a static or dynamic resource. It is resolved relative to the document root.</p>
+        </li>
+        
+        <li>Query
+            <p>The query is typically provided as key = value pairs, with ampersand (&) separators between key/ value pairs, and may be URL-encoded.</p>
+        </li>
+        
+        <li>Fragment Identifier</li>
+        <p>The fragment identifier is a part of the query argument that serves like a bookmark for a specific resource. It usually begins with a number sign (#).</p>
+    </ul>
+    
+    <p>An absolute URL contains all information needed to access a resource and so, the scheme and domain name must always be specified. A relative URL uses an absolute URL as its starting point in accessing a resource. Because of this, the scheme, user information, and the domain name can be omitted.</p>
+</body>
+</html>
