@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>HTTP Fundamentals</title>
+</head>
+<body>
+	<h1>Hypertext Transfer Protocol (HTTP)</h1>
+
+	<p>Hypertext Transfer Protocol was developed by W3C (World Wide Web Consortium and IETF (Internet Engineering Task Force). It is an application layer communications protocol that is used to access resources and is the standard way of communicating through applications. It runs on top of TCP/IP, using port 80 as default or 443 for HTTPS.</p>
+
+	<p>HTTP 0.9 came out in 1991 and is the first documented version. On May 1996, RFC 1945 first standardized HTTP 1.0. HTTP 1.1 was officially released in January 1997 as defined in RFC 2068 and updates were released in June 1999 under RFC 2616. In June 2014, RFC 230 until RFC 7235 was released.</p>
+
+	<p>HTTP is based on a client-server architecture. Clients also known as “user agents” are applications that communicate with the HTTP protocol and is a program or user that sends requests to the server. They can be web browsers, web crawlers/spiders and other end user tools and applications. Servers on the other hand, are the ones providing the services and fulfills requests from client programs.</p>
+
+	<h4>Some types of servers:</h4>
+		<ul>
+			<li>Origin Server
+				<p>Resources in an origin server are physically there.</p>
+			</li>
+
+			<li>Proxy Server
+				<p>A proxy server checks authentication and forwards and gives back requests.</p>
+			</li>
+
+		</ul>
+
+	<p>HTTP has a secure version called the HTTPS. HTTPS is encrypted and needs a digital or a self-signed certification to set it up. It uses SSL (Secure Sockets Layer) or TLS (Transport Layer Security) to encrypt communications. These protocols takes HTTP traffic and transmits it in an encrypted form.</p>
+
+	<h3>Basic Features:</h3>
+
+		<ul>
+			<li>HTTP uses a request-response protocol: 
+				<p>The server processes the request and replies with an HTTP response message. In a pull protocol, a client sends an HTTP request message to a server. In a push protocol, the server volunteers new information via notifications. In HTTP 2, servers can push resources to clients without the clients requesting.</p>
+			</li>
+
+			<li>HTTP is a stateless protocol:
+				<p>The server does not keep information about clients in between requests. Both the server and the client are aware of each other only during a request.</p>
+			</li>
+		</ul>
+
+	<h3>Other Functionalities:</h3>
+
+		<ul>
+			<li>Content media type (MIME: Multipurpose Internet Mail Extension) specification</li>
+
+			<li>Language and character set specification</li>
+
+			<li>Content Negotiation 
+				<p>Selecting the best representation for a given response when there are multiple representations available</p>
+			</li>
+
+			<li>Client-server protocol negotiation 
+				<p>Asking the server if it can handle higher versions. If the server can handle higher versions then it will proceed to upgrade.</p>
+			</li>
+
+			<li>Persistent Connections
+				<p>Telling the server to not close the connection for further requests. In HTTP 1.0, the connection is terminated after a resource has been retrieved from responding to a request.</p>
+			</li>
+
+			<li>Request pipelining
+				<p>Sending requests one after another. Only one resource can be transferred per connection in HTTP 1.0</p>
+			</li>
+
+			<li>Authentication/Authorization</li>
+
+		</ul>
+
+
+
+
+</body>
+
+
+
+
+</html>
