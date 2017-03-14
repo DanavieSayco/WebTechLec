@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Request Header Fields</title>
+</head>
+<body>
+	<h1>Request Header Fields</h1>
+	<p>Request Header Fields provide information about the request messages requested by the client.</p>
+
+	<ul>
+		<li>Accept
+			<p>The Accept request header field specifies acceptable file types. If other types can be delivered then it will be accepted. The server responds with negotiation.</p>
+		</li>
+
+		<li>Accept-Charset
+			<p>The Accept-Charset request header field indicates which character sets are acceptable for the response.</p>
+		</li>
+
+		<li>Accept-Encoding
+			<p>The Accept-Encoding request header field restricts the content-codings that are acceptable in the response.</p>
+		</li>
+
+		<li>Accept-Language
+			<p>The Accept-Language request header field restricts the set of languages that are preferred as a response to the request.</p>
+		</li>
+
+		<li>Authorization 
+			<p>The Authorization request header field ensures protection from unauthorized access. When proper credentials are entered, another request will be sent with authorization.</p>
+		</li>
+
+		<li>Proxy Authorization
+			<p>The Proxy Authorization request header field allows the client to identify itself (or its user) to a proxy which requires authentication.</p>
+		</li>
+
+		<li>Expect
+			<p>The Expect request header field indicates that particular server behaviors are required by the client.</p>
+		</li>
+
+		<li>From
+			<p>The From request header field contains contact credentials of the sender</p>
+		</li>
+
+		<li>Host
+			<p>The Host request header field specifies the internet host and port number of the resource being requested. This enables the origin server to distinguish among resources while servicing requests for multiple host names on a single IP address.</p>
+		</li>
+
+		<li>If-Match
+			<p>The If-Match request header field compares the file in the cache and server to check if file is unmodified.</p>
+		</li>
+
+		<li>If-None-Match
+			<p>The If-None-Match request header field requests the server to perform the requested method only if one of the given value in a tag matches the given entity tags. This is also used to update caches or to prevent to upload a new resource when one is already existing.</p>
+		</li>
+
+		<li>If-Range
+			<p>The If-Range request header field allows the client to “short circuit” the second request. It can be used with a conditional GET to request only the portion of the entity that is missing.</p>
+		</li>
+
+		<li>If-Unmodified-Since
+			<p>The If-Unmodified-Since request header field expects the entity to be transmitted only if it has not been modified after the given date.</p>
+		</li>
+
+		<li>Ranges
+			<p>The Ranges request header field specifies portions of the resource the client wants to receive.</p>
+		</li>
+
+		<li>Max-Forwards
+			<p>The Max-Forwards request header field limit the number of proxies or gateways that can forward the request.</p>
+		</li>
+
+		<li>Referer
+			<p>The Referer request header field specifies the URI where the request was originated. It is also used to check where traffic is coming from.</p>
+		</li>
+
+		<li>TE
+			<p>The Trailer Encoding request header field specifies the transfer encodings the user agent is willing to accept.</p>
+		</li>
+
+		<li>User-Agent
+			<p>The User-Agent request header field contains additional information about the clients' identity.</p>
+		</li>
+
+	</ul>
+
+</body>
+</html>
