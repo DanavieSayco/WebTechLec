@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>HTTP Request URI</title>
+</head>
+<body>
+	<h1>HTTP Request URI</h1>
+    <p>Request-URI = "*" | absoluteURI | abs_path | authority<br />
+	The Request URI, which URI means 'Uniform Resource Identifier', identifies the resource upon which to apply the request.</p>
+
+	<ul>
+		<li>*
+			<p>The asterisk * form is used when an HTTP request does not apply to a particular resource, but to the server itself, and is only allowed when the method used does not necessarily apply to a resource.</p>
+		</li>
+
+		<li>absoluteURI
+			<p>The absoluteURI is used when an HTTP request is being made to a proxy. The proxy is requested to forward the request or service from a valid cache, and return the response.</p>
+		</li>
+
+		<li>abs_path
+			<p>The abs_path form is used to identify a resource on an origin server or gateway. This cannot be empty; if the original URI is empty, it MUST be given as "/" (the server root).</p>
+		</li>
+        
+		<li>authority
+			<p>The authority form is only used by the CONNECT method (method def. in <a href="http-request-methods.html">Request Methods - CONNECT</a>.)</p>
+		</li>
+
+	</ul>
+
+</body>
+</html>
