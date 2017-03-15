@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Http Response Message</title>
+</head>
+<body>
+	
+	<div class=""></div>
+	<div class="content-box"></div>
+	<div class="heading-area">
+		<h1>Status Code</h1>
+       
+	</div>
+	<div class="content-area">
+       <h2>Informational (1xx)</h2>
+        <ul><li>100 – continue</li>
+            <li>101 – switching protocol. When the client request a switch to different protocol using upgrade header</li>
+        </ul>
+        <h2>Success (2xx)</h2>
+            <ul><li>200 – OK. Request is successful</li>
+                <li>201 – Created. New resources has been created.</li>
+                <li>202 – Accepted; request is accepted but not yet generated</li>
+                <li>203 – Non-Authoritative Information; some are not from the origin server. Something has been added while going through a proxy</li>
+                <li>204 – No Content; successful but  not returning anything.</li>
+                <li>205 – Reset Content; client can reset forms and data entries</li>
+                <li>206 – Partial Content; in other words, this is not the whole resource.</li>
+
+
+            </ul>
+        <h2>Redirection (3xx)</h2>
+            <ul><li>300 - Multiple Choices; when resource is available in different forms</li>
+                <li>301 – moved Permanently; resource is no longer here and location must be changed. Example pdf, java, html, text file, etc..</li>
+                <li>302 – Found; when a new resource is generated and can be found somewhere</li>
+                <li>303 – See Other; same as 302. can be found somewhere.</li>
+                <li>304 – Not Modified; cache and server resource are the same</li>
+                <li>305 – Use Proxy; access through proxy. Not directly accessing origin, it is either for validation, filtering or authorization.</li>
+                <li>306 – n/a (unused status code). Used by earlier version.</li>
+                <li>307 – Temporary Redirect; like 301 but location must not be changed. Possibility in using when the site is in maintenance or crashed.</li>
+            </ul>
+    </div>
+    
+</body>
+</html>
