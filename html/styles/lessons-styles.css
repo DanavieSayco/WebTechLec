@@ -1,0 +1,66 @@
+body {
+    background-image: url(pictures/tag.png);
+}
+
+h1 {
+    font-family: 'dosis', sans-serif;
+    font-size: 72px;
+    margin-left: 30%;
+}
+
+.nav-title {
+    color: #20b8ff;
+    font-family: 'dosis', sans-serif;
+    border-bottom: dotted;
+    border-color: #2e3a43; 
+    display: block;
+    padding-bottom: 2%;
+}
+
+.content nav {
+    background-color: #14181a;
+    position: absolute;
+    overflow-y: auto;
+    margin-top: 6%;
+    margin-left: 10%;
+    padding: 2%;
+}
+
+.content nav a {
+    padding: 5%;
+    display: block;
+}
+
+.content nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sub-topic {
+    padding-left: 20%;
+}
+
+.content nav a:hover:not(.active) {
+    background-color: #2e3a43;
+    color: white;
+}
+
+.content .active {
+    background-color: #00ace6;
+    color: #14181a; 
+}
+
+.notes {
+    display: inline-block;
+    background-color: #1b2126;
+    padding: 3%;
+}
+
+.notes-con {
+    width: 63%;
+    float: right;
+    padding: 5%;
+    color: white;
+    background-color: #424a50;
+}
+

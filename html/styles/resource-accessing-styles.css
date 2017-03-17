@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Dosis:600|Nunito:600');
+
+body {
+    margin: 0;
+    background-image: url(pictures/tag.png);
+}
+
+p, li {
+    font-family: 'roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'nunito', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-family: 'dosis', sans-serif;
+    font-size: 72px;
+    margin-left: 30%;
+}
+
+#logo {
+    width: 15%;
+    margin-left: 10%;
+    position: absolute;
+}
+
+header {
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #14181a;
+}
+
+header nav {
+    display: inline-block;
+    margin-left: 27%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+header ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+}
+
+header li a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    border-right: solid;
+    border-color: #2e3a43;
+    border-width: thin;
+}
+
+header li a:first-child {
+    border-left: solid;
+    border-color: #2e3a43;
+    border-width: thin;
+}
+
+header li a:hover:not(.active) {
+    background-color: #2e3a43;
+}
+
+header .active {
+    background-color: #20b8ff;
+    color: #14181a;
+}
+
+.nav-title {
+    color: #20b8ff;
+    font-family: 'dosis', sans-serif;
+    border-bottom: dotted;
+    border-color: #2e3a43; 
+    display: block;
+    padding-bottom: 2%;
+}
+
+.content nav {
+    background-color: #14181a;
+    position: absolute;
+    overflow-y: auto;
+    margin-top: 6%;
+    margin-left: 10%;
+    padding: 2%;
+}
+
+.content nav a {
+    padding: 5%;
+    display: block;
+}
+
+.content nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sub-topic {
+    padding-left: 20%;
+}
+
+.content nav a:hover:not(.active) {
+    background-color: #2e3a43;
+    color: white;
+}
+
+.content .active {
+    background-color: #00ace6;
+    color: #14181a; 
+}
+
+.notes {
+    display: inline-block;
+    background-color: #1b2126;
+    padding: 3%;
+}
+
+.notes-con {
+    width: 63%;
+    float: right;
+    padding: 5%;
+    color: white;
+    background-color: #424a50;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #1b2126;
+    border-top: dotted;
+    border-color: #2e3a43;
+    overflow: hidden;
+    color: white;
+    margin-top: 63%;
+}
+
+footer a {
+    color: #00ace6;
+}
