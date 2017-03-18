@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HTTP Fundamentals</title> <!--paki update na rin to :D -->
+    <title>HTTP Fundamentals</title> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1" />
-    <link href="styles/main.css" rel="stylesheet"> <!-- - - - -- pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
-    <link href="styles/lessons-styles.css" rel="stylesheet"> <!-- - - - -- pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
-    <link href="styles/http-fundamentals.css" rel="stylesheet"> <!-- - - - - - - - - - - - - your css here, copy niyo lang yung nacommit ni ate danavie na resource-accessing.css for reference, tas ayusin nio na html+css - - - - - - - - -->
+    <link href="styles/main.css" rel="stylesheet"> 
+    <link href="styles/lessons-styles.css" rel="stylesheet"> 
+    <link href="styles/http-fundamentals-styles.css" rel="stylesheet"> 
 </head>
 <body>
     <header>
@@ -32,7 +32,7 @@
                 <ul>        
                     <li><a class="active sub">Fundamentals</a></li>
                     <li><a href = "resource-accessing.html" class="sub">Resource Accessing</a></li>
-                    <li><a href="request-message.html" class="sub">Request Message</a></li>
+                    <li><a href="http-request-message.html" class="sub">Request Message</a></li>
                     <li><a href="response-message.html" class="sub">Response Message</a></li>
                     <li><a href="http-request-methods.html" class="sub">Request Method</a></li>
                     <li><a href="general-header-fields.html" class="sub">Message Header</a></li>
@@ -42,7 +42,7 @@
             </li>
         </ul>
     </nav>
-    <h1>Hypertext Transfer Protocol</h1> <!-- - - - - - - - - - - - -  wag kalimutan->
+    <h1>Hypertext Transfer Protocol</h1> 
     <div class="notes"-->
         <div class="notes-con">
             <p>Hypertext Transfer Protocol was developed by W3C (World Wide Web Consortium and IETF (Internet Engineering Task Force). It is an application layer communications protocol that is used to access resources and is the standard way of communicating through applications. It runs on top of TCP/IP, using port 80 as default or 443 for HTTPS.</p>
@@ -67,9 +67,9 @@
 
 	<h3>Basic Features</h3>
 
-		<p>HTP uses a request-response protocol: The server processes the request and replies with an HTTP response message. In a pull protocol, a client sends an HTTP request message to a server. In a push protocol, the server volunteers new information via notifications. In HTTP 2, servers can push resources to clients without the clients requesting.</p>
+		<p><b>HTP uses a request-response protocol:</b> The server processes the request and replies with an HTTP response message. In a pull protocol, a client sends an HTTP request message to a server. In a push protocol, the server volunteers new information via notifications. In HTTP 2, servers can push resources to clients without the clients requesting.</p>
 	
-		<p>HTTP is a stateless protocol: The server does not keep information about clients in between requests. Both the server and the client are aware of each other only during a request.</p>
+		<p><b>HTTP is a stateless protocol:</b> The server does not keep information about clients in between requests. Both the server and the client are aware of each other only during a request.</p>
 		
 	<h3>Other Functionalities</h3>
 
