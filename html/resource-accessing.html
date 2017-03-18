@@ -4,6 +4,7 @@
     <title>HTTP Resource Accessing</title>
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/lessons-styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -24,15 +25,28 @@
         <ul>
             <li><a href="internet.html">Internet</a></li>
             <li><a href="world-wide-web.html">WWW</a></li>
-            <li><a href="http.html">HTTP</a>
+            <li>
+                <label for="sub">HTTP</label>
+                <input type="checkbox" id="sub"/>
                 <div class="sub-topic">
                 <ul>        
                     <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
                     <li><a class="active sub">Resource Accessing</a></li>
-                    <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                    <li><a href="request-message.html" class="sub">Request Message</a></li>
                     <li><a href="response-message.html" class="sub">Response Message</a></li>
                     <li><a href="http-request-methods.html" class="sub">Request Method</a></li>
-                    <li><a href="general-header-fields.html" class="sub">Message Header</a></li>
+                    <li>
+                        <label for="sub2">Message Header</label>
+                        <input type="checkbox" id="sub2"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                            <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                            <li><a href="response-header.html">Response Header Fields</a></li>
+                            <li><a href="entity-header.html">Entity Header Fields</a></li>
+                        </ul>
+                        </div>
+                    </li>
                     <li><a href="http-status-codes-client-and-server.html" class="sub">Status Codes</a></li>
                 </ul>
                 </div>
@@ -42,7 +56,14 @@
     <h1>HTTP Resource Accessing</h1>
     <div class="notes">
     <div class="notes-con">
+        <div class="page-nav-top">
+            <a href="http%20fundamentals.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a>
+            <div class="next">
+                <a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a>
+            </div>
+        </div>
     <p>HTTP resources are identified using URIs, which tells what the resource is, or more, specifically HTTP URL. URL, which stands for Uniform Resource Locator, tells where in the web the resource is. A URL contains different components such as:</p>
+        <img src="pictures/url.png">
     <ul>
         <li>Scheme
             <p>The scheme specifies the protocol to be used to access the specified resource from the internet. Different protocols are used to access specific types of resources but to get a hypertext document, HTTP or HTTPS protocols are used. HTTP is for accessing resources without SSL, or Secure Sockets Layer, while HTTPS is for accessing with SSL.</p>
@@ -70,7 +91,20 @@
     </ul>
     
     <p>An absolute URL contains all information needed to access a resource and so, the scheme and domain name must always be specified. A relative URL uses an absolute URL as its starting point in accessing a resource. Because of this, the scheme, user information, and the domain name can be omitted.</p>
+        
+    <p>References:</p>
+        <p>The components of a URL. (n.d.). In IBM. Retrieved from <a href="https://www.ibm.com/support/knowledgecenter/en/SSGMGV_3.1.0/com.ibm.cics.ts31.doc/dfhtl/topics/dfhtl_uricomp.htm" target="_blank">https://www.ibm.com/support/knowledgecenter/en/SSGMGV_3.1.0/com.ibm.cics.ts31.doc/dfhtl/topics/dfhtl_uricomp.htm</a></p>
+        <p>Milener, G., Vance, J., Guyer, C. (2017). Absolute and Relative URLs. Retrieved from <a href="https://docs.microsoft.com/en-us/sql/ado/guide/data/absolute-and-relative-urls" target="_blank">https://docs.microsoft.com/en-us/sql/ado/guide/data/absolute-and-relative-urls</a></p>
+        
+    <div class="page-nav-bottom">
+        <a href="http%20fundamentals.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a>
+        <div class="next">
+            <a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a>
+        </div>
+    </div>    
     </div>
+        
+    
         <footer>
             <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
         </footer>

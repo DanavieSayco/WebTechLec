@@ -8,6 +8,53 @@ h1 {
     margin-left: 30%;
 }
 
+[id^="sub"],                        /* HIDE CHECKBOX */
+[id^="sub"] ~ .sub-topic {                /* HIDE LIST */
+    display: none;
+}
+
+[id^="sub"]:checked ~ .sub-topic {
+    display: block;                        /* SHOW LIST (IF CHECKED) */
+}
+
+label {
+    color: white;
+    padding: 5%;
+    display: block;
+}
+
+label:hover {
+    background-color: #2e3a43;
+}
+
+i {
+    color: #00ace6;
+}
+
+.previous {
+    display: inline-block;
+    color: #00ace6;  
+}
+
+.next {
+    display: inline-block;
+    color: #00ace6;
+}
+
+div.next {
+    float: right;
+}
+
+.page-nav-top {
+    border-bottom: dotted;
+    border-color: #1b2126;
+}
+
+.page-nav-bottom {
+    border-top: dotted;
+    border-color: #1b2126;
+}
+
 .nav-title {
     color: #20b8ff;
     font-family: 'dosis', sans-serif;
@@ -22,8 +69,9 @@ h1 {
     position: absolute;
     overflow-y: auto;
     margin-top: 6%;
-    margin-left: 10%;
+    margin-left: 8%;
     padding: 2%;
+    width: 15%;
 }
 
 .content nav a {
@@ -59,8 +107,17 @@ h1 {
 .notes-con {
     width: 63%;
     float: right;
-    padding: 5%;
+    padding: 1% 5%;
     color: white;
     background-color: #424a50;
 }
 
+.notes-con img{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.notes-con a {
+    color: #00ace6;
+}
