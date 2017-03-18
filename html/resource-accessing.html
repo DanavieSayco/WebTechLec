@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>HTTP Resource Accessing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/lessons-styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <img src="pictures/logo.png" id="logo">
+        <img src="pictures/logo.png" id="logo" alt="WebTek Logo">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -32,7 +34,7 @@
                 <ul>        
                     <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
                     <li><a class="active sub">Resource Accessing</a></li>
-                    <li><a href="request-message.html" class="sub">Request Message</a></li>
+                    <li><a href="http-request-message.html" class="sub">Request Message</a></li>
                     <li><a href="response-message.html" class="sub">Response Message</a></li>
                     <li><a href="http-request-methods.html" class="sub">Request Method</a></li>
                     <li>
@@ -63,7 +65,7 @@
             </div>
         </div>
     <p>HTTP resources are identified using URIs, which tells what the resource is, or more, specifically HTTP URL. URL, which stands for Uniform Resource Locator, tells where in the web the resource is. A URL contains different components such as:</p>
-        <img src="pictures/url.png">
+        <img src="pictures/url.png" alt="Parts of a URL">
     <ul>
         <li>Scheme
             <p>The scheme specifies the protocol to be used to access the specified resource from the internet. Different protocols are used to access specific types of resources but to get a hypertext document, HTTP or HTTPS protocols are used. HTTP is for accessing resources without SSL, or Secure Sockets Layer, while HTTPS is for accessing with SSL.</p>
@@ -86,8 +88,9 @@
             <p>The query is typically provided as key = value pairs, with ampersand (&) separators between key/ value pairs, and may be URL-encoded.</p>
         </li>
         
-        <li>Fragment Identifier</li>
-        <p>The fragment identifier is a part of the query argument that serves like a bookmark for a specific resource. It usually begins with a number sign (#).</p>
+        <li>Fragment Identifier
+            <p>The fragment identifier is a part of the query argument that serves like a bookmark for a specific resource. It usually begins with a number sign (#).</p>
+        </li>
     </ul>
     
     <p>An absolute URL contains all information needed to access a resource and so, the scheme and domain name must always be specified. A relative URL uses an absolute URL as its starting point in accessing a resource. Because of this, the scheme, user information, and the domain name can be omitted.</p>
@@ -109,7 +112,6 @@
             <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
         </footer>
     </div>
-    
-    
+    </div>
 </body>
 </html>
