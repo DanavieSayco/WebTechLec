@@ -1,12 +1,51 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>HTTP Fundamentals</title>
+    <title>HTTP Fundamentals</title> <!--paki update na rin to :D -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="styles/main.css" rel="stylesheet"> <!-- - - - -- pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link href="styles/lessons-styles.css" rel="stylesheet"> <!-- - - - -- pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link href="styles/http-fundamentals.css" rel="stylesheet"> <!-- - - - - - - - - - - - - your css here, copy niyo lang yung nacommit ni ate danavie na resource-accessing.css for reference, tas ayusin nio na html+css - - - - - - - - -->
 </head>
 <body>
-	<h1>Hypertext Transfer Protocol (HTTP)</h1>
-
-	<p>Hypertext Transfer Protocol was developed by W3C (World Wide Web Consortium and IETF (Internet Engineering Task Force). It is an application layer communications protocol that is used to access resources and is the standard way of communicating through applications. It runs on top of TCP/IP, using port 80 as default or 443 for HTTPS.</p>
+    <header>
+        <img src="pictures/logo.png" id="logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><a href="internet.html">Internet</a></li>
+            <li><a href="world-wide-web.html">WWW</a></li>
+            <li><a href="http.html">HTTP</a>
+                <div class="sub-topic">
+                <ul>        
+                    <li><a class="active sub">Fundamentals</a></li>
+                    <li><a href = "resource-accessing.html" class="sub">Resource Accessing</a></li>
+                    <li><a href="request-message.html" class="sub">Request Message</a></li>
+                    <li><a href="response-message.html" class="sub">Response Message</a></li>
+                    <li><a href="http-request-methods.html" class="sub">Request Method</a></li>
+                    <li><a href="general-header-fields.html" class="sub">Message Header</a></li>
+                    <li><a href="http-status-codes-client-and-server.html" class="sub">Status Codes</a></li>
+                </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <h1>Hypertext Transfer Protocol</h1> <!-- - - - - - - - - - - - -  wag kalimutan->
+    <div class="notes"-->
+        <div class="notes-con">
+            <p>Hypertext Transfer Protocol was developed by W3C (World Wide Web Consortium and IETF (Internet Engineering Task Force). It is an application layer communications protocol that is used to access resources and is the standard way of communicating through applications. It runs on top of TCP/IP, using port 80 as default or 443 for HTTPS.</p>
 
 	<p>HTTP 0.9 came out in 1991 and is the first documented version. On May 1996, RFC 1945 first standardized HTTP 1.0. HTTP 1.1 was officially released in January 1997 as defined in RFC 2068 and updates were released in June 1999 under RFC 2616. In June 2014, RFC 230 until RFC 7235 was released.</p>
 
@@ -58,13 +97,13 @@
 			<li>Authentication/Authorization</li>
 
 		</ul>
-
-
-
-
+        </div>
+        <footer>
+            <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+        </footer>
+    </div>
+    
+    
 </body>
-
-
-
-
 </html>
+
