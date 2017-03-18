@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTTP Status Codes</title> <!--paki update na rin to :D -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="styles/main.css" rel="stylesheet"> <!-- - - - -- pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link href="styles/lessons-styles.css" rel="stylesheet"> <!-- - - - -- pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="pictures/logo.png" id="logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+        
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><a href="internet.html">Internet</a></li>
+            <li><a href="world-wide-web.html">WWW</a></li>
+            <li>
+                <label for="sub">HTTP</label>
+                <input type="checkbox" id="sub"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                    <li><a class="active sub">Resource Accessing</a></li>
+                    <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                    <li><a href="response-message.html" class="sub">Response Message</a></li>
+                    <li><a href="http-request-methods.html" class="sub">Request Method</a></li>
+                    <li>
+                        <label for="sub2">Message Header</label>
+                        <input type="checkbox" id="sub2"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                            <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                            <li><a href="response-header.html">Response Header Fields</a></li>
+                            <li><a href="entity-header.html">Entity Header Fields</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li><a href="http-status-codes-client-and-server.html" class="sub">Status Codes</a></li>
+                </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>    
+    <h1>Http Status Codes</h1> <!-- - - - - - - - - - - - -  wag kalimutan--->
+    <div class="notes">
+    <div class="notes-con">
+        <div class="page-nav-top">
+            <a href="http%20fundamentals.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a>
+            <div class="next">
+                <a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a>
+            </div>
+        </div>
+        
+            <h2>Informational (1xx)</h2>
+                <p>The value of 1xx is Informational, where the request process will continue.</p>
+                <ul><li>100 – Continue<p>Continuing the request of the client and the request is not yet completed or rejected by the server </p></li>
+                    <li>101 – Switching protocol <p>When the client request a switch to different protocol using upgrade header</p></li>
+                </ul>
+            <h2>Success (2xx)</h2>
+                <p>The value of 2xx is Success. It means the request is successful and accepted</p>
+                <ul><li>200 – OK    <p>Request is successful and the server will a response to the client</p></li>
+                    <li>201 – Created <p>New resources has been created.</p></li>
+                    <li>202 – Accepted <p>Request is accepted but not yet generated</p></li>
+                    <li>203 – Non-Authoritative Information <p>Some are not from the origin server. Something has been added while going through a proxy</p></li>
+                    <li>204 – No Content <p>Successful but  not returning anything.</p></li>
+                    <li>205 – Reset Content <p>client can reset forms and data entries</p></li>
+                    <li>206 – Partial Content <p>In other words, this is not the whole resource.</p></li>
+
+
+                    </ul>
+            <h2>Redirection (3xx)</h2>
+                <p>The value od 3xx is Redirection. There will be an additional steps before completing the process</p>
+            <ul><li>300 - Multiple Choices <p>When resource is available in different forms</p></li>
+                <li>301 – Moved Permanently <p>Resource is no longer here and location must be changed. Example pdf, java, html, text file, etc..</p></li>
+                <li>302 – Found <p>When a new resource is generated and can be found somewhere</p></li>
+                <li>303 – See Other <p>Same as 302. can be found somewhere.</p></li>
+                <li>304 – Not Modified <p>Cache and server resource are the same</p></li>
+                <li>305 – Use Proxy <p>Access through proxy. Not directly accessing origin, it is either for validation, filtering or authorization.</p></li>
+                <li>306 – n/a (unused status code) <p>Used by earlier version.</p></li>
+                <li>307 – Temporary Redirect <p>Like 301 but location must not be changed. Possibility in using when the site is in maintenance or crashed.</p></li>
+                </ul>
+            <h2>Client Error - 4xx</h2>
+                <p>The value of 4xx is Client error, where it means that the request is not accepted and understood because the request contains syntax error.</p>
+                <ul>
+                    <li>400 Bad Request
+                        <p>The server did not recognized the request, the request is malformed</p>
+                    </li>
+                    <li>401 Unauthorized
+                        <p>The request page is a protected resource and needs clinet authentication</p>
+                    </li>
+                    <li>402 Payment Required
+                        <p>For digital payment, but according to Wikipedia, this code is reserved for future use.</p>
+                    </li>
+                    <li>403 Forbidden
+                        <p>The requested page must not be accessed, access is not allowed.</p>
+                    </li>
+                    <li>404 Not Found
+                        <p>The requested resource is not found in the server.</p>
+                    </li>
+                    <li>405 Method Not Allowed
+                        <p>The specified request method is not allowed. The request method is not supported by the resource.</p>
+                    </li>
+                    <li>406 Not Acceptable
+                        <p>The requested resource does not have a current representation that would be acceptable to the user agent and the server is unwilling to supply a default representation, as described in RFC 7231 Section 6.5.6</p>
+                    </li>
+                    <li>407 Proxy Authentication Required
+                        <p>The client must first authenticate itself with the proxy server.</p>
+                    </li>
+                    <li>408 Request Timeout
+                        <p>The request is taking too long to process the request.</p>
+                    </li>
+                    <li>409 Conflict
+                        <p>The request cannot be done due to a conflict with the current state of the requested resource.</p>
+                    </li>
+                    <li>410 Gone
+                        <p>The requested resource has been purposely removed and no longer available.</p>
+                    </li>
+                    <li>411 Content Length Required
+                        <p>"Content-length" is not specified and is required.</p>
+                    </li>
+                    <li>412 Precondition Failed
+                        <p>Specified precondition in the request is rejected by the server.</p>
+                    </li>
+                    <li>413 Request Entity Too Large
+                        <p>The specified payload it too big and it will not be accepted by the server.</p>
+                    </li>
+                    <li>414 Request URI Too Long
+                        <p>The server refuses to accept the request due to the request-target is too long.</p>
+                    </li>
+                    <li>415 Unsupported Media Type
+                        <p> the server is refusing the request due to the entity of the request is in a format that is not supported by the method on the target resource.</p>
+                    </li>
+                    <li>416 Request Range Not Satisfiable
+                        <p>The client has asked for a portion of the fle, bu the server cannot supply that portion.</p>
+                    </li>
+                    <li>417 Expectation Failed
+                        <p>The server cannot honor the request; the server cannot meet the requirements of the Expect request-header field.</p>
+                    </li>
+                    <li>425 Upgrade Required
+                        <p>The client should upgrade and switch to a different protocol.</p>
+                    </li>
+            </ul>
+
+            <h2>Server Error - 5xx</h2>
+                <p>The value of 5xx is server error.It means that the server failed to accomplish the valid request.</p>
+                   <ul> <li>500 Internal Server Error
+                        <p>Misconfiguration or the server's at fault; it is given when no more specific message is suitable.</p>
+                    </li>
+                    <li>501 Not Implemented
+                        <p>The method cannnot be handled. The server does not support the functionality required to fufill the request.</p>
+                    </li>
+                    <li>502 Bad Gateway
+                        <p>The gateway machine is having a problem. The gateway server received an invalid response from the upstream server it accessed in attempting to fulfill the request.</p>
+                    </li>
+                    <li>503 Service Unavailable
+                        <p>The server is under maintenance or it is tempporary overloaded.</p>
+                    </li>
+                    <li>504 Gateway Timeout
+                        <p>The gateway server did not receive a timely response from the upstream server.</p>
+                    </li>
+                    <li>505 HTTP Version Not Supported
+                        <p>The server does not support the HTTP version used in the request.</p>
+                    </li>
+                </ul>
+        <p>References:</p>
+        <p>Author/s (Year). Title. Retrieved from <a href="URL" target="_blank">URL</a></p> <!--references in APA format-->
+        <!--new paragraph for every reference-->
+       <p>RestApiTutorial.com. HTTP Status Codes. Retrieved fromhttp://www.restapitutorial.com/httpstatuscodes.html</p>
+        <p>10 Status Code Definitions. https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</p>
+        
+        <div class="page-nav-bottom">
+            <a href="http%20fundamentals.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a>
+            <div class="next">
+                <a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a>
+            </div>
+        </div>    
+    </div>    
+    <footer>
+        <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>
