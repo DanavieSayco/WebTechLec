@@ -1,110 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Notes</title>
+    <title>Internet</title> <!--paki update na rin to :D -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="styles/main.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link href="styles/lessons-styles.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	
-	<div class=""></div>
-	<div class="content-box"></div>
-	<div class="heading-area">
-		<h1>Internet</h1>
-       
-	</div>
-	<div class="content-area">
-        <div class="definition-internet">
+    <header>
+        <img src="pictures/logo.png" id="logo" alt="WebTek Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+    <!-- - - - - - - - - - - - - wag kalimutan palitan yung topic na may class active- - - - - - - - - - - - - - - - -->    
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><a href="internet.html">Internet</a></li>
+            <li><a href="world-wide-web.html">WWW</a></li>
+            <li>
+                <label for="sub">HTTP</label>
+                <input type="checkbox" id="sub"/>
+                <div class="sub-topic">
                 <ul>        
-                      <li>Defines as global network of networks</li>                
-                      <li>Internet comes from the word inter-network.</li>
-                      <li>The Inter means outside the boundary while the network means the interconnection of devices. </li>
-                      <li>Internetworking is a technique that uses device such as router to connect to a different network. </li>
-                      <li>categorized by:</li>
-
-                          <ul><li>nodes – actual devices </li>
-                              <li> interconnection technology – </li>
-                                    <ul><li>wired - ex. coaxial ,fiber, UTP</li>
-                                    <li>wireless- ex. infrared</li></ul>
-                              <li>protocols - special rules used in communication</li>
-                              <li>device drivers - controls particular device that is connected to the computer</li>
-                            </ul>
-
-                      <li>Also known as net and "The Internet".</li>
-
-               </ul>
-        </div>
-        <div class = "history-internet">
-            <h2>History</h2>
-                <ul>
-                    <li>May 31, 1961 - Leonard Kleinrock published his first paper entitled "Information Flow in Large Communication Nets" or simply known as packet switching theory. This theory contains the initial idea of internet and played huge part in creating the "Internet".</li>
-                    <li>August 1962 - J.C.R Licklider of MIT presented an idea known as "Galactic Network". This idea can connect to different terminal  and let them share information.  He moved to DARPA and lead its development. He also convinced his coworker the importance of it.</li>
-                    <li>1965- Lawrence Roberts of MIT formed an experiment that connects computer from different areas using the dial-up telephone lines and proved that Kleinrock's pocket switching is needed to advance the technology while using telephone line is inadequate.</li>
-                    <li>1966 - Roberts moved to DARPA and to develop his paper "ARPANET" which was published in 1967.</li>
-                    <li>1969 - first message that was delivered to a different computer. The message is "LOGIN" but the first two word was the only thing received due to system crash. The one who first used it is Charley Kline at UCLA.</li>
-                    <li>1972 - email was developed by Ray Tomlinson. 
-                            <ul><li>ARPA change its name to DARPA (Defense Advanced Research Projects Agency)</li></ul>
-                    <li>1973 - Transmission Control Protocol /Internet Protocol  (TCP/IP) was developed by Vinton Cerf and Bob Kahn</li>
-                    <li>1974 - The word "Internet" was first used by Vinton Cerf and Bob Kahn in TCP/IP paper</li>
-                    <li>1976 - Ethernet was developed by Dr. Robert M. Metcalf.   
-                            <ul><li>SATNET was born and it is a satellite program. It is used to linked network from United States and Europe and it owned by the consortium of countries. </li></ul>
-                    </li>
-                    <li>1979 -  Steve Bellovin, Jim Ellis, and Tom Truscott created USENET 
-                            <ul><li>BITNET "Because its Time Network" was created by IBM and "store and forward " network was introduced.</li></ul>
-                    </li>
-                    <li>1981 - CSNET was created by National Science Foundation  and its purpose is to connect to a network without connecting to ARPANET or any government network.</li>
-                    <li>1983 - Internet Activities Board (IAB) was developed. 
-                        <ul><li>TCP/IP became standard protocol because of it internet was created.
-                            </li>
-                            <li>Domain Name System was created in University of Wisconsin.</li>
+                    <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                    <li><a class="active sub">Resource Accessing</a></li>
+                    <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                    <li><a href="response-message.html" class="sub">Response Message</a></li>
+                    <li><a href="http-request-methods.html" class="sub">Request Method</a></li>
+                    <li>
+                        <label for="sub2">Message Header</label>
+                        <input type="checkbox" id="sub2"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                            <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                            <li><a href="response-header.html">Response Header Fields</a></li>
+                            <li><a href="entity-header.html">Entity Header Fields</a></li>
                         </ul>
+                        </div>
                     </li>
+                    <li><a href="http-status-codes.html" class="sub">Status Codes</a></li>
                 </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>    
+    <h1>Internet</h1> <!-- - - - - - - - - - - - -  wag kalimutan- -->
+    <div class="notes">
+    <div class="notes-con">
+        <div class="page-nav-top">
+            <a href="http%20fundamentals.html"><p class="previous"></p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <a href="world-wide-web.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+            </div>
         </div>
-        <div class="others-internet">
-            <h3>Advanced Research Projects Agency Network (ARPANET )</h3>
-                    <ul>
-                        <li>Original internet.</li>
-                        <li>Beginning of the net</li>
-                        <li>First used the packet switching theory.</li>
-                    </ul>
-             <h3>Advanced Research Projects Agency(ARPA)</h3>
-                    <ul>
-                        <li>Created by US government to gain advantage over the ongoing war against the Soviet Union and to create new technology.</li>
-                        <li>Created in the year 1958 and authorized by U.S. President Dwight D. Eisenhower</li>
-                        <li>It is now known as Defense Advanced Research Projects Agency (DARPA)
-                        Involve in creating the internet</li>
 
-                    </ul>
-             <h3>Transmission Control Protocol / Internet Protocol (TCP/IP)</h3>
-                    <ul>
-                        <li>A protocol that is used by computers to communicate on the Internet.</li>
-                        <li>Version of IP are IPv4 and IPv6.</li>
-                    </ul>
-             <h3>Circuit Switch Connection</h3>
-                    <ul>
-                        <li>Establish circuit and maintain it to communicate</li>
-                        <li>Not scalable</li>
-                    </ul>
-            <h3>Store and Forward</h3>
-                    <ul>
-                        <li>Send messages to the next hub until destination is reached</li>
-                    </ul>
-            <h3>Wide Area Information Services (WAIS)</h3>
-                    <ul>
-                        <li>Connected to servers from different locations to get data from each server periodically and index these data</li>
-                    </ul>
-            <h3>Gopher Protocol</h3>
-                    <ul>
-                        <li>Distributing, searching and retrieving documents over the internet</li>
-                        <li>Hierarchy is involved with the index having sub-indexes</li>
+            <div class="definition-internet">
+                
+                          <p>Defines as global network of networksInternet comes from the word inter-network.
+                          The Inter means outside the boundary while the network means the interconnection of devices. Also known as net and "The Internet".</p>
+                          <p>Internetworking is a technique that uses device such as router to connect to a different network. </p>
+                          <p>categorized by:</p>
 
-                    </ul>
-            <h3>Usenet</h3>
+                              <ul><li>nodes – actual devices </li>
+                                  <li> interconnection technology – </li>
+                                        <ul><li>wired - ex. coaxial ,fiber, UTP</li>
+                                        <li>wireless- ex. infrared</li></ul>
+                                  <li>protocols - special rules used in communication</li>
+                                  <li>device drivers - controls particular device that is connected to the computer</li>
+                                </ul>
+
+                         
+
+            </div>
+            <div class = "history-internet">
+                <h2>History</h2>
                     <ul>
-                        <li>Similar to an online discussion group</li>
+                        <li>May 31, 1961 <p>Leonard Kleinrock published his first paper entitled "Information Flow in Large Communication Nets" or simply known as packet switching theory. This theory contains the initial idea of internet and played huge part in creating the "Internet".</p> </li>
+                        
+                        <li>August 1962 <p> J.C.R Licklider of MIT presented an idea known as "Galactic Network". This idea can connect to different terminal  and let them share information.  He moved to DARPA and lead its development. He also convinced his coworker the importance of it.</p> </li>
+                        
+                        <li>1965  <p> Lawrence Roberts of MIT formed an experiment that connects computer from different areas using the dial-up telephone lines and proved that Kleinrock's pocket switching is needed to advance the technology while using telephone line is inadequate.</p> </li>
+                        
+                        <li>1966 <p>Roberts moved to DARPA and to develop his paper "ARPANET" which was
+                        published in 1967.</p> </li>
+                        
+                        <li>1969  <p>First message that was delivered to a different computer. The message is "LOGIN" but the first two word was the only thing received due to system crash. The one who first used it is Charley Kline at UCLA.</p> </li>
+                        
+                        <li>1972 <p>Email was developed by Ray Tomlinson. 
+                               ARPA change its name to DARPA (Defense Advanced Research Projects Agency)</p> 
+                        <li>1973 <p>Transmission Control Protocol /Internet Protocol  (TCP/IP) was developed by Vinton Cerf and Bob Kahn</p> </li>
+                        
+                        <li>1974  <p>The word "Internet" was first used by Vinton Cerf and Bob Kahn in TCP/IP paper</p> </li>
+                        
+                        <li>1976 <p>Ethernet was developed by Dr. Robert M. Metcalf.   
+                              SATNET was born and it is a satellite program. It is used to linked network from United States and Europe and it owned by the consortium of countries. </p> 
+                        </li>
+                        
+                        <li>1979 <p>Steve Bellovin, Jim Ellis, and Tom Truscott created USENET. 
+                                BITNET "Because its Time Network" was created by IBM and "store and forward " network was introduced.</p> 
+                        </li>
+                        <li>1981 <p>CSNET was created by National Science Foundation  and its purpose is to connect to a network without connecting to ARPANET or any government network.</p> 
+                        <li>1983  <p>Internet Activities Board (IAB) was developed.TCP/IP became standard protocol because of it internet was created.Domain Name System was created in University of Wisconsin.</p>
+                        </li>
                     </ul>
-        </div>
+            </div>
+            <div class="others-internet">
+                <h3>Advanced Research Projects Agency Network (ARPANET )</h3>
+                        <p>Considered as the original internet and beginning of the net .First used the packet switching theory.</p>
+                
+                 <h3>Advanced Research Projects Agency(ARPA)</h3>
+                        <p>Created by US government to gain advantage over the ongoing war against the Soviet Union and to create new technology. Created in the year 1958 and authorized by U.S. President Dwight D. Eisenhower.It is now known as Defense Advanced Research Projects Agency (DARPA) and involved in creating the internet</p>
+
+                      
+                 <h3>Transmission Control Protocol / Internet Protocol (TCP/IP)</h3>
+                        <p>A protocol that is used by computers to communicate on the Internet. Version of IP are IPv4 and IPv6.</p>
+                
+                 <h3>Circuit Switch Connection</h3>
+                        <p>Establish circuit and maintain it to communicate and it is not scalable</p>
+                
+                <h3>Store and Forward</h3>
+                        <p>Send messages to the next hub until destination is reached</p>
+                
+                <h3>Wide Area Information Services (WAIS)</h3>
+                        <p>Connected to servers from different locations to get data from each server periodically and index these data</p>
+                
+                <h3>Gopher Protocol</h3>
+                        <p>Distributing, searching and retrieving documents over the internet.Hierarchy is involved with the index having sub-indexes</p>
+                
+                <h3>Usenet</h3>
+                        <p>Similar to an online discussion group</p>
+            </div>
+        <p>References:</p>
+        <p>Author/s (Year). Title. Retrieved from <a href="URL" target="_blank">URL</a></p> <!--references in APA format-->
+        <!--new paragraph for every reference-->
+        <p> DARPA(2007, June). Retrieved from<a href="https://en.wikipedia.org/wiki/DARPA">https://en.wikipedia.org/wiki/DARPA</a></p>
+        <p>Internetworking(2011, July). Retrieved from<a href="https://www.techopedia.com/definition/7788/internetworking"> https://www.techopedia.com/definition/7788/internetworking</a></p>
+        
+        <p>History of the Internet(2009, March)Retrieved from<a href="http://www.historyofthings.com/history-of-the-internet"> http://www.historyofthings.com/history-of-the-internet</a></p>
+        <p>Randy Abdallah. INTRODUCTION TO THE INTERNET- A BRIEF HISTORY. Retrieved from <a href="http://fashionhighschool.entest.org/pdf/teachers/TechnologyPLC/The%20Internet%20a%20Brief%20History.pdf">"http://fashionhighschool.entest.org/pdf/teachers/TechnologyPLC/The%20Internet%20a%20Brief%20History.pdf</a></p>
+        
+        <p>THE INVENTION OF THE INTERNET(2014, March). Retrieved from <a href="http://www.history.com/topics/inventions/invention-of-the-internet">http://www.history.com/topics/inventions/invention-of-the-internet</a></p>
+        
+        <p>Who invented the Internet?(2007, October). Retrieved from <a href="http://www.computerhope.com/issues/ch001016.htm">http://www.computerhope.com/issues/ch001016.htm</a></p>
+        <p>ARPANET(2001, June).Retrieved from <a href="http://www.computerhope.com/jargon/a/arpanet.htm">http://www.computerhope.com/jargon/a/arpanet.htm</a></p>
+        <p>Vinton G. Cerf(2012, November) .Brief History of the Internet. Retrieved from <a href="http://www.internetsociety.org/internet/what-internet/history-internet/brief-history-internet#roberts">http://www.internetsociety.org/internet/what-internet/history-internet/brief-history-internet#roberts</a></p>
+        <p>Walt Howe(2001, February). A Brief History of the Internet. Retrieved from <a href="http://www.walthowe.com/navnet/history.html">http://www.walthowe.com/navnet/history.html</a></p>
+        <p>History of the Internet(2010, January). Retrieved from <a href="http://www.newmedia.org/history-of-the-internet.html?page=1">http://www.newmedia.org/history-of-the-internet.html?page=1</a></p>
+        <p>Internet Timeline(1999, May). Retrieved from <a href="http://www.infoplease.com/ipa/A0193167.html">http://www.infoplease.com/ipa/A0193167.html</a></p>
+        <p>Dave Kristula(1997, March).Internet History Timeline.Retrieved from <a href="http://www.davesite.com/webstation/net-history4.shtml">http://www.davesite.com/webstation/net-history4.shtml</a></p>
+        <p>A BRIEF GUIDE TO THE HISTORY OF THE INTERNET(2009, April). Retrieved from <a href="http://www.investintech.com/content/historyinternet/">http://www.investintech.com/content/historyinternet/</a></p>
+        <p>A Brief History of the Internet(2002, February). Retrieved from <a href="http://www.usg.edu/galileo/skills/unit07/internet07_02.phtml">http://www.usg.edu/galileo/skills/unit07/internet07_02.phtml</a></p>
+
+        
+        <div class="page-nav-bottom">
+            <a href="http%20fundamentals.html"></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <a href="world-wide-web.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+            </div>
+        </div>    
+    </div>    
+    <footer>
+        <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+    </footer>
     </div>
-    
+    </div>
 </body>
 </html>
