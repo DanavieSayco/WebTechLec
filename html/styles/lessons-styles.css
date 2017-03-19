@@ -1,7 +1,13 @@
 body {
     background-image: url(pictures/tag.png);
 }
+
 details summary::-webkit-details-marker { display:none; }
+
+summary:hover {
+    color: #00ace6;
+}
+
 h1 {
     font-family: 'dosis', sans-serif;
     font-size: 72px;
