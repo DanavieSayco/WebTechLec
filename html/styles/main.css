@@ -83,3 +83,21 @@ footer {
 footer a {
     color: #00ace6;
 }
+
+@media only screen and (max-width: 625px){
+    #logo {
+        position: relative;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    header nav {
+        margin-left: initial;
+    }
+    
+    header li a {
+        padding: 20px 9px; 
+    }
+}

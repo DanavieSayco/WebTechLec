@@ -130,6 +130,10 @@ div.next {
     color: #14181a; 
 }
 
+.content .icon {
+    display: none;
+}
+
 .notes {
     display: inline-block;
     background-color: #1b2126;
@@ -155,3 +159,22 @@ div.next {
     word-break: break-all;
 }
 
+@media screen and (max-width: 800px){
+    .content nav {
+        margin: initial;
+        position: relative;
+        width: 96%;
+    }
+    
+    h1 {
+        text-align: center;
+        margin: initial;
+        display: block;
+        padding: 50px;
+    }
+    
+    .notes-con {
+        float: none;
+        width: 90%;
+    }
+}
