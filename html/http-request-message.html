@@ -1,33 +1,352 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>HTTP Request Message</title>
+    <title>HTTP Request Message</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/lessons-styles.css" rel="stylesheet">
+    <!--link href="styles/request-message.styles.css" rel="stylesheet"-->
 </head>
 <body>
-    <h1>HTTP Request Message</h1>
-    <h2>Request Line</h2>
-        <p>The Request-Line begins with a method token/request method, followed by the Request-URI and the protocol version, and ending with CRLF (terminated line consisting of three spaced-separated items).</p>
-    
+    <header>
+        <img src="pictures/logo.png" id="logo">
+    <nav>
         <ul>
-            <li><a href="http-request-methods.html">Request Methods</a>
-                <p>It passes the information about the request and the client to the server</p></li>
-            <li><a href="http-request-uri.html">Request URI</a></li>
-            <li>HTTP Protocol Version
-                <p>A server supporting HTTP version 1.1 will return the version information. (e.g. HTTP-Version = HTTP/1.1)</p>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><a href="internet.html">Internet</a></li>
+            <li><a href="world-wide-web.html">WWW</a></li>
+            <li>
+                <label for="sub">HTTP</label>
+                <input type="checkbox" id="sub"/>
+                <div class="sub-topic">
+                    <ul>        
+                        <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                        <li><a class="sub">Resource Accessing</a></li>
+                        <li><a href="request-message.html" class="active sub">Request Message</a></li>
+                        <li><a href="response-message.html" class="sub">Response Message</a></li>
+                        <li><a href="http-request-methods.html" class="sub">Request Method</a></li>
+                        <li>
+                            <label for="sub2">Message Header</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                                <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                                <li><a href="response-header.html">Response Header Fields</a></li>
+                                <li><a href="entity-header.html">Entity Header Fields</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li><a href="http-status-codes-client-and-server.html" class="sub">Status Codes</a></li>
+                    </ul>
+                </div>
             </li>
         </ul>
+    </nav>
+    <h1>HTTP Request Message</h1>
+    <div class="notes">
+        <div class="notes-con">
+            <div class="page-nav-top">
+                <a href="http%20fundamentals.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a>
+                <div class="next">
+                    <a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+            <!-- - - - - REQUEST LINES - - -->
+            
+            <h2>Request Line</h2>
+                    <dd>The Request-Line begins with a method token/request method, followed by the Request-URI and the protocol version, and ending with CRLF (terminated line consisting of three spaced-separated items).</dd>
+            
+                <ul>
+                    <details><summary><li>Request Methods</li></summary>
+                        <dd>It passes the information about the request and the client to the server</dd>
+                        <ul>
+                            <li>
+                                <details><summary>GET</summary>
+                                    <ul>
+                                        <li>Transfer a current selected representation of the resource identified by the request URI</li>
+                                        <li>Requests data from a specified resource</li>
+                                        <li>Most commonly used method</li>
+                                        <li>Must be supported by all compliant general-purpose servers</li>
+                                        <li>Can be stored </li>
+                                        <li>Can be bookmarked </li>
+                                        <li>Must never be utilized when managing delicate information </li>
+                                        <li>Are ought to be utilized just to recover information</li>
+                                        <li>Asks for have length limitations</li>
+                                        <li>Remains in the browser history</li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                            <li>
+                                <details><summary>HEAD</summary>
+                                <ul>
+                                    <li>Same as GET but the entity is not sent</li>
+                                    <li>Used to retrieve metadata about the entity</li>
+                                    <li>Must also be supported by all</li>
+                                </ul>
+                                </details>
+                            </li>
+
+                            <li>
+                                <details><summary>POST</summary>
+                                    <ul>
+                                        <li>Performing resource-specific processing of entities enclosed in the message body</li>
+                                        <li>Submits data to be processed to a specified resource</li>
+                                        <li>Has a payload</li>
+                                        <li>Are never cached</li>
+                                        <li>Cannot be bookmarked</li>
+                                        <li>Do not remain in the browser history</li>
+                                        <li>No restrictions on the data length</li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                            <li>    
+                                <details><summary>PUT</summary>
+                                    <ul>
+                                        <li>Store the enclosed entity in the message body under a specified URI</li>
+                                        <li>By default, the method is not allowed</li>
+                                        <li>When allowed, authentication must be provided</li>
+                                        <li>Uploads a representation of the specified URI</li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                            <li>    
+                                <details><summary>DELETE</summary>
+                                    <ul>
+                                        <li>Remove the resource associated with the specified URI</li>
+                                        <li>Like PUT, the method is not allowed by default</li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>    
+                                <details><summary>OPTIONS</summary>
+                                    <ul>
+                                        <li>Request information on what can be done with the resource specified</li>
+                                        <li>Returns the HTTP methods that the server supports</li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                            <li>    
+                                <details><summary>TRACE</summary>
+                                    <ul>
+                                        <li>Perform or request a loopback of the requested message (echo back)</li>
+                                        <li>Typically used for testing/diagnosis of the request/response chain</li>
+                                        <li>Allows the customer to perceive what is being gotten at the flip side of the demand chain and use the data for testing</li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                            <li>
+                                <details><summary>CONNECT</summary>
+                                    <ul>
+                                        <li>Establishment of an encryption tunnel to communicate with https</li>
+                                        <li>Converts the request connection to a transparent TCP/IP tunnel</li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details><summary>Extension Methods</summary>
+                                    <details><summary>WebDAV</summary>
+                                        <ul>
+                                            <li>PROPFIND - method recovers properties characterized on the asset recognized by the Request-URI</li>
+                                            <li>PROPPATCH – method forms guidelines indicated in the demand body to set and additionally or expel properties characterized on the asset recognized by the Demand URI</li>
+                                            <li>MKCOL – make collection (new folder)</li>
+                                            <li>COPY – creates a duplicate of the source resource</li>
+                                            <li>MOVE – does not guarantee the ability to move a  resource to a particular destination</li>
+                                            <li>LOCK - lock resources</li>
+                                            <li>UNLOCK – unlock resources</li>
+                                        </ul>    
+                                    </details>
+
+                                </details>
+                            </li>
+
+                            <li>
+                                <details><summary>Safe Methods</summary>
+                                    <ul>
+                                        <li>Doesn’t change the resources</li>
+                                        <li>Method that can be cached</li>
+                                        <li>GET, HEAD, OPTIONS, TRACE</li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                            <li>
+                                <details><summary>Idempotent Methods</summary>
+                                    <ul>
+                                        <li>Repeated request result to the same response</li>
+                                        <li>GET, HEAD, OPTIONS, TRACE, PUT, DELETE</li>
+                                    </ul>
+                                </details>
+                            </li>
+
+                            <li>
+                                <details><summary>Cacheable Methods</summary>
+                                    <ul>
+                                        <li>Requests that generate cache</li>
+                                        <li>GET, HEAD are cacheable</li>
+                                    </ul>
+                                </details>
+                            </li>
+                        </ul>
+
+                    </details>
+
+                    <details><summary><li>Request URI</li></summary>
+                        <dd>Request-URI = "*" | absoluteURI | abs_path | authority<br />
+                           The Request URI, which URI means 'Uniform Resource Identifier', identifies the resource upon which to apply the request.
+                        </dd>
+
+                        <ul>
+                            <li>*
+                                <p>The asterisk * form is used when an HTTP request does not apply to a particular resource, but to the server itself, and is only allowed when the method used does not necessarily apply to a resource.</p>
+                            </li>
+
+                            <li>absoluteURI
+                                <p>The absoluteURI is used when an HTTP request is being made to a proxy. The proxy is requested to forward the request or service from a valid cache, and return the response.</p>
+                            </li>
+
+                            <li>abs_path
+                                <p>The abs_path form is used to identify a resource on an origin server or gateway. This cannot be empty; if the original URI is empty, it MUST be given as "/" (the server root).</p>
+                            </li>
+
+                            <li>authority
+                                <p>The authority form is only used by the CONNECT method (method def. in <a href="http-request-methods.html">Request Methods - CONNECT</a>.)</p>
+                            </li>
+
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary><li>HTTP Protocol Version</li></summary>
+                        <ul>
+                            <li>A server supporting HTTP version 1.1 will return the version information. (e.g. HTTP-Version = HTTP/1.1)</li>
+                        </ul>
+
+                    </details>
+                    
+                </ul>
+            
+            <!-- - - - --  REQUEST HEADER FIELDS - -->
+            <h2>Request Header Fields</h2>
+                <dd>Request Header Fields provide information about the request messages requested by the client.</dd>
+                
+            	<ul>
+                    <details><summary><li>Accept</li></summary>
+                        <p>The Accept request header field specifies acceptable file types. If other types can be delivered then it will be accepted. The server responds with negotiation.</p>
+                    </details>
+                    
+
+                    <details><summary><li>Accept-Charset</li></summary>
+                        <p>The Accept-Charset request header field indicates which character sets are acceptable for the response.</p>
+                    </details>
+                    
+                    <details><summary><li>Accept-Encoding</li></summary>
+                        <p>The Accept-Encoding request header field restricts the content-codings that are acceptable in the response.</p>
+                    </details>
+                    
+                    <details><summary><li>Accept-Language</li></summary>
+                        <p>The Accept-Language request header field restricts the set of languages that are preferred as a response to the request.</p>
+                    </details>
+                    
+                    <details><summary><li>Authorization </li></summary>
+                        <p>The Authorization request header field ensures protection from unauthorized access. When proper credentials are entered, another request will be sent with authorization.</p>
+                    </details>
+                    
+                    <details><summary><li>Proxy Authorization</li></summary>
+                        <p>The Proxy Authorization request header field allows the client to identify itself (or its user) to a proxy which requires authentication.</p>
+                    </details>
+                    
+                    <details><summary><li>Expect</li></summary>
+                        <p>The Expect request header field indicates that particular server behaviors are required by the client.</p>
+                    </details>
+                    
+                    <details><summary><li>From</li></summary>
+                        <p>The From request header field contains contact credentials of the sender</p>
+                    </details>
+                    
+                    <details><summary><li>Host</li></summary>
+                        <p>The Host request header field specifies the internet host and port number of the resource being requested. This enables the origin server to distinguish among resources while servicing requests for multiple host names on a single IP address.</p>
+                    </details>
+                    
+                    <details><summary><li>If-Match</li></summary>
+                        <p>The If-Match request header field compares the file in the cache and server to check if file is unmodified.</p>
+                    </details>
+                    
+                    <details><summary><li>If-None-Match</li></summary>
+                        <p>The If-None-Match request header field requests the server to perform the requested method only if one of the given value in a tag matches the given entity tags. This is also used to update caches or to prevent to upload a new resource when one is already existing.</p>
+                    </details>
+                    
+                    <details><summary><li>If-Range</li></summary>
+                        <p>The If-Range request header field allows the client to “short circuit” the second request. It can be used with a conditional GET to request only the portion of the entity that is missing.</p>
+                    </details>
+                    
+                    <details><summary><li>If-Unmodified-Since</li></summary>
+                        <p>The If-Unmodified-Since request header field expects the entity to be transmitted only if it has not been modified after the given date.</p>
+                    </details>
+                    
+                    <details><summary><li>Ranges</li></summary>
+                        <p>The Ranges request header field specifies portions of the resource the client wants to receive.</p>
+                    </details>
+                    
+                    <details><summary><li>Max-Forwards</li></summary>
+                        <p>The Max-Forwards request header field limit the number of proxies or gateways that can forward the request.</p>
+                    </details>
+
+                    <details><summary><li>Referer</li></summary>
+                        <p>The Referer request header field specifies the URI where the request was originated. It is also used to check where traffic is coming from.</p>
+                    </details>
+                    
+                    <details><summary><li>TE</li></summary>
+                        <p>The Trailer Encoding request header field specifies the transfer encodings the user agent is willing to accept.</p>
+                    </details>
+                    
+                    <details><summary><li>User-Agent</li></summary>
+                        <p>The User-Agent request header field contains additional information about the clients' identity.</p>
+                    </details>
+                    
+
+                </ul>
+
+            
+            <!-- - - -  -REQUEST MESSAGE - - - -  -->
+            <h2>Request Message</h2>
+                <p>Example of a Request Message body:</p>
+                <dd>GET /sample.html HTTP/1.1 <br />
+                    User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)<br />
+                    Host: www.sample.com<br />
+                    Accept-Language: en-us<br />
+                    Accept-Encoding: gzip, deflate<br />
+                    Connection: Keep-Alive</dd>
+        
+            <div class="page-nav-bottom">
+                <a href="http%20fundamentals.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a>
+                <div class="next">
+                    <a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>   
+        </div>
+        <footer>
+            <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+        </footer>
+    </div>
     
-	<h2><a href="request%20header%20fields.html">Request Header Fields</a></h2>
-    <p>Request Header Fields provide information about the request messages requested by the client.</p>
-    
-    <h2>Request Message</h2>
-    <p>Example of a Request Message body:</p>
-    <dd>    GET /sample.html HTTP/1.1 <br />
-User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)<br />
-Host: www.sample.com<br />
-Accept-Language: en-us<br />
-Accept-Encoding: gzip, deflate<br />
-Connection: Keep-Alive</dd>
     
 </body>
 </html>
