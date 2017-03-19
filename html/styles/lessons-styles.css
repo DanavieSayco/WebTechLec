@@ -8,10 +8,20 @@ summary:hover {
     color: #00ace6;
 }
 
+dd {
+    font-family: 'roboto', sans-serif;
+}
+
 h1 {
     font-family: 'dosis', sans-serif;
     font-size: 72px;
     margin-left: 30%;
+}
+
+h2 {
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 h3{
@@ -99,6 +109,7 @@ div.next {
 .content nav a {
     padding: 5%;
     display: block;
+    word-break: break-all;
 }
 
 .content nav ul {
