@@ -146,7 +146,7 @@ div.next {
 }
 
 .notes {
-    display: inline-block;
+    display: block;
     background-color: #1b2126;
     padding: 3%;
 }
