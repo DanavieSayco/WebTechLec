@@ -4,8 +4,13 @@ body {
 
 details summary::-webkit-details-marker { display:none; }
 
+summary { 
+  transition: all .2s ease-in-out; 
+}
+
 summary:hover {
     color: #00ace6;
+    transform: scale(1.03);
 }
 
 dd {
@@ -57,6 +62,7 @@ label {
 
 label:hover {
     background-color: #2e3a43;
+    transform: scale(1.03);
 }
 
 i {
@@ -109,6 +115,11 @@ div.next {
 .content nav a {
     padding: 5%;
     display: block;
+    transition: all .2s ease-in-out; 
+}
+
+.content nav a:hover{
+    transform: scale(1.03);
 }
 
 .content nav ul {
@@ -130,8 +141,12 @@ div.next {
     color: #14181a; 
 }
 
+.content .icon {
+    display: none;
+}
+
 .notes {
-    display: inline-block;
+    display: block;
     background-color: #1b2126;
     padding: 3%;
 }
@@ -155,3 +170,22 @@ div.next {
     word-break: break-all;
 }
 
+@media screen and (max-width: 800px){
+    .content nav {
+        margin: initial;
+        position: relative;
+        width: 96%;
+    }
+    
+    h1 {
+        text-align: center;
+        margin: initial;
+        display: block;
+        padding: 50px;
+    }
+    
+    .notes-con {
+        float: none;
+        width: 90%;
+    }
+}
