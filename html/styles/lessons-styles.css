@@ -170,6 +170,15 @@ div.next {
     word-break: break-all;
 }
 
+.glossary dl{
+    margin-left: 20px;
+}
+.alpha{
+   padding:1%;
+    font-size: 15px;
+    text-align: center;
+}
+
 @media screen and (max-width: 800px){
     .content nav {
         margin: initial;

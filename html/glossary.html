@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Gloss</title> 
+    <title>Glossary</title> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <link href="styles/main.css" rel="stylesheet"> 
@@ -28,170 +28,256 @@
         <div class="notes-con">
         <div class="page-nav-top">
             <!--a href="world-wide-web.html"></i><p class="previous"></p></a-->
+            <div class="alpha" id="alphabet"><a href="#1">1-5</a> || <a href="#A">A</a> || <a href="#C">C</a> || <a href="#D">D</a> || <a href="#E">E</a> || <a href="#F">F</a> || <a href="#G">G</a> || <a href="#H">H</a> || <a href="#I">I</a> || <a href="#L">L</a> || <a href="#M">M</a> || <a href="#N">N</a> || <a href="#O">O</a> || <a href="#P">P</a> || <a href="#Q">Q</a> || <a href="#R">R</a> || <a href="#S">S</a> || <a href="#T">T</a> || <a href="#U">U</a> || <a href="#V">V</a> || <a href="#W">W</a> </div>
             <div class="next">
                 <!--a href="resource-accessing.html"><p class="next"></p></a-->
             </div>
         </div>
-            <ul class="glossary">
-                <li>1xx (Informational)<dd>Continuing the process of a request</dd></li>
-                <li>2xx (Success)  <dd>The process was successful and accepted</dd></li>
-                <li>3xx (Redirection)<dd>There are additional steps needed in order to complete the request</dd></li>
-                <li>4xx (Client Error)<dd>It means that the request is not accepted and understood because the request contains syntax error</dd></li>
-                <li>5xx (Server Error)<dd>It means that the server failed to accomplish the valid request</dd></li>
-                <li>Absolute URL<dd>Scheme and domain name are always required</dd></li>
-                <li>Accept <dd> a Request Header Field (client) for specifying acceptable file type; server responds with negotiation, accept if other type can be delivered</dd></li>
-                <li>Accept-Charset <dd> a Request Header Field (client) that indicates which character sets are acceptable for the response</dd></li>
-                <li>Accept-Encoding <dd> a Request Header Field (client) that restricts the content-codings that are acceptable in the response</dd></li>
-                <li>Accept-Language <dd> a Request Header Field (client) that restricts the set of natural languages that are preferred as a response to the request</dd></li>
-                <li>Accept-Ranges <dd> A Response Header Field (server) that allows partial resources</dd></li>
-                <li>Advanced Research Projects Agency Network (ARPANET) <dd>Considered as the original internet and it is the beginning of the net. First used for the packet switching theory</dd></li>
-                <li>Advanced Research Projects Agency (ARPA)<dd>Created by US government to gain advantage over the ongoing war against the Soviet Union and used to create new technology</dd></li> 
-                <li>Age <dd> A Response Header Field (server) that shows how long ago the response has been generated</dd></li>
-                <li>Allow <dd> An Entity Header Field that allows methods to be called</dd></li>
-                <li>Authentication/ authorization<dd> is a term for a framework for intelligently controlling access to computer resources, enforcing policies, auditing usage, and providing the information necessary to bill for services; These combined processes are considered important for effective network management and security.</dd> </li>
-                <li>Authority<dd>User information/ information credentials</dd></li>
-                <li>Authorization<dd>a Request Header Field (client) that ensures protection from unauthorized access; When proper credentials are entered, another request will be sent with authorization; Without authorization, www-authenticate challenge will be sent and a pop-up authorization will appear</dd></li>
-                <li>Cacheable Methods<dd>Requests that generate cache</dd></li>
-                <li>Cache-control <dd> a General Header Field used for controlling cache and telling whether a resource needs to be cached or not</dd></li>
-                <li>Circuit Switch Connection<dd>A type of communication and used in phone calls. It establish dedicated channel (circuit), maintain and terminate a communication session</dd></li>
-                <li>Circuit Switch Connection<dd>Establish circuit and maintain it to communicate; Not scalable</dd></li>
-                <li>Clients<dd>user agent; Web browsers, web crawlers/spiders, other end user tools and applications; any application that communicates with HTTP protocol</dd></li>
-                <li>Client-server protocol negotiation <dd> asking server if it can handle higher version and if yes, the server will upgrade</dd></li>
-                <li>CONNECT<dd>Establishment of an encryption tunnel to communicate with https; Converts the request connection to a transparent TCP/IP tunnel</dd></li>
-                <li>Connection <dd> a General Header Field to control whether connection is persistent or not and allows the sender to specify options that are desired for that particular connection</dd></li>
-                <li>Content media type <dd> (MIME: Multipurpose Internet Mail Extension) specification; </dd></li>
-                <li>Content negotiation <dd> talk to tell what the recipient can handle</dd></li>
-                <li>Content/ transfer coding<dd></dd></li>
-                <li>Content-Encoding <dd> An Entity Header Field that shows when server changed form of entity</dd></li>
-                <li>Content-Language <dd> An Entity Header Field that shows language characteristics; for accessibility purposes</dd></li>
-                <li>Content-Length <dd> An Entity Header Field that shows size of payload</dd></li>
-                <li>Content-Location <dd> An Entity Header Field that shows when content are from somewhere else; actual location of the resource</dd></li>
-                <li>Content-MD5 <dd> A deprecated Entity Header Field; an Entity Header Field that </dd></li>
-                <li>Content-Range <dd> An Entity Header Field when doing range request</dd></li>
-                <li>Content-Type <dd> MIME type; An Entity Header Field that </dd></li>
-                <li>COPY <dd> creates a duplicate of the source resource</dd></li>
-                <li>CRLF<dd>Act as terminator of a line; CR means carriage return where cursor return to the beginning of the line without going to the next line and LF means line feed where it will go to the next line without going back to the beginning of a line</dd></li>
-                <li>DARPA<dd>Defense Advanced Research Project Agency</dd></li>
-                <li>Date <dd> a General Header Field that represents the date and time at which the request was generated </dd></li>
-                <li>DELETE<dd>Remove the resource associated with the specified URI; Like PUT, the method is not allowed by default</dd></li>
-                <li>Device drivers<dd>a program that controls a particular type of device that is attached to your computer</dd></li>
-                <li>Email <dd> It is an electronic mail</dd></li>
-                <li>Entity Header Field<dd>Define metainformation about the entity-body or, if no body is present, about the resource identified by the request.</dd></li>
-                <li>ETag (entity tag)<dd>A Response Header Field (server) that serves as an identifier</dd></li>
-                <li>Expect <dd> a Request Header Field (client) for two-face connection; Indicates that particular server behaviors are required by the client; If any of the expectations cannot be met the server must respond with a 417 (Expectation Failed)</dd></li>
-                <li>Expires <dd> An Entity Header Field for controlling cache access; cache-control; (e.g. max-age = ??)</dd></li>
-                <li>Extension Methods<dd>are a special kind of static method, but they are called as if they were instance methods on the extended type. </dd></li>
-                <li>Fragment identifier <dd> “bookmark”</dd></li>
-                <li>From <dd> a Request Header Field (client) that contains contact credentials of sender (an internet e-mail address); May be used for logging purposes and as a means for identifying the source of invalid or unwanted requests</dd></li>
-                <li>Gateway tunnel<dd>blind relay between two points; forwards communication without knowing what it does; can be used for authentication</dd></li>
-                <li>General Headers <dd>These header fields have general applicability for both request and response messages and that are used in both client requests and server responses; Some may be more specific to either a client or server message. </dd></li>
-                <li>GET<dd>Transfer a current selected representation of the resource identified by the request URI; Requests data from a specified resource; Most commonly used method; Must be supported by all compliant general-purpose servers; Can be stored; Can be bookmarked; Must never be utilized when managing delicate information; Are ought to be utilized just to recover information; Asks for have length limitations; Remains in the browser history</dd></li>
-                <li>Gopher Protocol<dd>Used in distributing, searching and retrieving documents over the internet; Hierarchy is involved with the index having sub-indexes</dd></li>
-                <li>HEAD<dd>Same as GET but the entity is not sent; used to retrieve metadata about the entity; must also be supported by all</dd></li>
-                <li>Host (domain name)<dd>domain name (resolved to an IP address using DNS) of the server where the resource resides, or will be created</dd></li>
-                <li>Host (Header Field) <dd> a Request Header Field (client) that is required in HTTP 1</dd><dd>1; Specifies the internet host and port number of the resource being requested</dd><dd> This enables the origin server to distinguish among resources while servicing requests for multiple host names on a single IP address</dd></li>
-                <li>HTTP Message Headers<dd>are components of the header section of request and response messages in the Hypertext Transfer Protocol (HTTP); They define the operating parameters of an HTTP transaction.</dd></li>
-                <li>HTTP protocol version <dd> shows what HTTP version of the Client uses</dd></li>
-                <li>HTTP Resource Accessing<dd>HTTP resources are identified using URIs (Uniform Resource Identifier), which tells what the resource is, or more, specifically HTTP URL (Uniform Resource Locator), which tells where the resource is</dd></li>
-                <li>HTTP Response Message <dd>After receiving and interpreting a request message, a server responds with an HTTP response message.  </dd></li>
-                <li>HTTP Status Codes<dd>return values and its corresponding description</dd></li>
-                <li>Hypertext Markup Language<dd>is the set of markup symbols or codes inserted in a file intended for display on a World Wide Web browser page; The markup tells the Web browser how to display a Web page's words and images for the user.</dd></li>
-                <li>Hypertext Transfer Protocol (HTTP)<dd>Application layer communications protocol used to access resources; Standard way of communicating through applications</dd></li>
-                <li>IANA <dd> allocates certain ports to certain applications</dd></li>
-                <li>Idempotent Methods<dd>Repeated request result to the same response</dd></li>
-                <li>IETF (internet Engineering Task Force)<dd>is an organized activity of the Internet Society (ISOC).</dd></li>
-                <li>If-Match <dd> a Request Header Field (client) that compares the file in the cache and server to check if file is unmodified to avoid state entity</dd></li>
-                <li>If-None-Match <dd> a Request Header Field (client) that requests the server to perform the requested method only if one of the given value in a tag matches the given entity tags represented by the Etag; Used to update caches or to prevent to upload a new resource when one is already existing</dd></li>
-                <li>If-Range <dd> “is what I have a portion of what you have”; a Request Header Field (client) that can be used with a conditional GET to request only the portion of the entity that is missing; allows the client to “short circuit” the second request</dd></li>
-                <li>If-Unmodified-Since <dd> a Request Header Field (client) that is used with a method to make it conditional; Expects the entity to be transmitted only if it has not been modified after the given date</dd></li>
-                <li>Inter<dd>It means outside the boundary while the network means the interconnection of devices</dd></li>
-                <li>Inter<dd> outside the boundary</dd></li>
+            <div class="glossary">
+               <h2 id="1">1-5</h2>
+                    <dl>
+                        <dt>1xx (Informational)</dt><dd>Continuing the process of a request</dd>
+                        <dt>2xx (Success)</dt>  <dd>The process was successful and accepted</dd>
+                        <dt>3xx (Redirection)</dt><dd>There are additional steps needed in order to complete the request</dd>
+                        <dt>4xx (Client Error)</dt><dd>It means that the request is not accepted and understood because the request contains syntax error</dd>
+                        <dt>5xx (Server Error)</dt><dd>It means that the server failed to accomplish the valid request</dd>
+                    </dl>
                 
-                <li>Interconnection technology<dd>It establish connection between devices using coaxial, fiber, UTP, or infrared</dd></li>
-                <li>Internet<dd>Defines as global network of networks</dd></li>
-                <li>Internetworking<dd>A technique that uses device such as router to connect to a different network</dd></li>
-                <li>IoT <dd> Internet of things</dd></li>
-                <li>IP <dd> Internet Protocol</dd></li>
-                <li>IPv4<dd>Internet Protocol version 4. It is the underlying technology that makes it possible for us to connect our devices to the web. It utilizes 32-bit addresses</dd></li>
-                <li>IPv6<dd>is the sixth revision to the Internet Protocol and the successor to IPv4. It utilizes 128-bit addresses</dd></li>
-                <li>Language and character set specification<dd> requires that protocol elements containing human-readable text are able to carry language information.</dd></li>
-                <li>Last-Modified <dd> An Entity Header Field that shows possible reference value to check if resource is fresh</dd></li>
-                <li>Location <dd> A Response Header Field (server) for redirection. If present, the server will fetch the latest resource from location</dd></li>
-                <li>Location <dd> a Response Header Field for redirection</dd></li>
-                <li>LOCK<dd>lock resources</dd></li>
-                <li>Max-Forwards <dd> a Request Header Field (client) for tracing and limiting a trace; Limit the number of proxies or gateways that can forward the request to the next inbound server; Contains a decimal integer indicating the remaining number of times a request message may be forwarded</dd></li>
-                <li>Message body <dd> also known as payload; optional</dd></li>
-                <li>Message headers <dd>HTTP messages consist of requests from client to server and responses from server to client.  </dd></li>
-                <li>MKCOL <dd> make collection (new folder)</dd></li>
-                <li>MOVE <dd> does not guarantee the ability to move a resource to a particular destination</dd></li>
-                <li>Network <dd> interconnection of devices </dd></li>
-                <li>Nodes<dd>It is an actual device</dd></li>
-                <li>OPTIONS<dd>Request information on what can be done with the resource specified; Returns the HTTP methods that the server supports</dd></li>
-                <li>Origin server <dd> where original resources are actually stored</dd></li>
-                <li>Path to resource (resolved relative to the document root) <dd> may refer to a static or dynamic resource</dd></li>
-                <li>Persistent connections <dd> telling the server to not close the connection for further requests</dd></li>
-                <li>Port number (HTTP) <dd> default is 80</dd></li>
-                <li>POST<dd>Performing resource-specific processing of entities enclosed in the message body; Submits data to be processed to a specified resource; Has a payload; Are never cached; Cannot be bookmarked; Do not remain in the browser history; No restrictions on the data length</dd></li>
-                <li>Pragma <dd> a General Header Field that is from an older version, a generic directive, and indicates that something is cacheable; used to include implementation specific directives that might apply to any recipient along the request/response chain</dd></li>
-                <li>PROPFIND<dd>method recovers properties characterized on the asset recognized by the Request-URI</dd></li>
-                <li>PROPPATCH <dd> method forms guidelines indicated in the demand body to set and additionally or expel properties characterized on the asset recognized by the Demand URI</dd></li>
-                <li>Protocols<dd>a set of technical rules for the transmission and receipt of information between computers</dd></li>
-                <li>Proxy authentication <dd> a Response Header Field for authentication to access a proxy</dd></li>
-                <li>Proxy Authorization <dd> a Request Header Field (client) that allows the client to identify itself (or its user) to a proxy which requires authentication; Consists of credentials containing the authentication information of the user agent for the proxy and/or realm of the resource being requested</dd></li>
-                <li>Proxy server <dd> checks authentication; forwards requests and gives back requests </dd></li>
-                <li>Proxy-Authenticate<dd>A Response Header Field (server) that </dd></li>
-                <li>PUT<dd>Store the enclosed entity in the message body under a specified URI; By default, the method is not allowed; When allowed, authentication must be provided; Uploads a representation of the specified URI</dd></li>
-                <li>Query <dd> typically provided as key = value pairs, with ampersand separators between key/ value pairs, and may be URL-encoded </dd></li>
-                <li>Ranges <dd> a Request Header Field (client) for Specifying portions of the resource the client wants to receive </dd></li>
-                <li>Reason phrase <dd>Descriptive meaning of the status code</dd></li>
-                <li>Referer <dd> a Request Header Field (client) that specifies the address (URI) where the request was originated; to check where traffic is coming from</dd></li>
-                <li>Relative URL<dd>Scheme, user info, and domain name can be omitted</dd></li>
-                <li>Request Header Fields <dd> information about the request and the client</dd></li>
-                <li>Request Header Fields (client)<dd>information of the client about the request</dd></li>
-                <li>Request Line (CRLF) <dd> terminated line consisting of three spaced-separated items)</dd></li>
-                <li>Request pipelining <dd> sending requests one after another</dd></li>
-                <li>Request URI <dd> location of the requested resource</dd></li>
-                <li>Response Header Fields <dd>are components of the header section of request and response messages in the Hypertext Transfer Protocol (HTTP); They define the operating parameters of an HTTP transaction. </dd></li>
-                <li>Response Headers <dd> Response of the server after receiving the request message.</dd>         </li>
-                <li>Response Message<dd>Response of the server after receiving the request message</dd></li>
-                <li>Retry-After <dd> A Response Header Field (server) that shows the amount of time the client has to wait before trying again</dd></li>
-                <li>Retry-After <dd> a Response Header Field where it is used when under maintenance of a web server; timeouts; indicate to a client that the server is currently not available; 503 Service not Available</dd></li>
-                <li>Safe Methods <dd> Doesn’t change the resources</dd></li>
-                <li>Scheme (http or https) <dd>It simply tells you how to interpret the part of the URL after the colon. </dd></li>
-                <li>Semantic Web<dd>Next step in the evolution of the web; Makes use of artificial intelligence to understand the question given by user</dd></li>
-                <li>Server <dd> A Response Header Field (server) that shows information about the server</dd></li> 
-                <li>Socket<dd>IP Address and Port number</dd></li>
-                <li>SP<dd>It means Space</dd></li>
-                <li>SSL/TLS <dd> takes HTTP traffic and transmits it in an encrypted form</dd></li>
-                <li>Stateless communication <dd> A communication where it does not keep information about clients in between requests</dd></li>
-                <li>Status code<dd>3-digit code that designates the status</dd></li>
-                
-                <li>Status line<dd>It is a combination of status code and reason phrase</dd></li>  
-                <li>Store and Forward<dd>Send messages to the next hub until destination is reached</dd></li>
-                <li>TE <dd> trailer encoding; a Request Header Field (client) that specifies the transfer encodings the user agent is willing to accept</dd></li>
-                <li>TRACE<dd>Perform or request a loopback of the requested message (echo back); Typically used for testing/diagnosis of the request/response chain; Allows the customer to perceive what is being gotten at the flip side of the demand chain and use the data for testing</dd></li>
-                <li>Trailer <dd> a General Header Field that indicates that a header is present at the end of the data to supply metadata that might be dynamically generated while the message body is sent</dd></li>
-                <li>Transfer-encoding <dd> a General Header Field that indicates what type of transformation has been applied to the message body to safely transfer it between the sender and the recipient</dd></li>
-                <li>Transmission Control Protocol / Internet Protocol (TCP/IP) <dd>A protocol that is used by computers to communicate in the Internet</dd></li>
-                <li>Universal Resource Identifier<dd>is a string of characters used to identify a resource. Such identification enables interaction with representations of the resource over a network, typically the World Wide Web, using specific protocols.</dd></li>
-                <li>Universal Resource Locator <dd>It is the global address of documents and other resources on the World Wide Web.  </dd></li>
-                <li>UNLOCK <dd> unlock resources</dd></li>
-                <li>Upgrade <dd> a General Header Field used for protocol negotiation *; Allows the client to upgrade or change to a different protocol on the same connection</dd></li>
-                <li>Usenet<dd>Similar to an online discussion group</dd></li>
-                <li>User-Agent <dd> a Request Header Field (client) that contains additional information about the clients, identity</dd></li>
-                <li>User request-response protocol <dd> Client sends an HTTP request message to server (pull protocol); Server volunteers new information via notifications (push protocol); Checks server at regular intervals (polling); Server processes the request and replies with HTTP response message; In HTTP 2, server can push resources to client without client requesting</dd></li>
-                <li>Vary <dd> A Response Header Field (server) for content negotiation</dd><dd> a Response Header Field where changing header values that is used in content negotiations</dd></li>
-                <li>Via <dd> a General Header Field to indicate where the request passed through; Used for tracking message forwards, avoiding request loops, and identifying the protocol capabilities of senders along the request/response chain</dd></li>
-                <li>W3C (World Wide Web Consortium) <dd>is the main international standards organization for the World Wide Web. </dd></li>
-                <li>Warning <dd> a General Header Field that carries additional information about the status or transformation of a message error in the message *</dd></li>
-                <li>Web Client<dd>Example is web browser; Gives requests to web servers; Follows HTTP to communicate with the server</dd></li>
-                <li>Web Server<dd>Hosts web resources; Listens for requests</dd></li>
-                <li>WebDAV<dd>Web Distributed Authoring and Versioning which is an extension of the Hypertext Transfer Protocol (HTTP) that allows clients to perform remote Web content authoring operations; It is defined in RFC 4918 by a working group of the Internet Engineering Task Force.</dd></li>
-                <li>Wide Area Information Services (WAIS)<dd>Connected to servers from different locations to get data from each server periodically and index these data</dd></li>
-                <li>World Wide Web (WWW)<dd>Information system that allows documents to be connected to other documents; an arrangement of web servers that boost particularly designed records</dd></li>
-                <li>www-Authentication<dd>a Response Header Field for authentication to access a site</dd></li>
+               <h2 id="A">A</h2>
+                    <dl>
+                        <dt>Absolute URL</dt><dd>Scheme and domain name are always required</dd>
+                        <dt>Accept</dt> <dd> a Request Header Field (client) for specifying acceptable file type; server responds with negotiation, accept if other type can be delivered</dd>
+                        <dt>Accept-Charset</dt> <dd> a Request Header Field (client) that indicates which character sets are acceptable for the response</dd>
+                        <dt>Accept-Encoding </dt><dd> a Request Header Field (client) that restricts the content-codings that are acceptable in the response</dd>
+                        <dt>Accept-Language </dt><dd> a Request Header Field (client) that restricts the set of natural languages that are preferred as a response to the request</dd>
+                        <dt>Accept-Ranges </dt><dd> A Response Header Field (server) that allows partial resources</dd>
+                        <dt>Advanced Research Projects Agency Network (ARPANET) </dt><dd>Considered as the original internet and it is the beginning of the net. First used for the packet switching theory</dd>
+                        <dt>Advanced Research Projects Agency (ARPA)</dt><dd>Created by US government to gain advantage over the ongoing war against the Soviet Union and used to create new technology</dd> 
+                        <dt>Age </dt><dd> A Response Header Field (server) that shows how long ago the response has been generated</dd>
+                        <dt>Allow </dt><dd> An Entity Header Field that allows methods to be called</dd>
+                        <dt>Authentication/ authorization</dt><dd> is a term for a framework for intelligently controlling access to computer resources, enforcing policies, auditing usage, and providing the information necessary to bill for services; These combined processes are considered important for effective network management and security.</dd>
+                        <dt>Authority</dt><dd>User information/ information credentials</dd>
+                        <dt>Authorization</dt><dd>a Request Header Field (client) that ensures protection from unauthorized access; When proper credentials are entered, another request will be sent with authorization; Without authorization, www-authenticate challenge will be sent and a pop-up authorization will appear</dd>
+                    </dl>
+                 <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="C">C</h2>
+                    <dl>
+                        <dt>Cacheable Methods</dt><dd>Requests that generate cache</dd>
+                        <dt>Cache-control </dt><dd> a General Header Field used for controlling cache and telling whether a resource needs to be cached or not</dd>
+                        <dt>Circuit Switch Connection</dt><dd>A type of communication and used in phone calls. It establish dedicated channel (circuit), maintain and terminate a communication session</dd>
+                        <dt>Circuit Switch Connection</dt><dd>Establish circuit and maintain it to communicate; Not scalable</dd>
+                        <dt>Clients</dt><dd>user agent; Web browsers, web crawlers/spiders, other end user tools and applications; any application that communicates with HTTP protocol</dd>
+                        <dt>Client-server protocol negotiation </dt><dd> asking server if it can handle higher version and if yes, the server will upgrade</dd>
+                        <dt>CONNECT</dt><dd>Establishment of an encryption tunnel to communicate with https; Converts the request connection to a transparent TCP/IP tunnel</dd>
+                        <dt>Connection </dt><dd> a General Header Field to control whether connection is persistent or not and allows the sender to specify options that are desired for that particular connection</dd>
+                        <dt>Content media type </dt><dd> (MIME: Multipurpose Internet Mail Extension) specification; </dd>
+                        <dt>Content negotiation </dt><dd> talk to tell what the recipient can handle</dd>
+                        <dt>Content/ transfer coding</dt><dd></dd>
+                        <dt>Content-Encoding </dt><dd> An Entity Header Field that shows when server changed form of entity</dd>
+                        <dt>Content-Language </dt><dd> An Entity Header Field that shows language characteristics; for accessibility purposes</dd>
+                        <dt>Content-Length </dt><dd> An Entity Header Field that shows size of payload</dd>
+                        <dt>Content-Location </dt><dd> An Entity Header Field that shows when content are from somewhere else; actual location of the resource</dd>
+                        <dt>Content-MD5 </dt><dd> A deprecated Entity Header Field; an Entity Header Field that </dd>
+                        <dt>Content-Range </dt><dd> An Entity Header Field when doing range request</dd>
+                        <dt>Content-Type </dt><dd> MIME type; An Entity Header Field that </dd>
+                        <dt>COPY </dt><dd> creates a duplicate of the source resource</dd>
+                        <dt>CRLF</dt><dd>Act as terminator of a line; CR means carriage return where cursor return to the beginning of the line without going to the next line and LF means line feed where it will go to the next line without going back to the beginning of a line</dd>
+                    </dl>
+                 <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="D">D</h2>
+                    <dl>
+                        <dt>DARPA</dt><dd>Defense Advanced Research Project Agency</dd>
+                        <dt>Date </dt><dd> a General Header Field that represents the date and time at which the request was generated </dd>
+                        <dt>DELETE</dt><dd>Remove the resource associated with the specified URI; Like PUT, the method is not allowed by default</dd>
+                        <dt>Device drivers</dt><dd>a program that controls a particular type of device that is attached to your computer</dd>
+                    </dl>
+                 <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="E">E</h2>
+                    <dl>
+                        <dt>Email </dt><dd> It is an electronic mail</dd>           
+                        <dt>Entity Header Field</dt><dd>Define metainformation about the entity-body or, if no body is present, about the resource identified by the request.</dd>
+                        <dt>ETag (entity tag)</dt><dd>A Response Header Field (server) that serves as an identifier</dd>
+                        <dt>Expect </dt><dd> a Request Header Field (client) for two-face connection; Indicates that particular server behaviors are required by the client; If any of the expectations cannot be met the server must respond with a 417 (Expectation Failed)</dd>
+                        <dt>Expires </dt><dd> An Entity Header Field for controlling cache access; cache-control; (e.g. max-age = ??)</dd>
+                        <dt>Extension Methods</dt><dd>are a special kind of static method, but they are called as if they were instance methods on the extended type. </dd>
+                    </dl>
+                  <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="F">F</h2>
+                    <dl>
+                        <dt>Fragment identifier </dt><dd> “bookmark”</dd>
+                        <dt>From </dt><dd> a Request Header Field (client) that contains contact credentials of sender (an internet e-mail address); May be used for logging purposes and as a means for identifying the source of invalid or unwanted requests</dd>
+                    </dl>
+                  <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="G">G</h2>
+                    <dl>
+                        <dt>Gateway tunnel</dt><dd>blind relay between two points; forwards communication without knowing what it does; can be used for authentication</dd>
+                        <dt>General Headers </dt><dd>These header fields have general applicability for both request and response messages and that are used in both client requests and server responses; Some may be more specific to either a client or server message. </dd>
+                        <dt>GET</dt><dd>Transfer a current selected representation of the resource identified by the request URI; Requests data from a specified resource; Most commonly used method; Must be supported by all compliant general-purpose servers; Can be stored; Can be bookmarked; Must never be utilized when managing delicate information; Are ought to be utilized just to recover information; Asks for have length limitations; Remains in the browser history</dd>
+                        <dt>Gopher Protocol</dt><dd>Used in distributing, searching and retrieving documents over the internet; Hierarchy is involved with the index having sub-indexes</dd>
+                    </dl>
+                  <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="H">H</h2>
+                    <dl>
+                        <dt>HEAD</dt><dd>Same as GET but the entity is not sent; used to retrieve metadata about the entity; must also be supported by all</dd>
+                        <dt>Host (domain name)</dt><dd>domain name (resolved to an IP address using DNS) of the server where the resource resides, or will be created</dd>
+                        <dt>Host (Header Field) </dt><dd> a Request Header Field (client) that is required in HTTP 1</dd><dd>1; Specifies the internet host and port number of the resource being requested</dd><dd> This enables the origin server to distinguish among resources while servicing requests for multiple host names on a single IP address</dd>
+                        <dt>HTTP Message Headers</dt><dd>are components of the header section of request and response messages in the Hypertext Transfer Protocol (HTTP); They define the operating parameters of an HTTP transaction.</dd>
+                        <dt>HTTP protocol version </dt><dd> shows what HTTP version of the Client uses</dd>
+                        <dt>HTTP Resource Accessing</dt><dd>HTTP resources are identified using URIs (Uniform Resource Identifier), which tells what the resource is, or more, specifically HTTP URL (Uniform Resource Locator), which tells where the resource is</dd>
+                        <dt>HTTP Response Message </dt><dd>After receiving and interpreting a request message, a server responds with an HTTP response message.  </dd>
+                        <dt>HTTP Status Codes</dt><dd>return values and its corresponding description</dd>
+                        <dt>Hypertext Markup Language</dt><dd>is the set of markup symbols or codes inserted in a file intended for display on a World Wide Web browser page; The markup tells the Web browser how to display a Web page's words and images for the user.</dd>
+                        <dt>Hypertext Transfer Protocol (HTTP)</dt><dd>Application layer communications protocol used to access resources; Standard way of communicating through applications</dd>
+                    </dl>
+                   <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="I">I</h2>
+                    <dl>
+                        <dt>IANA </dt><dd> allocates certain ports to certain applications</dd>
+                        <dt>Idempotent Methods</dt><dd>Repeated request result to the same response</dd>
+                            <dt>IETF (internet Engineering Task Force)<dd>is an organized activity of the Internet Society (ISOC).</dd>
+                        <dt>If-Match </dt><dd> a Request Header Field (client) that compares the file in the cache and server to check if file is unmodified to avoid state entity</dd>
+                        <dt>If-None-Match </dt><dd> a Request Header Field (client) that requests the server to perform the requested method only if one of the given value in a tag matches the given entity tags represented by the Etag; Used to update caches or to prevent to upload a new resource when one is already existing</dd>
+                        <dt>If-Range </dt><dd> “is what I have a portion of what you have”; a Request Header Field (client) that can be used with a conditional GET to request only the portion of the entity that is missing; allows the client to “short circuit” the second request</dd>
+                        <dt>If-Unmodified-Since </dt><dd> a Request Header Field (client) that is used with a method to make it conditional; Expects the entity to be transmitted only if it has not been modified after the given date</dd>
+                        <dt>Inter</dt><dd>It means outside the boundary while the network means the interconnection of devices</dd>
+                        <dt>Inter</dt><dd> outside the boundary</dd>
 
-            </ul>       
+                        <dt>Interconnection technology</dt><dd>It establish connection between devices using coaxial, fiber, UTP, or infrared</dd>
+                        <dt>Internet</dt><dd>Defines as global network of networks</dd>
+                        <dt>Internetworking</dt><dd>A technique that uses device such as router to connect to a different network</dd>
+                        <dt>IoT </dt><dd> Internet of things</dd>
+                        <dt>IP </dt><dd> Internet Protocol</dd>
+                        <dt>IPv4</dt><dd>Internet Protocol version 4. It is the underlying technology that makes it possible for us to connect our devices to the web. It utilizes 32-bit addresses</dd>
+                        <dt>IPv6</dt><dd>is the sixth revision to the Internet Protocol and the successor to IPv4. It utilizes 128-bit addresses</dd>
+                    </dl>
+                   <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="L">L</h2>
+                    <dl>
+                        <dt>Language and character set specification</dt><dd> requires that protocol elements containing human-readable text are able to carry language information.</dd>
+                        <dt>Last-Modified </dt><dd> An Entity Header Field that shows possible reference value to check if resource is fresh</dd>
+                        <dt>Location </dt><dd> A Response Header Field (server) for redirection. If present, the server will fetch the latest resource from location</dd>
+                        <dt>Location </dt><dd> a Response Header Field for redirection</dd>
+                        <dt>LOCK</dt><dd>lock resources</dd>
+                    </dl>
+                   <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="M">M</h2>
+                    <dl>
+                        <dt>Max-Forwards </dt><dd> a Request Header Field (client) for tracing and limiting a trace; Limit the number of proxies or gateways that can forward the request to the next inbound server; Contains a decimal integer indicating the remaining number of times a request message may be forwarded</dd>
+                        <dt>Message body </dt><dd> also known as payload; optional</dd>
+                        <dt>Message headers </dt><dd>HTTP messages consist of requests from client to server and responses from server to client.  </dd>
+                        <dt>MKCOL </dt><dd> make collection (new folder)</dd>
+                        <dt>MOVE </dt><dd> does not guarantee the ability to move a resource to a particular destination</dd>
+                    </dl>
+                   <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="N">N</h2>
+                    <dl>
+                        <dt>Network </dt><dd> interconnection of devices </dd>
+                        <dt>Nodes</dt><dd>It is an actual device</dd>
+                    </dl>
+                   <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="O">O</h2>
+                    <dl>
+                        <dt>OPTIONS</dt><dd>Request information on what can be done with the resource specified; Returns the HTTP methods that the server supports</dd>
+                        <dt>Origin server </dt><dd> where original resources are actually stored</dd>
+                    </dl>
+                  <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="P">P</h2>
+                    <dl>
+                        <dt>Path to resource (resolved relative to the document root) </dt><dd> may refer to a static or dynamic resource</dd>
+                        <dt>Persistent connections </dt><dd> telling the server to not close the connection for further requests</dd>
+                        <dt>Port number (HTTP) </dt><dd> default is 80</dd>
+                        <dt>POST</dt><dd>Performing resource-specific processing of entities enclosed in the message body; Submits data to be processed to a specified resource; Has a payload; Are never cached; Cannot be bookmarked; Do not remain in the browser history; No restrictions on the data length</dd>
+                        <dt>Pragma </dt><dd> a General Header Field that is from an older version, a generic directive, and indicates that something is cacheable; used to include implementation specific directives that might apply to any recipient along the request/response chain</dd>
+                        <dt>PROPFIND</dt><dd>method recovers properties characterized on the asset recognized by the Request-URI</dd>
+                        <dt>PROPPATCH </dt><dd> method forms guidelines indicated in the demand body to set and additionally or expel properties characterized on the asset recognized by the Demand URI</dd>
+                        <dt>Protocols</dt><dd>a set of technical rules for the transmission and receipt of information between computers</dd>
+                        <dt>Proxy authentication </dt><dd> a Response Header Field for authentication to access a proxy</dd>
+                        <dt>Proxy Authorization </dt><dd> a Request Header Field (client) that allows the client to identify itself (or its user) to a proxy which requires authentication; Consists of credentials containing the authentication information of the user agent for the proxy and/or realm of the resource being requested</dd>
+                        <dt>Proxy server</dt> <dd> checks authentication; forwards requests and gives back requests </dd>
+                        <dt>Proxy-Authenticate</dt><dd>A Response Header Field (server) that </dd>
+                        <dt>PUT</dt><dd>Store the enclosed entity in the message body under a specified URI; By default, the method is not allowed; When allowed, authentication must be provided; Uploads a representation of the specified URI</dd>
+                    </dl>
+                   <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="Q">Q</h2>
+                    <dl>
+                        <dt>Query </dt><dd> typically provided as key = value pairs, with ampersand separators between key/ value pairs, and may be URL-encoded </dd>
+                        
+                    </dl>
+                   <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="R">R</h2>
+                    <dl>
+                        <dt>Ranges </dt><dd> a Request Header Field (client) for Specifying portions of the resource the client wants to receive </dd>
+                        <dt>Reason phrase </dt><dd>Descriptive meaning of the status code</dd>
+                        <dt>Referer </dt><dd> a Request Header Field (client) that specifies the address (URI) where the request was originated; to check where traffic is coming from</dd>
+                        <dt>Relative URL</dt><dd>Scheme, user info, and domain name can be omitted</dd>
+                        <dt>Request Header Fields </dt><dd> information about the request and the client</dd>
+                        <dt>Request Header Fields (client)</dt><dd>information of the client about the request</dd>
+                        <dt>Request Line (CRLF) </dt><dd> terminated line consisting of three spaced-separated items)</dd>
+                        <dt>Request pipelining </dt><dd> sending requests one after another</dd>
+                        <dt>Request URI </dt><dd> location of the requested resource</dd>
+                        <dt>Response Header Fields </dt><dd>are components of the header section of request and response messages in the Hypertext Transfer Protocol (HTTP); They define the operating parameters of an HTTP transaction. </dd>
+                        <dt>Response Headers </dt><dd> Response of the server after receiving the request message.</dd>         
+                        <dt>Response Message</dt><dd>Response of the server after receiving the request message</dd>
+                        <dt>Retry-After</dt> <dd> A Response Header Field (server) that shows the amount of time the client has to wait before trying again</dd>
+                        <dt>Retry-After </dt><dd> a Response Header Field where it is used when under maintenance of a web server; timeouts; indicate to a client that the server is currently not available; 503 Service not Available</dd>
+                    </dl>
+                   <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="S">S</h2>
+                    <dl>
+                        <dt>Safe Methods </dt><dd> Doesn’t change the resources</dd>
+                        <dt>Scheme (http or https) </dt><dd>It simply tells you how to interpret the part of the URL after the colon. </dd>
+                        <dt>Semantic Web</dt><dd>Next step in the evolution of the web; Makes use of artificial intelligence to understand the question given by user</dd>
+                        <dt>Server </dt><dd> A Response Header Field (server) that shows information about the server</dd> 
+                        <dt>Socket</dt><dd>IP Address and Port number</dd>
+                        <dt>SP</dt><dd>It means Space</dd>
+                        <dt>SSL/TLS </dt><dd> takes HTTP traffic and transmits it in an encrypted form</dd>
+                        <dt>Stateless communication </dt><dd> A communication where it does not keep information about clients in between requests</dd>
+                        <dt>Status code</dt><dd>3-digit code that designates the status</dd>
+
+                        <dt>Status line</dt><dd>It is a combination of status code and reason phrase</dd>  
+                        <dt>Store and Forward</dt><dd>Send messages to the next hub until destination is reached</dd>
+                    </dl>
+                  <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="T">T</h2>
+                    <dl>
+                        <dt>TE </dt><dd> trailer encoding; a Request Header Field (client) that specifies the transfer encodings the user agent is willing to accept</dd>
+                        <dt>TRACE</dt><dd>Perform or request a loopback of the requested message (echo back); Typically used for testing/diagnosis of the request/response chain; Allows the customer to perceive what is being gotten at the flip side of the demand chain and use the data for testing</dd>
+                        <dt>Trailer </dt><dd> a General Header Field that indicates that a header is present at the end of the data to supply metadata that might be dynamically generated while the message body is sent</dd>
+                        <dt>Transfer-encoding </dt><dd> a General Header Field that indicates what type of transformation has been applied to the message body to safely transfer it between the sender and the recipient</dd>
+                        <dt>Transmission Control Protocol / Internet Protocol (TCP/IP) </dt><dd>A protocol that is used by computers to communicate in the Internet</dd>
+                    </dl>
+                  <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="U">U</h2>
+                    <dl>
+                        <dt>Universal Resource Identifier</dt><dd>is a string of characters used to identify a resource. Such identification enables interaction with representations of the resource over a network, typically the World Wide Web, using specific protocols.</dd>
+                        <dt>Universal Resource Locator </dt><dd>It is the global address of documents and other resources on the World Wide Web.  </dd>
+                        <dt>UNLOCK </dt><dd> unlock resources</dd>
+                        <dt>Upgrade </dt><dd> a General Header Field used for protocol negotiation *; Allows the client to upgrade or change to a different protocol on the same connection</dd>
+                        <dt>Usenet</dt><dd>Similar to an online discussion group</dd>
+                        <dt>User-Agent </dt><dd> a Request Header Field (client) that contains additional information about the clients, identity</dd>
+                        <dt>User request-response protocol </dt><dd> Client sends an HTTP request message to server (pull protocol); Server volunteers new information via notifications (push protocol); Checks server at regular intervals (polling); Server processes the request and replies with HTTP response message; In HTTP 2, server can push resources to client without client requesting</dd>
+                    </dl>
+                  <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="V">V</h2>
+                    <dl>
+                        <dt>Vary </dt><dd> A Response Header Field (server) for content negotiation</dd><dd> a Response Header Field where changing header values that is used in content negotiations</dd>
+                        <dt>Via </dt><dd> a General Header Field to indicate where the request passed through; Used for tracking message forwards, avoiding request loops, and identifying the protocol capabilities of senders along the request/response chain</dd>
+                    </dl>
+                   <a href="#alphabet"><p >Back to top</p></a>
+               <h2 id="W">W</h2>
+                    <dl>
+                        <dt>W3C (World Wide Web Consortium) </dt><dd>is the main international standards organization for the World Wide Web. </dd>
+                        <dt>Warning </dt><dd> a General Header Field that carries additional information about the status or transformation of a message error in the message *</dd>
+                        <dt>Web Client</dt><dd>Example is web browser; Gives requests to web servers; Follows HTTP to communicate with the server</dd>
+                        <dt>Web Server</dt><dd>Hosts web resources; Listens for requests</dd>
+                        <dt>WebDAV</dt><dd>Web Distributed Authoring and Versioning which is an extension of the Hypertext Transfer Protocol (HTTP) that allows clients to perform remote Web content authoring operations; It is defined in RFC 4918 by a working group of the Internet Engineering Task Force.</dd>
+                        <dt>Wide Area Information Services (WAIS)</dt><dd>Connected to servers from different locations to get data from each server periodically and index these data</dd>
+                        <dt>World Wide Web (WWW)</dt><dd>Information system that allows documents to be connected to other documents; an arrangement of web servers that boost particularly designed records</dd>
+                        <dt>www-Authentication</dt><dd>a Response Header Field for authentication to access a site</dd>
+                    </dl>
+                 <a href="#alphabet"><p >Back to top</p></a>
+
+            </div>       
         <div class="page-nav-bottom">
             <a href="world-wide-web.html"><p class="previous"></p></a>
             <div class="next">
