@@ -48,6 +48,7 @@
                 <li>Advanced Research Projects Agency (ARPA)<dd>Created by US government to gain advantage over the ongoing war against the Soviet Union and used to create new technology</dd></li> 
                 <li>Age <dd> A Response Header Field (server) that shows how long ago the response has been generated</dd></li>
                 <li>Allow <dd> An Entity Header Field that allows methods to be called</dd></li>
+                <li>Authentication/ authorization - </li>
                 <li>Authority<dd>User information/ information credentials</dd></li>
                 <li>Authorization<dd>a Request Header Field (client) that ensures protection from unauthorized access; When proper credentials are entered, another request will be sent with authorization; Without authorization, www-authenticate challenge will be sent and a pop-up authorization will appear</dd></li>
                 <li>Cacheable Methods<dd>Requests that generate cache</dd></li>
@@ -88,7 +89,7 @@
                 <li>Gopher Protocol<dd>Used in distributing, searching and retrieving documents over the internet; Hierarchy is involved with the index having sub-indexes</dd></li>
                 <li>HEAD<dd>Same as GET but the entity is not sent; used to retrieve metadata about the entity; must also be supported by all</dd></li>
                 <li>Host (domain name)<dd>domain name (resolved to an IP address using DNS) of the server where the resource resides, or will be created</dd></li>
-                <li>Host (Header Field) <dd> a Request Header Field (client) that is required in HTTP 1</dd></li>1; Specifies the internet host and port number of the resource being requested</dd></li> This enables the origin server to distinguish among resources while servicing requests for multiple host names on a single IP address</dd></li>
+                <li>Host (Header Field) <dd> a Request Header Field (client) that is required in HTTP 1</dd><dd>1; Specifies the internet host and port number of the resource being requested</dd><dd> This enables the origin server to distinguish among resources while servicing requests for multiple host names on a single IP address</dd></li>
                 <li>HTTP Message Headers<dd></dd></li>
                 <li>HTTP protocol version <dd> shows what HTTP version of the Client uses</dd></li>
                 <li>HTTP Resource Accessing<dd>HTTP resources are identified using URIs (Uniform Resource Identifier), which tells what the resource is, or more, specifically HTTP URL (Uniform Resource Locator), which tells where the resource is</dd></li>
@@ -105,6 +106,7 @@
                 <li>If-Unmodified-Since <dd> a Request Header Field (client) that is used with a method to make it conditional; Expects the entity to be transmitted only if it has not been modified after the given date</dd></li>
                 <li>Inter<dd>It means outside the boundary while the network means the interconnection of devices</dd></li>
                 <li>Inter<dd> outside the boundary</dd></li>
+                
                 <li>Interconnection technology<dd>It establish connection between devices using coaxial, fiber, UTP, or infrared</dd></li>
                 <li>Internet<dd>Defines as global network of networks</dd></li>
                 <li>Internetworking<dd>A technique that uses device such as router to connect to a different network</dd></li>
@@ -146,10 +148,11 @@
                 <li>Relative URL<dd>Scheme, user info, and domain name can be omitted</dd></li>
                 <li>Request Header Fields <dd> information about the request and the client</dd></li>
                 <li>Request Header Fields (client)<dd></dd></li>
-                <li>Request Line (CRLF <dd> terminated line consisting of three spaced-separated items)</dd></li>
+                <li>Request Line (CRLF) <dd> terminated line consisting of three spaced-separated items)</dd></li>
                 <li>Request pipelining <dd> sending requests one after another</dd></li>
                 <li>Request URI <dd> location of the requested resource</dd></li>
                 <li>Response Header Fields <dd> </dd></li>
+                <li>Response Headers <dd> Response of the server after receiving the request message.</dd>         </li>
                 <li>Response Message<dd>Response of the server after receiving the request message</dd></li>
                 <li>Retry-After <dd> A Response Header Field (server) that shows the amount of time the client has to wait before trying again</dd></li>
                 <li>Retry-After <dd> a Response Header Field where it is used when under maintenance of a web server; timeouts; indicate to a client that the server is currently not available; 503 Service not Available</dd></li>
@@ -162,7 +165,7 @@
                 <li>SSL/TLS <dd> takes HTTP traffic and transmits it in an encrypted form</dd></li>
                 <li>Stateless communication <dd> A communication where it does not keep information about clients in between requests</dd></li>
                 <li>Status code<dd>3-digit code that designates the status</dd></li>
-                <li>Status code <dd> 3-digit code that designates the status</dd></li>
+                
                 <li>Status line<dd>It is a combination of status code and reason phrase</dd></li>  
                 <li>Store and Forward<dd>Send messages to the next hub until destination is reached</dd></li>
                 <li>TE <dd> trailer encoding; a Request Header Field (client) that specifies the transfer encodings the user agent is willing to accept</dd></li>
@@ -175,11 +178,9 @@
                 <li>UNLOCK <dd> unlock resources</dd></li>
                 <li>Upgrade <dd> a General Header Field used for protocol negotiation *; Allows the client to upgrade or change to a different protocol on the same connection</dd></li>
                 <li>Usenet<dd>Similar to an online discussion group</dd></li>
-                <li>Usenet<dd>Similar to an online discussion group</dd></li>
                 <li>User-Agent <dd> a Request Header Field (client) that contains additional information about the clients, identity</dd></li>
                 <li>User request-response protocol <dd> Client sends an HTTP request message to server (pull protocol); Server volunteers new information via notifications (push protocol); Checks server at regular intervals (polling); Server processes the request and replies with HTTP response message; In HTTP 2, server can push resources to client without client requesting</dd></li>
-                <li>Vary <dd> A Response Header Field (server) for content negotiation</dd></li>
-                <li>Vary <dd> a Response Header Field where changing header values that is used in content negotiations</dd></li>
+                <li>Vary <dd> A Response Header Field (server) for content negotiation</dd><dd> a Response Header Field where changing header values that is used in content negotiations</dd></li>
                 <li>Via <dd> a General Header Field to indicate where the request passed through; Used for tracking message forwards, avoiding request loops, and identifying the protocol capabilities of senders along the request/response chain</dd></li>
                 <li>W3C (World Wide Web Consortium) <dd> </dd></li>
                 <li>Warning <dd> a General Header Field that carries additional information about the status or transformation of a message error in the message *</dd></li>
