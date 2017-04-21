@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Preprocessors</title> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="styles/main.css" rel="stylesheet"> 
+    <link href="styles/lessons-styles.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="pictures/logo.png" id="logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><a href="internet.html">Internet</a></li>
+            <li><a href="world-wide-web.html">WWW</a></li>
+            <li>
+                <label for="sub">HTTP</label>
+                <input type="checkbox" id="sub"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                    <li><a href="resource-accessing.html" class="sub">Resource Accessing</a></li>
+                    <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                    <li><a href="response-message.html" class="sub">Response Message</a></li>
+                    <li>
+                        <label for="sub2">Message Header</label>
+                        <input type="checkbox" id="sub2"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                            <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                            <li><a href="response-header.html">Response Header Fields</a></li>
+                            <li><a href="entity-header.html">Entity Header Fields</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li><a href="http-status-codes.html" class="sub">Status Codes</a></li>
+                </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>    
+    <h1>CSS Preprocessors</h1> 
+    <div class="notes"-->
+        <div class="notes-con">
+        <div class="page-nav-top">
+            <a href=""><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a>
+            <div class="next">
+                <a href=""><p class="next">Next</p><i class="fa fa-chevron-right"></i></a>
+            </div>
+        </div>
+
+        <p>CSS Preprocessors are preprocessing languages which are used by web developers to build code in CSS faster. It uses special CSS files that could contain variables, functions, mixins and etc. These special files will then be converted into regular CSS files so that web browsers can recognize them.</p>
+
+        <p>CSS Preprocessors make your CSS code more organized and easier to maintain. Writing long CSS code will be less tedious since the use of a preprocessor will lessen the burden of coding. This increases productivity on the developer’s part and it will also save you a lot of time.</p>
+
+        <p>One of the popular CSS Preprocessors are SASS and LESS:</p>
+
+        <h2>SASS</h2>
+
+        <p>SASS stands for Syntactically Awesome Stylesheets. This is the most common preprocessor that is used today. It allows the usage of variables, nested rules, inline imports and etc. Before using SASS, you must have Ruby installed first.</p>
+
+        <h3>Variables</h3>
+
+        <p>Variables start with the dollar ($) sign. Values are assigned with a colon (:)</p>
+
+        <p>Example:</p>
+        <img src="pictures/variables.png" alt="Variables in SASS">
+
+        <p>When the SASS is processed, this CSS file will be produced:</p>
+        <img src="pictures/variables2.png" alt="CSS Equivalent">
+
+        <h3>Syntax</h3>
+
+        <p>SASS has two syntax options: SCSS also known as (Sassy CSS) and SASS. SCSS has a more flexible syntax than SASS and is fully compliant with the CSS syntax. It uses brackets and semicolons. On the other hand, SASS syntax uses indentations instead of brackets and it also omits the semicolon. It is not fully compliant with CSS syntax but it is much quicker to write.</p>
+
+        <h3>Nesting</h3>
+
+        <p>SASS provides nesting that reduces the amount of code that one has to write. You can nest CSS selectors to have a visual hierarchy of your HTML. This increases readability and outlines identifiable selectors. The same goes for LESS but it uses an @ sign instead of the dollar sign.</p>
+
+        <h3>Mixins</h3>
+
+        <p>Mixins are set of definitions that compiles according to static rules. They simplify long and complex code and allows one to reuse groups of CSS declarations. They are identified using the @mixin directive followed by any arguments.</p>
+
+        <p>Example:</p>
+        <img src="pictures/mixin.png" alt="Mixin">
+
+        <p>The compiled CSS will look like this:</p>
+        <img src="pictures/mixin2.png" alt="CSS Equivalent">
+
+        <h3>Extends</h3>
+
+        <p>Using the @extend directive lets a selector inherit the styles of another selector/s. In this way, you won’t have to nest selectors.</p>
+
+        <p>Example:</p>
+        <img src="pictures/extends.png" alt="Extends">
+
+        <p>The compiled CSS will look like this:</p>
+        <img src="pictures/extends2.png" alt="CSS Equivalent">
+
+        <h2>LESS</h2>
+        <p>LESS is a "dynamic stylesheet language". It runs inside Node and works on Javascript. Less is designed to resemble CSS, therefore the syntax of the two is identical except for a bunch of extra features.</p>
+
+        <h3>Variables</h3>
+
+        <p>Variables start with the (@) sign. Values are assigned with a colon (:).LESS allows one to specify variables in one place then reuse these variables anywhere in the style sheet.</p>
+
+        <h3>Mixins</h3>
+
+        <p>Mixins in less are like functions in programming languaged. They are used to group CSS instruction and handle the repetition of declarations. To declare a mixin in LESS, place a . symbol before the variable.</p>
+
+	
+        <p>References:</p>
+        <p>HTTP/1.1: Header Field Definitions. (n.d.). Retrieved from <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html" target="_blank">https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html</a></p> 
+        <p>HTTP headers. (n.d.). Retrieved from <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers" target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers</a></p>
+        <p>RFC 7230 - Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing. (n.d.). Retrieved from <a href="https://tools.ietf.org/html/rfc7230" target="_blank">https://tools.ietf.org/html/rfc7230</a></p>
+        
+        <div class="page-nav-bottom">
+            <a href=""><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a>
+            <div class="next">
+                <a href=""><p class="next">Next</p><i class="fa fa-chevron-right"></i></a>
+            </div>
+        </div>    
+    </div>   
+        <footer>
+            <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+        </footer>
+    </div>
+    
+    
