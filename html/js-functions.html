@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTTP Request Message</title> <!--paki update na rin to :D -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="main.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link href="lessons-styles.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="pictures/logo.png" id="logo" alt="WebTek Logo">
+    <nav>
+        <ul>
+            <li><a href="index-alt.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+    <!-- - - - - - - - - - - - - wag kalimutan palitan yung topic na may class active- - - - - - - - - - - - - - - - -->    
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><label for="sub">Prelims</label>
+                <input type="checkbox" id="sub"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li><a href="http%20fundamentals.html" class="sub">Internet</a></li>
+                    <li><a href="world-wide-web.html" class="sub">World Wide Web</a></li>
+                    <li>
+                        <label for="sub0">HTTP</label>
+                        <input type="checkbox" id="sub0"/>
+                        <div class="sub-topic">
+                        <ul>        
+                            <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                            <li><a href="resource-accessing.html" class="sub">Resource Accessing</a></li>
+                            <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                            <li><a href="response-message.html" class="sub">Response Message</a></li>
+                            <li><a href="http-request-methods.html" class="sub">Request Method</a></li>
+                            <li>
+                                <label for="sub2">Message Header</label>
+                                <input type="checkbox" id="sub2"/>
+                                <div class="sub-topic">
+                                <ul>
+                                    <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                                    <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                                    <li><a href="response-header.html">Response Header Fields</a></li>
+                                    <li><a href="entity-header.html">Entity Header Fields</a></li>
+                                </ul>
+                                </div>
+                            </li>
+                            <li><a href="http-status-codes.html" class="sub">Status Codes</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub1" class="active">Midterms</label> <!-------------------------midterms-->
+                <input type="checkbox" id="sub1"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li>
+                        <label for="sub4">HTML</label>
+                        <input type="checkbox" id="sub4"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub5">CSS</label>
+                        <input type="checkbox" id="sub5"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub6" class="active">JavaScript</label>
+                        <input type="checkbox" id="sub6"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="js-variables.html" class="sub">JavaScript Variables</a></li>  
+                            <li><a href="js-functions.html" class="active sub">JavaScript Functions and Methods</a></li>
+                            <li><a href="js-objects.html" class="sub">Javscript Objects</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub3">Finals</label>
+                <input type="checkbox" id="sub3"/>
+                <div class="sub-topic">
+                    <ul>        
+                        <li>
+                            <label for="sub2">HTML</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">CSS</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">JavaScript</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>    
+    <h1>JavaScript Built-in Functions and Methods</h1> <!-- - - - - - - - - - - - -  wag kalimutan- -->
+    <div class="notes">
+    <div class="notes-con">
+        <div class="page-nav-top">
+            <a href="js-variables.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <a href="js-objects.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+            </div>
+        </div>
+                <dd>Methods are the functions that let the object do something or let something be done to it.</dd> There is a small difference between a function and a method – at a function is a standalone unit of statements and a method is attached to an object and can be referenced by the this keyword.</dd></dd>
+            <ul>
+                <details><summary><li>Number Methods</li>
+                <dd>The Number object contains only the default methods that are part of every object's definition.</dd></summary>
+                <ul>
+                    <li>constructor()   Returns the function that created this object's instance. By default this is the Number object.</li>
+                    <li>toExponential() Forces a number to display in exponential notation, even if the number is in the range in which JavaScript normally uses standard notation.</li>
+                    <li>toFixed()   Formats a number with a specific number of digits to the right of the decimal.</li>
+                    <li>toLocaleString()    Returns a string value version of the current number in a format that may vary according to a browser's locale settings.</li>
+                    <li>toPrecision()   Defines how many total digits (including digits to the left and right of the decimal) to display of a number.</li>
+                    <li>toString()  Returns the string representation of the number's value.</li>
+                    <li>valueOf()   Returns the number's value.</li>
+                </ul>
+                </details>
+
+                <details><summary><li>Boolean Methods</li></summary>
+                <ul>
+                    <li>toSource()  Returns a string containing the source of the Boolean object; you can use this string to create an equivalent object.</li>
+                    <li>toString()  Returns a string of either "true" or "false" depending upon the value of the object.</li>
+                    <li>valueOf()   Returns the primitive value of the Boolean object.</li>
+                </ul>
+                </details>
+
+                <details><summary><li>String Methods</li></summary>
+                <ul>
+                    <li>charAt()    Returns the character at the specified index.</li>
+                    <li>charCodeAt()    Returns a number indicating the Unicode value of the character at the given index.</li>
+                    <li>concat()    Combines the text of two strings and returns a new string.</li>
+                    <li>indexOf()   Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.</li>
+                    <li>lastIndexOf()   Returns the index within the calling String object of the last occurrence of the specified value, or -1 if not found.</li>
+                    <li>localeCompare() Returns a number indicating whether a reference string comes before or after or is the same as the given string in sort order.</li>
+                    <li>length()    Returns the length of the string.</li>
+                    <li>match() Used to match a regular expression against a string.</li>
+                    <li>replace()   Used to find a match between a regular expression and a string, and to replace the matched substring with a new substring.</li>
+                    <li>search()    Executes the search for a match between a regular expression and a specified string.</li>
+                    <li>slice() Extracts a section of a string and returns a new string.</li>
+                    <li>split() Splits a String object into an array of strings by separating the string into substrings.</li>
+                    <li>substr()    Returns the characters in a string beginning at the specified location through the specified number of characters.</li>
+                    <li>substring() Returns the characters in a string between two indexes into the string.</li>
+                    <li>toLocaleLowerCase() The characters within a string are converted to lower case while respecting the current locale.</li>
+                    <li>toLocaleUpperCase() The characters within a string are converted to upper case while respecting the current locale.</li>
+                    <li>toLowerCase()   Returns the calling string value converted to lower case.</li>
+                    <li>toString()  Returns a string representing the specified object.</li>
+                    <li>toUpperCase()   Returns the calling string value converted to uppercase.</li>
+                    <li>valueOf()   Returns the primitive value of the specified object.</li>
+                </ul>
+                </details>
+
+                <details><summary><li>String HTML wrappers</li></summary>
+                <ul>
+                    <li>anchor()    Creates an HTML anchor that is used as a hypertext target.</li>
+                    <li>big()   Creates a string to be displayed in a big font as if it were in a tag.</li>
+                    <li>blink() Creates a string to blink as if it were in a blink tag.</li>
+                    <li>bold()  Creates a string to be displayed as bold as if it were in a bold tag.</li>
+                    <li>fixed() Causes a string to be displayed in fixed-pitch font as if it were in a <tt> tag</li>
+                    <li>fontcolor() Causes a string to be displayed in the specified color as if it were in a font tag.</li>
+                    <li>fontsize()  Causes a string to be displayed in the specified font size as if it were in a font tag.</li>
+                    <li>italics()   Causes a string to be italic, as if it were in an italicized tag.</li>
+                    <li>link()  Creates an HTML hypertext link that requests another URL.</li>
+                    <li>small() Causes a string to be displayed in a small font, as if it were in a small tag.</li>
+                    <li>strike()    Causes a string to be displayed as struck-out text, as if it were in a strike tag.</li>
+                    <li>sub()   Causes a string to be displayed as a subscript, as if it were in a subscipt tag</li>
+                    <li>sup()   Causes a string to be displayed as a superscript, as if it were in a superscript tag</li>
+                </details>
+
+                <details><summary><li>Array Methods</li></summary>
+                <ul>
+                    <li>concat()    Returns a new array comprised of this array joined with other array(s) and/or value(s).</li>
+                    <li>every() Returns true if every element in this array satisfies the provided testing function.</li>
+                    <li>filter()    Creates a new array with all of the elements of this array for which the provided filtering function returns true.</li>
+                    <li>forEach()   Calls a function for each element in the array.</li>
+                    <li>indexOf()   Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.</li>
+                    <li>join()  Joins all elements of an array into a string.</li>
+                    <li>lastIndexOf()   Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.</li>
+                    <li>map()   Creates a new array with the results of calling a provided function on every element in this array.</li>
+                    <li>pop()   Removes the last element from an array and returns that element.</li>
+                    <li>push()  Adds one or more elements to the end of an array and returns the new length of the array.</li>
+                    <li>reduce()    Apply a function simultaneously against two values of the array (from left-to-right) as to reduce it to a single value.</li>
+                    <li>reduceRight()   Apply a function simultaneously against two values of the array (from right-to-left) as to reduce it to a single value.</li>
+                    <li>reverse()   Reverses the order of the elements of an array -- the first becomes the last, and the last becomes the first.</li>
+                    <li>shift() Removes the first element from an array and returns that element.</li>
+                    <li>slice() Extracts a section of an array and returns a new array.</li>
+                    <li>some()  Returns true if at least one element in this array satisfies the provided testing function.</li>
+                    <li>toSource()  Represents the source code of an object
+                    <li>sort()  Sorts the elements of an array.</li>
+                    <li>splice()    Adds and/or removes elements from an array.</li>
+                    <li>toString()  Returns a string representing the array and its elements.</li>
+                    <li>unshift()   Adds one or more elements to the front of an array and returns the new length of the array.</li>
+                </li>
+                </details>
+
+                <details><summary><li>Date Methods</li></summary>
+                <ul>
+                    <li>Date()  Returns today's date and time
+                    <li>getDate()   Returns the day of the month for the specified date according to local time.</li>
+                    <li>getDay()    Returns the day of the week for the specified date according to local time.</li>
+                    <li>getFullYear()   Returns the year of the specified date according to local time.</li>
+                    <li>getHours()  Returns the hour in the specified date according to local time.</li>
+                    <li>getMilliseconds()   Returns the milliseconds in the specified date according to local time.</li>
+                    <li>getMinutes()    Returns the minutes in the specified date according to local time.</li>
+                    <li>getMonth()  Returns the month in the specified date according to local time.</li>
+                    <li>getSeconds()    Returns the seconds in the specified date according to local time.</li>
+                    <li>getTime()   Returns the numeric value of the specified date as the number of milliseconds since January 1, 1970, 000000 UTC.</li>
+                    <li>getTimezoneOffset() Returns the time-zone offset in minutes for the current locale.</li>
+                    <li>getUTCDate()    Returns the day (date) of the month in the specified date according to universal time.</li>
+                    <li>getUTCDay() Returns the day of the week in the specified date according to universal time.</li>
+                    <li>getUTCFullYear()    Returns the year in the specified date according to universal time.</li>
+                    <li>getUTCHours()   Returns the hours in the specified date according to universal time.</li>
+                    <li>getUTCMilliseconds()    Returns the milliseconds in the specified date according to universal time.</li>
+                    <li>getUTCMinutes() Returns the minutes in the specified date according to universal time.</li>
+                    <li>getUTCMonth()   Returns the month in the specified date according to universal time.</li>
+                    <li>getUTCSeconds() Returns the seconds in the specified date according to universal time.</li>
+                    <li>getYear()   Deprecated - Returns the year in the specified date according to local time.</li> Use getFullYear instead.</li>
+                    <li>setDate()   Sets the day of the month for a specified date according to local time.</li>
+                    <li>setFullYear()   Sets the full year for a specified date according to local time.</li>
+                    <li>setHours()  Sets the hours for a specified date according to local time.</li>
+                    <li>setMilliseconds()   Sets the milliseconds for a specified date according to local time.</li>
+                    <li>setMinutes()    Sets the minutes for a specified date according to local time.</li>
+                    <li>setMonth()  Sets the month for a specified date according to local time.</li>
+                    <li>setSeconds()    Sets the seconds for a specified date according to local time.</li>
+                    <li>setTime()   Sets the Date object to the time represented by a number of milliseconds since January 1, 1970, 000000 UTC.</li>
+                    <li>setUTCDate()    Sets the day of the month for a specified date according to universal time.</li>
+                    <li>setUTCFullYear()    Sets the full year for a specified date according to universal time.</li>
+                    <li>setUTCHours()   Sets the hour for a specified date according to universal time.</li>
+                    <li>setUTCMilliseconds()    Sets the milliseconds for a specified date according to universal time.</li>
+                    <li>setUTCMinutes() Sets the minutes for a specified date according to universal time.</li>
+                    <li>setUTCMonth()   Sets the month for a specified date according to universal time.</li>
+                    <li>setUTCSeconds() Sets the seconds for a specified date according to universal time.</li>
+                    <li>setYear()   Deprecated - Sets the year for a specified date according to local time.</li> Use setFullYear instead.</li>
+                    <li>toDateString()  Returns the "date" portion of the Date as a human-readable string.</li>
+                    <li>toGMTString()   Deprecated - Converts a date to a string, using the Internet GMT conventions.</li> Use toUTCString instead.</li>
+                    <li>toLocaleDateString()    Returns the "date" portion of the Date as a string, using the current locale's conventions.</li>
+                    <li>toLocaleFormat()    Converts a date to a string, using a format string.</li>
+                    <li>toLocaleString()    Converts a date to a string, using the current locale's conventions.</li>
+                    <li>toLocaleTimeString()    Returns the "time" portion of the Date as a string, using the current locale's conventions.</li>
+                    <li>toSource()  Returns a string representing the source for an equivalent Date object; you can use this value to create a new object.</li>
+                    <li>toString()  Returns a string representing the specified Date object.</li>
+                    <li>toTimeString()  Returns the "time" portion of the Date as a human-readable string.</li>
+                    <li>toUTCString()   Converts a date to a string, using the universal time convention.</li>
+                    <li>valueOf()   Returns the primitive value of a Date object.</li>
+                </ul>
+                </details>
+
+                <details><summary><li>Date Static Methods</li></summary>
+                <ul>
+                <dd>In addition to the many instance methods listed previously, the Date object also defines two static methods.</dd> These methods are invoked through the Date( ) constructor itself</dd>
+                    <li>Date.parse( )   Parses a string representation of a date and time and returns the internal millisecond representation of that date.</
+                    <li>Date.UTC( ) Returns the millisecond representation of the specified UTC date and time.</
+                </li>
+                </details>
+
+                <details><summary><li>Math Methods</li></summary>
+                <ul>
+                    <li>abs()   Returns the absolute value of a number.</li>
+                    <li>acos()  Returns the arccosine (in radians) of a number.</li>
+                    <li>asin()  Returns the arcsine (in radians) of a number.</li>
+                    <li>atan()  Returns the arctangent (in radians) of a number.</li>
+                    <li>atan2() Returns the arctangent of the quotient of its arguments.</li>
+                    <li>ceil()  Returns the smallest integer greater than or equal to a number.</li>
+                    <li>cos()   Returns the cosine of a number.</li>
+                    <li>exp()   Returns EN, where N is the argument, and E is Euler's constant, the base of the natural logarithm.</li>
+                    <li>floor() Returns the largest integer less than or equal to a number.</li>
+                    <li>log()   Returns the natural logarithm (base E) of a number.</li>
+                    <li>max()   Returns the largest of zero or more numbers.</li>
+                    <li>min()   Returns the smallest of zero or more numbers.</li>
+                    <li>pow()   Returns base to the exponent power, that is, base exponent.</li>
+                    <li>random()    Returns a pseudo-random number between 0 and 1.</li>
+                    <li>round() Returns the value of a number rounded to the nearest integer.</li>
+                    <li>sin()   Returns the sine of a number.</li>
+                    <li>sqrt()  Returns the square root of a number.</li>
+                    <li>tan()   Returns the tangent of a number.</li>
+                    <li>toSource()  Returns the string "Math".</li>
+                </ul>
+                </details>
+
+                <details><summary><li>RegExp Methods</li></summary>
+                <ul>
+                    <li>exec()  Executes a search for a match in its string parameter.</li>
+                    <li>test()  Tests for a match in its string parameter.</li>
+                    <li>toSource()  Returns an object literal representing the specified object; you can use this value to create a new object.</li>
+                    <li>toString()  Returns a string representing the specified object.</li>
+                </ul>
+                </details>
+            </ul>
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <p>References:</p>
+        <p>Author/s (Year). Title. Retrieved from <a href="URL" target="_blank">URL</a></p> <!--references in APA format-->
+        <!--new paragraph for every reference-->
+        
+        <div class="page-nav-bottom">
+            <a href="js-variables.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <a href="js-objects.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+            </div>
+        </div>    
+    </div>    
+    <footer>
+        <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>

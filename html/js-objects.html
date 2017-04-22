@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTTP Request Message</title> <!--paki update na rin to :D -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="main.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link href="lessons-styles.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="pictures/logo.png" id="logo" alt="WebTek Logo">
+    <nav>
+        <ul>
+            <li><a href="index-alt.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+    <!-- - - - - - - - - - - - - wag kalimutan palitan yung topic na may class active- - - - - - - - - - - - - - - - -->    
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><label for="sub">Prelims</label>
+                <input type="checkbox" id="sub"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li><a href="http%20fundamentals.html" class="sub">Internet</a></li>
+                    <li><a href="world-wide-web.html" class="sub">World Wide Web</a></li>
+                    <li>
+                        <label for="sub0">HTTP</label>
+                        <input type="checkbox" id="sub0"/>
+                        <div class="sub-topic">
+                        <ul>        
+                            <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                            <li><a href="resource-accessing.html" class="sub">Resource Accessing</a></li>
+                            <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                            <li><a href="response-message.html" class="sub">Response Message</a></li>
+                            <li><a href="http-request-methods.html" class="sub">Request Method</a></li>
+                            <li>
+                                <label for="sub2">Message Header</label>
+                                <input type="checkbox" id="sub2"/>
+                                <div class="sub-topic">
+                                <ul>
+                                    <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                                    <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                                    <li><a href="response-header.html">Response Header Fields</a></li>
+                                    <li><a href="entity-header.html">Entity Header Fields</a></li>
+                                </ul>
+                                </div>
+                            </li>
+                            <li><a href="http-status-codes.html" class="sub">Status Codes</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub1" class="active">Midterms</label> <!-- ======================= -midterms-->
+                <input type="checkbox" id="sub1"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li>
+                        <label for="sub4">HTML</label>
+                        <input type="checkbox" id="sub4"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#" class="sub">topic</a></li>  
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub5">CSS</label>
+                        <input type="checkbox" id="sub5"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub6" class="active">JavaScript</label>
+                        <input type="checkbox" id="sub6"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="js-variables.html" class="sub">JavaScript Variables</a></li>  
+                            <li><a href="js-functions.html" class="sub">JavaScript Functions and Methods</a></li>
+                            <li><a href="js-objects.html" class="active sub">Javscript Objects</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub3">Finals</label>
+                <input type="checkbox" id="sub3"/>
+                <div class="sub-topic">
+                    <ul>        
+                        <li>
+                            <label for="sub2">HTML</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">CSS</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">JavaScript</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>    
+    <h1>JavaScript Objects</h1> <!-- - - - - - - - - - - - -  wag kalimutan- -->
+    <div class="notes">
+    <div class="notes-con">
+        <div class="page-nav-top">
+            <a href="js-functions.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <!--a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a>yung link dapat yung topic after ng topic mo-->
+            </div>
+        </div>
+            <p>JavaScript is an Object Oriented Programming (OOP) language. A programming language can be called object-oriented if it provides four basic capabilities to developers: Encapsulation, Aggregation, Inheritance, Polymorphism.</p>
+            <p>In JavaScript, almost "everything" is an object.</p>
+            <dd><ul>
+                <li>Booleans can be objects (if defined with the new keyword)</li>
+                <li>Numbers can be objects (if defined with the new keyword)</li>
+                <li>Strings can be objects (if defined with the new keyword)</li>
+                <li>Dates are always objects</li>
+                <li>Maths are always objects</li>
+                <li>Regular expressions are always objects</li>
+                <li>Arrays are always objects</li>
+                <li>Functions are always objects</li>
+                <li>Objects are always objects</li>
+                <li>All JavaScript values, except primitives, are objects.</li>
+            </dd>
+
+            <p>Objects are composed of attributes. If an attribute contains a function, it is considered to be a method of the object, otherwise the attribute is considered a property.</p>
+
+            <h2><center>Object Properties</center></h2>
+            <p>Object properties can be any of the three primitive data types, or any of the abstract data types, such as another object. Object properties are usually variables that are used internally in the object's methods, but can also be globally visible variables that are used throughout the page.</p>
+
+            <p>The syntax for adding a property to an object is −
+            objectName.objectProperty = propertyValue;
+
+            For example − The following code gets the document title using the "title" property of the document object.
+            var str = document.title;</p>
+            <ul>
+                <details><summary><li>Object Methods</li></summary>
+                <dd>Methods are the functions that let the object do something or let something be done to it. There is a small difference between a function and a method – at a function is a standalone unit of statements and a method is attached to an object and can be referenced by the this keyword.
+                Methods are useful for everything from displaying the contents of the object to the screen to performing complex mathematical operations on a group of local properties and parameters.</dd>
+
+                <dd>For example − Following is a simple example to show how to use the write() method of document object to write any content on the document.
+                <dd>document.write("This is test");</dd></dd>
+                </details>
+
+                <details><summary><li>User-Defined Objects</li></summary>
+                <dd>All user-defined objects and built-in objects are descendants of an object called Object.</dd>
+                </details>
+
+                <details><summary><li>The new Operator</li></summary>
+                <dd>The new operator is used to create an instance of an object. To create an object, the new operator is followed by the constructor method.
+                In the following example, the constructor methods are Object(), Array(), and Date(). These constructors are built-in JavaScript functions.<br />
+                var employee = new Object();<br />
+                var books = new Array("C++", "Perl", "Java");<br />
+                var day = new Date("August 15, 1947");</dd>
+                </details>
+
+                <details><summary><li>The Object() Constructor</li></summary>
+                <dd>A constructor is a function that creates and initializes an object. JavaScript provides a special constructor function called Object() to build the object. The return value of the Object() constructor is assigned to a variable.<br />
+                The variable contains a reference to the new object. The properties assigned to the object are not variables and are not defined with the var keyword.</dd>
+                </details>
+
+                <details><summary><li>Defining Methods for an Object</li></summary>
+                <dd>The previous examples demonstrate how the constructor creates the object and assigns properties. But we need to complete the definition of an object by assigning methods to it.</dd>
+                </details>
+
+                <details><summary><li>The 'with' Keyword</li></summary>
+                <dd>The ‘with’ keyword is used as a kind of shorthand for referencing an object's properties or methods.
+                The object specified as an argument to with becomes the default object for the duration of the block that follows. The properties and methods for the object can be used without naming the object.</dd>
+                </details>
+
+                <details><summary><li>Syntax</li></summary>
+                <dd>The syntax for with object is as follows −
+
+                with (object){
+                   properties used without the object name and dot
+                }
+                </dd>
+                </details>
+
+                <details><summary><li>JavaScript Native Objects</li></summary>
+                <dd>JavaScript has several built-in or native objects. These objects are accessible anywhere in your program and will work the same way in any browser running in any operating system.</dd>
+                </details>
+            </ul>
+
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <p>References:</p>
+        <p>W3Schools. JavaScript Objects Definition. Retrieved from <a href="https://www.w3schools.com/js/js_object_definition.asp" target="_blank">https://www.w3schools.com/js/js_object_definition.asp</a></p>
+        <p>W3Schools. JavaScript Objects. Retrieved from <a href="https://www.w3schools.com/js/js_objects.asp" target="_blank">https://www.w3schools.com/js/js_objects.asp</a></p><!--references in APA format-->
+        <!--new paragraph for every reference-->
+        
+        <div class="page-nav-bottom">
+            <a href="js-functions.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <!--a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a>yung link dapat yung topic after ng topic mo-->
+            </div>
+        </div>    
+    </div>    
+    <footer>
+        <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>
