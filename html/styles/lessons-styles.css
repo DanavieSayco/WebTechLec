@@ -54,6 +54,24 @@ b{
     display: block;                        /* SHOW LIST (IF CHECKED) */
 }
 
+[id^="sub1"],                        /* HIDE CHECKBOX */
+[id^="sub1"] ~ .sub-topic {                /* HIDE LIST */
+    display: none;
+}
+
+[id^="sub1"]:checked ~ .sub-topic {
+    display: block;                        /* SHOW LIST (IF CHECKED) */
+}
+
+[id^="sub3"],                        /* HIDE CHECKBOX */
+[id^="sub3"] ~ .sub-topic {                /* HIDE LIST */
+    display: none;
+}
+
+[id^="sub3"]:checked ~ .sub-topic {
+    display: block;                        /* SHOW LIST (IF CHECKED) */
+}
+
 label {
     color: white;
     padding: 5%;
