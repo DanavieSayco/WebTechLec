@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Client-Side Scripting</title> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/lessons-styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="pictures/logo.png" id="logo" alt="WebTek Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+       
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><label for="sub">Prelims</label>
+                <input type="checkbox" id="sub"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li><a href="http%20fundamentals.html" class="sub">Internet</a></li>
+                    <li><a href="world-wide-web.html" class="sub">World Wide Web</a></li>
+                    <li>
+                        <label for="sub0">HTTP</label>
+                        <input type="checkbox" id="sub0"/>
+                        <div class="sub-topic">
+                        <ul>        
+                            <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                            <li><a href="resource-accessing.html" class="sub">Resource Accessing</a></li>
+                            <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                            <li><a href="response-message.html" class="sub">Response Message</a></li>
+                            <li>
+                                <label for="sub2">Message Header</label>
+                                <input type="checkbox" id="sub2"/>
+                                <div class="sub-topic">
+                                <ul>
+                                    <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                                    <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                                    <li><a href="response-header.html">Response Header Fields</a></li>
+                                    <li><a href="entity-header.html">Entity Header Fields</a></li>
+                                </ul>
+                                </div>
+                            </li>
+                            <li><a href="http-status-codes.html" class="sub">Status Codes</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub1">Midterms</label> 
+                <input type="checkbox" id="sub1"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li>
+                        <label for="sub4">HTML</label>
+                        <input type="checkbox" id="sub4"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#" class="sub">topic</a></li>  
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub5">CSS</label>
+                        <input type="checkbox" id="sub5"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub6" class = "active">JavaScript</label>
+                        <input type="checkbox" id="sub6"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub3">Finals</label>
+                <input type="checkbox" id="sub3"/>
+                <div class="sub-topic">
+                    <ul>        
+                        <li>
+                            <label for="sub2">HTML</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">CSS</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">JavaScript</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>    
+    <h1>Client-Side Scripting</h1> 
+    <div class="notes">
+    <div class="notes-con">
+        <div class="page-nav-top">
+            <a href="#"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> 
+            <div class="next">
+                <a href="#"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> 
+            </div>
+        </div>
+        
+        <p>Client-side scripts are executed by a browser. They provide changes to web pages after they arrive at a browser. The scripts manipulate and display the content returned from the server. The source code is passed from the server to a computer over the internet and runs directly in a browser. As a whole, client-side scripts are used for appearance and interaction.</p>
+
+        <p>These scripts interact with CSS files and the HTML code of a website. It selects HTML elements and then manipulates those HTML elements to provide users an interactive experience when viewing a website.</p>
+
+        <p>Since client-side scripts rely on the user’s computer, a slow computer will result to a script running slowly as well. It may not also run if a browser does not understand the scripting language.</p>
+
+        <h3>JavaScript</h3>
+
+        <p>The most commonly used scripting for the client side is JavaScript. It was developed by Brendan Eich of Netscape Communications and was first released in the year 1995. It was introduced with the browser Netscape Navigator.</p>
+
+        <p>JavaScript is an open, cross-platform and object-oriented scripting language running inside a browser. It manipulates elements on a webpage by means of a Document Object Model (DOM). </p>
+
+        <p>The standard version is defined by the ECMA-262 Specification. It delivers a standardized, international programming language based on JavaScript. ECMAScript is a standardized version of JavaScript.</p>
+
+        <h4>Some JavaScript Frameworks:</h4>
+
+        <ul>
+            <li>jQuery</li>
+            <p>A JavaScript object library streamlining the behavior of JavaScript across different browsers.</p>
+
+            <li>MooTools</li>
+            <p>An object-oriented JavaScript framework that allows one to extend the functionality of your code.</p>
+
+            <li>Angular JS</li>
+            <p>A framework that extends the syntax of HTML to define data bindings, templates and etc.</p>
+
+            <li>Bootstrap</li>
+            <p>A framework that provides UI components and facilitates responsive web and application development.</p>
+
+            <li>Prototype</li>
+            <p>Another framework that eases the development of dynamic web applications.</p>
+        </ul>
+        
+
+        <p>References:</p>
+        <p>Canter, S (2004). Understanding Client-Side Scripting. Retrieved from <a href="http://www.pcmag.com/article2/0,2817,1554984,00.asp" target="_blank">http://www.pcmag.com/article2/0,2817,1554984,00.asp</a></p>
+
+        <p>Wodehouse, C. (2017). Title. Retrieved from <a href="https://www.upwork.com/hiring/development/how-scripting-languages-work/" target="_blank">https://www.upwork.com/hiring/development/how-scripting-languages-work/</a></p>
+
+        <p>Wahlin, D. (2012). Explore the New World of JavaScript-Focused Client-Side Web Development. Retrieved from <a href="http://devproconnections.com/javascript/explore-new-world-javascript-focused-client-side-web-development" target="_blank">http://devproconnections.com/javascript/explore-new-world-javascript-focused-client-side-web-development</a></p>
+
+        <p>JavaScript Overview. (n.d.). Retrieved from <a href="https://www.tutorialspoint.com/javascript/javascript_overview.htm" target="_blank">https://www.tutorialspoint.com/javascript/javascript_overview.htm</a></p>
+
+        <p>Introduction - JavaScript. (n.d.). Retrieved from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction</a></p> 
+
+        
+        <div class="page-nav-bottom">
+            <a href="#"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> 
+            <div class="next">
+                <a href="#"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> 
+            </div>
+        </div>    
+    </div>    
+    <footer>
+        <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>
