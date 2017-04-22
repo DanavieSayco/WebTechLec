@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Rule Precedence</title> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="styles/main.css" rel="stylesheet"> 
+    <link href="styles/lessons-styles.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="pictures/logo.png" id="logo" alt="WebTek Logo">
+    <nav>
+        <ul>
+            <li><a href="index-alt.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><label for="sub">Prelims</label>
+                <input type="checkbox" id="sub"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li><a href="http%20fundamentals.html" class="sub">Internet</a></li>
+                    <li><a href="world-wide-web.html" class="sub">World Wide Web</a></li>
+                    <li>
+                        <label for="sub0">HTTP</label>
+                        <input type="checkbox" id="sub0"/>
+                        <div class="sub-topic">
+                        <ul>        
+                            <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                            <li><a href="resource-accessing.html" class="sub">Resource Accessing</a></li>
+                            <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                            <li><a href="response-message.html" class="sub">Response Message</a></li>
+                            <li><a href="http-request-methods.html" class="sub">Request Method</a></li>
+                            <li>
+                                <label for="sub2">Message Header</label>
+                                <input type="checkbox" id="sub2"/>
+                                <div class="sub-topic">
+                                <ul>
+                                    <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                                    <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                                    <li><a href="response-header.html">Response Header Fields</a></li>
+                                    <li><a href="entity-header.html">Entity Header Fields</a></li>
+                                </ul>
+                                </div>
+                            </li>
+                            <li><a href="http-status-codes.html" class="sub">Status Codes</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub1">Midterms</label> 
+                <input type="checkbox" id="sub1"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li>
+                        <label for="sub4">HTML</label>
+                        <input type="checkbox" id="sub4"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#" class="sub">topic</a></li>  
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub5" class = "active">CSS</label>
+                        <input type="checkbox" id="sub5"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub6">JavaScript</label>
+                        <input type="checkbox" id="sub6"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub3">Finals</label>
+                <input type="checkbox" id="sub3"/>
+                <div class="sub-topic">
+                    <ul>        
+                        <li>
+                            <label for="sub2">HTML</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">CSS</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">JavaScript</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>    
+    <h1>CSS Rule Precedence</h1> 
+    <div class="notes">
+    <div class="notes-con">
+        <div class="page-nav-top">
+            <a href="#"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> 
+            <div class="next">
+                <a href="#"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> 
+            </div>
+        </div>
+        
+        <p>When CSS selectors target the same HTML elements and have the same CSS properties with other selectors, it is important to know which CSS rule takes precedence.</p>
+
+        <p>Style sheets can have 3 origins: user agent, user and the author.These are sorted according to origin and importance, from the one with the lowest priority to the highest priority: </p>
+
+        <ul>
+        <li>User agent normal declaration</li>
+        <li>User normal declaration</li>
+        <li>Author normal declaration</li>
+        <li>Author important declaration</li>
+        <li>User important declaration</li>
+        <li>User agent important declaration</li>
+        </ul>
+
+        <h3>User Agent</h3>
+        
+        <p>User agents are applications that you use to view the website like browsers (Chrome, Firefox, Safari, etc.). They have their own default style sheet.</p>
+
+        <h3>User</h3>
+
+        <p>Users are the ones who view the website. They can override the styles of author by optionally setting their own stylesheets.</p>
+
+        <h3>Author</h3>
+
+        <p>Authors are the one who create the website and embeds all the styles of a website in CSS and links that stylesheet in the HTML of the website.</p>
+
+        <h3>Normal vs. Important</h3>
+
+        <p>An “!important” declaration will always take precedence over a normal declaration. Styles with normal declaration are styles that are defined normally. Important declarations override the normal declarations regardless of where they are on the page. User important declarations overrides author declarations since this is to give users with special requirements control over the presentational aspect of the site.</p>
+
+        <h3>Specificity</h3>
+
+        <p>Every selector has its place in the specificity hierarchy. When two selectors apply to the same element, the selector that is more specific will override the regular ones.</p>
+
+        <p>Hierarchy:</p>
+        <ul>
+        <li>Inline styles</li>
+        <p>Inline styles always overwrite any styles since they are attached directly to the HTML element to be styled, therefore having higher specificity.</p>
+        <li>ID selectors/Number of ID selectors</li>
+        <p>IDs are identifiers for page elements. Since it can only be used once in a web page, it has the highest priority in selector precedence.</p>
+        <li>Number of class selectors, attribute selectors, and pseudo-classes</li>
+        <p>A class selector has a higher specificity than attribute, it is defined by a dot with a class name. The next one are attributes, followed by the pseudo-classes.</p>
+        <li>Number of type selectors & pseudo-elements</li>
+        <p>Pseudo-elements are counted as normal elements, therefore having a lower specificity than selectors.</p>
+        </ul>
+
+        <h3>Order</h3>
+
+        <p>Lastly, If two declarations have the same properties, origin and specificity, the latter specified wins. Rules that are last defined in the document tree will take precedence over the ones that have been defined earlier.</p>
+  
+        <p>References:</p> 
+
+        <p>Friedman, V. (2007). CSS Specificity: Things You Should Know. Retrieved from <a href="https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/" target="_blank">https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/</a></p>
+
+        <p>Vemulapalli, P. (2013). User vs Author vs User Agent style sheets. Retrieved from <a href="http://praveen-vemulapalli.blogspot.com/2013/01/user-vs-author-vs-user-agent-style.html" target="_blank">http://praveen-vemulapalli.blogspot.com/2013/01/user-vs-author-vs-user-agent-style.html</a></p> 
+
+        <p>Ahmed, Z. (2014). Precedence Order of CSS rules. Retrieved from <a href="http://conceptf1.blogspot.com/2014/05/precedence-order-of-css-rules.html" target="_blank">http://conceptf1.blogspot.com/2014/05/precedence-order-of-css-rules.html</a></p>
+
+        <p>Kurtus, R. (2014). Order of Precedence for CSS Rules. Retrieved from <a href="http://www.school-for-champions.com/web/css_cascade_order.htm#.WPsePtJ97IV" target="_blank">http://www.school-for-champions.com/web/css_cascade_order.htm#.WPsePtJ97IV</a></p>
+
+        <p>Jenkov, J. (2014). CSS Precedence. Retrieved from <a href="http://tutorials.jenkov.com/css/precedence.html#specificity" target="_blank">http://tutorials.jenkov.com/css/precedence.html#specificity</a></p>
+
+        <p>Assigning property values, Cascading, and Inheritance. (n.d.). Retrieved from <a href="https://www.w3.org/TR/CSS21/cascade.html" target="_blank">https://www.w3.org/TR/CSS21/cascade.html</a></p>
+        
+        <div class="page-nav-bottom">
+            <a href="#"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> 
+            <div class="next">
+                <a href="#"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> 
+            </div>
+        </div>    
+    </div>    
+    <footer>
+        <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>
