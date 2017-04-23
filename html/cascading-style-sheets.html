@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Client-Side Scripting</title> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/lessons-styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="pictures/logo.png" id="logo" alt="WebTek Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+       
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><label for="sub">Prelims</label>
+                <input type="checkbox" id="sub"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li><a href="http%20fundamentals.html" class="sub">Internet</a></li>
+                    <li><a href="world-wide-web.html" class="sub">World Wide Web</a></li>
+                    <li>
+                        <label for="sub0">HTTP</label>
+                        <input type="checkbox" id="sub0"/>
+                        <div class="sub-topic">
+                        <ul>        
+                            <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                            <li><a href="resource-accessing.html" class="sub">Resource Accessing</a></li>
+                            <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                            <li><a href="response-message.html" class="sub">Response Message</a></li>
+                            <li>
+                                <label for="sub2">Message Header</label>
+                                <input type="checkbox" id="sub2"/>
+                                <div class="sub-topic">
+                                <ul>
+                                    <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                                    <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                                    <li><a href="response-header.html">Response Header Fields</a></li>
+                                    <li><a href="entity-header.html">Entity Header Fields</a></li>
+                                </ul>
+                                </div>
+                            </li>
+                            <li><a href="http-status-codes.html" class="sub">Status Codes</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub1">Midterms</label> 
+                <input type="checkbox" id="sub1"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li>
+                        <label for="sub4">HTML</label>
+                        <input type="checkbox" id="sub4"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#" class="sub">topic</a></li>  
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub5">CSS</label>
+                        <input type="checkbox" id="sub5"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub6" class = "active">JavaScript</label>
+                        <input type="checkbox" id="sub6"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub3">Finals</label>
+                <input type="checkbox" id="sub3"/>
+                <div class="sub-topic">
+                    <ul>        
+                        <li>
+                            <label for="sub2">HTML</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">CSS</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">JavaScript</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>    
+    <h1>Cascading Style Sheets</h1> 
+    <div class="notes">
+    <div class="notes-con">
+        <div class="page-nav-top">
+            <a href="#"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> 
+            <div class="next">
+                <a href="#"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> 
+            </div>
+        </div>
+        
+        <p>A simple mechanism for adding style (e.g., fonts, colors, spacing) to Web documents. </p>
+        <p>A stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects like SVG or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+
+        <p>One of the core languages of the open web and has a standardized W3C specification.Developed in levels, CSS1 is now obsolete, CSS2.1 is a recommendation, and CSS3, now split into smaller modules, is progressing on the standardization track.</p>
+
+        <p>A language used to specify presentation aspects of structurally marked up documents </p>
+        
+        <p>Developed by Håkon Wium Lie and Bert Bos and managed by W3C.</p>
+
+
+        <h3>CSS3 Preprocessors, CSS Frameworks</h3>
+          <ul>
+              <li>Sass</li>
+                <p>Sass, which requires Ruby, is probably the CSS preprocessor you’re most familiar with. It’s well-established, being an eight-year-old open source project, and it’s really the one that defined the genre of modern CSS preprocessors.</p>
+              <li>Less</li>
+                <p>Less.js, (usually referred to simply as “Less”), is one of the most popular CSS preprocessors, and is probably currently the strongest competitor to Sass. 
+                </p>
+                <p>Less extends CSS syntax thoroughly with mixins, variables, nested style rules, and even rule-set looping (which behaves similarly to for loops in a programming language).</p>
+              <li>Stylus</li>
+                <p>Stylus is another one that’s been a strong competitor to Sass, and is a feature-rich extension of CSS. It has over 60 custom functions including saturation(), which lets you mathematically adjust the saturation of a CSS color.</p>
+              <li>Bootstrap</li>
+                <p>Bootstrap makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.</p>
+              <li>960 Grid System</li>
+                <p>The 960 Grid System is an effort to streamline web development workflow by providing commonly used dimensions, based on a width of 960 pixels. There are two variants: 12 and 16 columns, which can be used separately or in tandem.</p>
+        </ul>
+        <h3>Three Layers of a Web Document</h3>
+            <p>The content layer is always present. It comprises the information the author wishes to convey to his or her audience, and is embedded within HTML or XHTML markup that defines its structure and semantics. Most of the content on the Web today is text, but content can also be provided through images, animations, sound, video, and whatever else an author wants to publish.</p>
+            <p>The presentation layer defines how the content will appear to a human being who accesses the document in one way or another. The conventional way to view a web page is with a regular web browser, of course, but that’s only one of many possible access methods. For example, content can also be converted to synthetic speech for users who have impaired vision or reading difficulties.</p>
+            <p>The behavior layer involves real-time user interaction with the document. This task is normally handled by JavaScript. The interaction can be anything from a trivial validation that ensures a required field is filled in before an order form can be submitted, to sophisticated web applications that work much like ordinary desktop programs.</p>
+            <ul>
+                <li>Certain versions of HTML and XHTML also contain presentational element types — that is, elements that specify the appearance of the content, rather than structure or semantics. For example, b and i tag can be used to control the presentation of text, and h tag will insert a visible rule element. However, as these types of elements embed presentation-layer information within the content layer, they negate any advantage we may have gained by keeping the layers separate.</li>
+                <li>Cascading Style Sheets, or CSS, is the recommended way to control the presentation layer in a web document. The main advantage of CSS over presentational HTML markup is that the styling can be kept entirely separate from the content. For example, it’s possible to store all the presentational styles for a 10,000-page web site in a single CSS file. CSS also provides far better control over presentation than do presentational element types in HTML.</li>
+                <li>Although CSS is designed to be independent of the markup language of the documents to which it is applied, in reality, it’s used mainly with HTML and XML (including XHTML).</li>
+        </ul>
+        <h3>Versions</h3>
+
+        <ul>
+                <li>1 (December 1996)</li>
+                <li>2.1</li>
+                <li>3</li>
+            <p>W3C decided to change tactics</p>
+            <p>Subdivided into modules (no more monolithic)</p>
+            <p>No more CSS4, just upgrading modules</p>
+         </ul>
+        
+        
+        
+        <p>References:</p>
+        <p>CSS. (n.d.). Retrieved April 22, 2017, from  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS " target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS </a></p>
+
+        <p>Cascading Style Sheets home page. (n.d.). Retrieved April 22, 2017, from <a href="http://www.w3.org/Style/CSS/Overview.en.html " target="_blank">http://www.w3.org/Style/CSS/Overview.en.html </a></p>
+
+        <p>Roberts, A. (2004, February 01). What Is CSS? — SitePoint. Retrieved April 22, 2017, from <a href="https://www.sitepoint.com/web-foundations/css/ " target="_blank">https://www.sitepoint.com/web-foundations/css/ </a></p>
+
+        <p> Gube, J. (2014, November 02). 6 Current Options for CSS Preprocessors — SitePoint. Retrieved April 22, 2017, from  <a href="https://www.sitepoint.com/6-current-options-css-preprocessors/" target="_blank">https://www.sitepoint.com/6-current-options-css-preprocessors/</a></p>
+
+        <p>Mark Otto, Jacob Thornton, and Bootstrap contributors. (n.d.). CSS. Retrieved April 22, 2017, from <a href="http://getbootstrap.com/css/ " target="_blank">http://getbootstrap.com/css/ </a></p> 
+            
+        <p>What are Frameworks? 22 Best Responsive CSS Frameworks for Web Design. (n.d.). Retrieved April 22, 2017, from <a href=" https://www.awwwards.com/what-are-frameworks-22-best-responsive-css-frameworks-for-web-design.html" target="_blank"> https://www.awwwards.com/what-are-frameworks-22-best-responsive-css-frameworks-for-web-design.html </a></p> 
+
+        
+        <div class="page-nav-bottom">
+            <a href="#"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> 
+            <div class="next">
+                <a href="#"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> 
+            </div>
+        </div>    
+        </div>
+    <footer>
+        <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>
