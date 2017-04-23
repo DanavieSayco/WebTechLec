@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WebTek | Pseudo-class</title> <!--paki update na rin to :D -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="styles/main.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link href="styles/lessons-styles.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link href="styles/pseudo-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="pictures/logo.png" id="logo" alt="WebTek Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+    <!-- - - - - - - - - - - - - wag kalimutan palitan yung topic na may class active- - - - - - - - - - - - - - - - -->    
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><label for="sub">Prelims</label>
+                <input type="checkbox" id="sub"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li><a href="internet.html" class="sub">Internet</a></li>
+                    <li><a href="world-wide-web.html" class="sub">World Wide Web</a></li>
+                    <li>
+                        <label for="sub0">HTTP</label>
+                        <input type="checkbox" id="sub0"/>
+                        <div class="sub-topic">
+                        <ul>        
+                            <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                            <li><a href="resource-accessing.html" class="sub">Resource Accessing</a></li>
+                            <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                            <li><a href="response-message.html" class="sub">Response Message</a></li>
+                            <li>
+                                <label for="sub2">Message Header</label>
+                                <input type="checkbox" id="sub2"/>
+                                <div class="sub-topic">
+                                <ul>
+                                    <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                                    <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                                    <li><a href="response-header.html">Response Header Fields</a></li>
+                                    <li><a href="entity-header.html">Entity Header Fields</a></li>
+                                </ul>
+                                </div>
+                            </li>
+                            <li><a href="http-status-codes.html" class="sub">Status Codes</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub1">Midterms</label> <!-------------------------midterms-->
+                <input type="checkbox" id="sub1"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li>
+                        <label for="sub4">HTML</label>
+                        <input type="checkbox" id="sub4"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#" class="sub">topic</a></li>  
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub5">CSS</label>
+                        <input type="checkbox" id="sub5"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub6">JavaScript</label>
+                        <input type="checkbox" id="sub6"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub3">Finals</label>
+                <input type="checkbox" id="sub3"/>
+                <div class="sub-topic">
+                    <ul>        
+                        <li>
+                            <label for="sub2">HTML</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">CSS</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">JavaScript</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>    
+    <h1>CSS Pseudo-class</h1> <!-- - - - - - - - - - - - -  wag kalimutan- -->
+    <div class="notes">
+    <div class="notes-con">
+        <div class="page-nav-top">
+            <a href="http%20fundamentals.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+            </div>
+        </div>
+        <p>Pseudo-class is an implicit class that enables selection of elements based on information that is not a part of the structure of the webpage. It starts with a colon (:) then the name of the pseudo-class. Some of these are mutually exclusive while others can be applied simultaneously. </p>
+        
+        <h2>Syntax</h2>
+        
+        <code><pre>selector:pseudo-class {
+    property:value;
+}</pre></code>
+        
+        <h2>Dynamic Pseudo-classes</h2>
+        <p>Dynamic pseudo-classes are lost or acquired by an element when a user interacts with the element. They do not appear in the document source or tree.</p>
+        
+        <h4>Link pseudo-classes</h4>
+        <p>Link pseudo-classes are used specifically for links in the webpage. These are used to differentiate a visited link and a link that has not been visited yet. They are also mutually exclusive, which means that only one of them is true at a given time. A link cannot be visited and not visited at the same time. These are browser-specific so they may not work for other browsers.</p>
+        
+        <ul>
+            <li>
+                <details><summary>:link</summary>
+                    <dd>The :link pseudo-class is used for links that have not yet been visited.</dd>
+                    <div id="link" class="samp">
+                        <code><pre>a:link {
+    color: orange;                    
+}</pre></code>
+                        <a href="#">This is a link</a>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details><summary>:visited</summary>
+                    <dd>The :visited pseudo-class is used for links that have been visited.</dd>
+                    <div id="visited" class="samp">
+                        <code><pre>a:visited {
+    color: pink;                    
+}</pre></code>
+                        <a href="#">This is a link. Click me.</a>
+                    </div>
+                </details>
+            </li>
+        </ul>
+        
+        <h4>User Action Pseudo-class</h4>
+        <p>User action pseudo-classes are used for the selection of an element a user is interacting with. These are not mutually exclusive and so, they can be used simultaneously in an element.</p>
+        
+        <ul>
+            <li>
+                <details><summary>:hover</summary>
+                    <dd>The :hover pseudo-class is used when the user’s pointer is hovering over an element. Some devices may not support this pseudo-class, like mobile phones and tablets.</dd>
+                    <div id="hover" class="samp">
+                        <code><pre>a:hover {
+    color: red;                    
+}</pre></code>
+                        <a href="#">Hover me</a>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details><summary>:active</summary>
+                    <dd>The :active pseudo-class is used to activate elements. The effect can be seen when the user presses the mouse button and will be gone once the mouse button is released.</dd>
+                    <div id="active" class="samp">
+                        <code><pre>a:active {
+    color: yellow;                    
+}</pre></code>
+                        <a href="#">Click me</a>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details><summary>:focus</summary>
+                    <dd>The :focus pseudo-class is used for forms and for moving the focus to the element.</dd>
+                    <div id="focus" class="samp">
+                        <code><pre>input:focus {
+    background-color: white;                    
+}</pre></code>
+                        <input type="text" value="Click me">
+                    </div>
+                </details>
+            </li>
+        </ul>
+        
+        <h2>Target Pseudo-class</h2>
+        <p>URLs can refer to an element within the document, which is called a target element. These URLs have # followed by an anchor identifier. This pseudo-class is used to style those target elements.</p>
+        <div id="target" class="samp">
+            <code><pre>div:target {
+    display:block;                    
+}</pre></code>
+            <a href="#con1">ClickMe</a>
+            <a href="#con2">ClickMeToo</a>
+            <div id="con1">
+                <p>This is the content of 1.</p>
+            </div>
+            <div id="con2">
+                <p>This is the content of 2.</p>
+            </div>
+        </div>
+        
+        <h2>Language Pseudo-class</h2>
+        <p>The language pseudo-class is used for targeting elements with a specific language attribute. It is most often a two-letter language code or two language codes combined. The language specified may not be an actual language but it must not be left as blank.</p>
+        <div id="lang" class="samp">
+            <code><pre>p:lang(fr) {
+    color: darkblue;
+    background-color: deepskyblue;
+}</pre></code>
+            <p>Let's go!</p>
+            <p lang="fr">Allons-y !</p>
+        </div>
+        
+        <h2>UI Element States Pseudo-classes</h2>
+        <ul>
+            <li>
+                <details><summary>:enabled</summary>
+                    <dd>The :enabled pseudo-class is used for elements that are enabled. It is mostly used on form elements.</dd>
+                    <div id="enabled" class="samp">
+                        <code><pre>input:enabled {
+    background-color: yellowgreen;
+}</pre></code>
+                        <input type="text" value="enabled"><br>
+                        <input type="text" value="disabled" disabled="disabled">
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details><summary>:disabled</summary>
+                    <dd>The :disabled pseudo-class is used for elements that are disabled. It is also used on form elements.</dd>
+                    <div id="disabled" class="samp">
+                        <code><pre>input:disabled {
+    background-color: palevioletred;
+}</pre></code>
+                        <form action="">
+                            <input type="text" value="enabled"><br>
+                            <input type="text" value="disabled" disabled="disabled">
+                        </form>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details><summary>:checked</summary>
+                    <dd>The :checked pseudo-class is used for selecting checked input or option elements. This can only be used for radio buttons and checkboxes.</dd>
+                    <div id="checked" class="samp">
+                        <code><pre>input:checked {
+    height: 25px;
+    width: 25px;
+}</pre></code>
+                        <form action="">
+                            <input type="radio" value="male" checked="checked" name="gender"> Male <br>
+                            <input type="radio" value="female" name="gender"> Female
+                        </form>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details><summary>:indeterminate</summary>
+                    <dd>The :indeterminate pseudo-class is for radio buttons and checkboxes that have an indeterminate state. They are neither checked nor unchecked.</dd>
+                </details>
+            </li>
+        </ul>
+        
+        <h2>Structural Pseudo-classes</h2>
+        <p>Structural pseudo-classes enables selection using information that can be seen in the document tree but cannot be represented by other simple selectors or combinators. They target elements based on their position in the document tree.</p>
+        <ul>
+            <li>
+                <details><summary>:root</summary>
+                    <dd>The :root pseudo-class is the root element of a document and is always the html element.</dd>
+                </details>
+            </li>
+            <li>
+                <details><summary>:first-child</summary>
+                    <dd>The :first-child pseudo-class refers to an element that is a first child of another element.</dd>
+                    <div id="first-child" class="samp">
+                        <code><pre>p:first-child {
+    color:sandybrown;
+}</pre></code>
+                        <div>
+                            <p>This is the first child.</p>
+                            <p>This is the second child.</p>
+                            <p>This is the third child.</p>
+                        </div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details><summary>:last-child</summary>
+                    <dd>The :last-child pseudo-class refers to an element that is the last child of another element.</dd>
+                    <div id="last-child" class="samp">
+                        <code><pre>p:last-child {
+    color:greenyellow;
+}</pre></code>
+                        <div>
+                            <p>This is the first child.</p>
+                            <p>This is the second child.</p>
+                            <p>This is the last child.</p>
+                        </div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details><summary>:only-child</summary>
+                    <dd>The :only-child pseudo-class refers to an element that is an only child of another element.</dd>
+                    <div id="only-child" class="samp">
+                        <code><pre>p:only-child {
+    color:sandybrown;
+}</pre></code>
+                        <div>
+                            <p>This is an only child.</p>
+                        </div>
+                        <div>
+                            <p>This is a child.</p>
+                            <p>This is a child.</p>
+                        </div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details><summary>:nth-child()</summary>
+                    <dd>The :nth-child() pseudo-class targets the nth child specified. The values must be positive or negative integers, or zero. The an+b notation can be used to select elements alternately.</dd>
+                    <div id="nth-child" class="samp">
+                        <code><pre>p:nth-child(2n+1) {
+    color:dogerblue;
+}</pre></code>
+                        <div>
+                            <p>This is an odd child.</p>
+                            <p>This is an even child.</p>
+                            <p>This is an odd child.</p>
+                            <p>This is an even child.</p>
+                            <p>This is an odd child.</p>
+                            <p>This is an even child.</p>
+                            <p>This is an odd child.</p>
+                        </div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details><summary>:nth-last-child()</summary>
+                    <dd>The :nth-last-child() functions like the previous pseudo-class but starts from the last child.</dd>
+                    <div id="nth-last-child" class="samp">
+                        <code><pre>p:nth-last-child(3n+1) {
+    color:dogerblue;
+}</pre></code>
+                        <div>
+                            <p>This is an odd child.</p>
+                            <p>This is an even child.</p>
+                            <p>This is an odd child.</p>
+                            <p>This is an even child.</p>
+                            <p>This is an odd child.</p>
+                            <p>This is an even child.</p>
+                            <p>This is an odd child.</p>
+                            <p>This is an even child.</p>
+                        </div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details><summary>:first-of-type</summary>
+                    <dd>The :first-of-type pseudo-class refers to the first element of its type in a section.</dd>
+                    <div id="first-of-type" class="samp">
+                        <code><pre>p:first-of-type {
+    color:fuschia;
+}</pre></code>
+                        <div>
+                            <a href="#">This is a link.</a>
+                            <p>This is a paragraph.</p>
+                            <code>This is a code.</code><br><br>
+                            <a href="#">This is another link.</a>
+                            <p>This is another paragraph.</p>
+                            <code>This is another code.</code>
+                        </div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details><summary>:last-of-type</summary>
+                    <dd>The :last-of-type pseudo-class refers to the last element of its type in a section.</dd>
+                    <div id="last-of-type" class="samp">
+                        <code><pre>p:last-of-type {
+    color:indianred;
+}</pre></code>
+                        <div>
+                            <a href="#">This is a link.</a>
+                            <p>This is a paragraph.</p>
+                            <code>This is a code.</code><br><br>
+                            <a href="#">This is another link.</a>
+                            <p>This is another paragraph.</p>
+                            <code>This is another code.</code>
+                        </div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details><summary>:only-of-type</summary>
+                    <dd>The :only-of-type pseudo-class refers to an element in a section that has no siblings of the same type.</dd>
+                    <div id="only-of-type" class="samp">
+                        <code><pre>p:only-of-type {
+    color:aquamarine;
+}</pre></code>
+                        <div>
+                            <a href="#">This is a link.</a>
+                            <p>This is a paragraph.</p>
+                            <code>This is a code.</code><br><br>
+                            <a href="#">This is another link.</a>
+                            <p>This is another paragraph.</p>
+                            <code>This is another code.</code><br><br>
+                        </div>
+                        <div>
+                            <a href="#">This is a link in another container.</a>
+                            <p>This is a paragraph in another container.</p>
+                            <code>This is a code in another container.</code><br><br>
+                        </div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details><summary>:nth-of-type()</summary>
+                    <dd>The :nth-of-type() pseudo-class targets the nth element of its type in a section. The an+b notation can be used as well.</dd>
+                    <div id="nth-of-type" class="samp">
+                        <code><pre>p:nth-of-type(2) {
+    color:burlywood;
+}</pre></code>
+                        <div>
+                            <a href="#">This is a link.</a>
+                            <p>This is a paragraph.</p>
+                            <code>This is a code.</code><br><br>
+                            <a href="#">This is another link.</a>
+                            <p>This is another paragraph.</p>
+                            <code>This is another code.</code><br><br>
+                            <a href="#">This is also a link.</a>
+                            <p>This is also a paragraph.</p>
+                            <code>This is also a code.</code>
+                        </div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details><summary>:nth-last-of-type()</summary>
+                    <dd>The :nth-of-last-type() functions like the previous pseudo-class but starts from the last of its type in a section.</dd>
+                    <div id="nth-last-of-type" class="samp">
+                        <code><pre>p:nth-last-of-type(1) {
+    color:deeppink;
+}</pre></code>
+                        <div>
+                            <a href="#">This is a link.</a>
+                            <p>This is a paragraph.</p>
+                            <code>This is a code.</code><br><br>
+                            <a href="#">This is another link.</a>
+                            <p>This is another paragraph.</p>
+                            <code>This is another code.</code><br><br>
+                            <a href="#">This is also a link.</a>
+                            <p>This is also a paragraph.</p>
+                            <code>This is also a code.</code>
+                        </div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details><summary>:empty</summary>
+                    <dd>The :empty pseudo-class refers to an element with no children.</dd>
+                    <div id="empty" class="samp">
+                        <code><pre>div:empty {
+    background-color: coral;
+    width: 150px;
+    height: 30px;
+}</pre></code>
+                        <div></div>
+                        <div>
+                            <p>The div above has no element.</p>
+                        </div>
+                    </div>
+                </details>
+            </li>
+        </ul>
+        
+        <h2>Negation</h2>
+        <p>The :not() pseudo-class negates the logic of the selector. Only simple selectors can be used as an argument. Nesting negations is invalid. </p>
+        <div id="not" class="samp">
+            <code><pre>:not(p) {
+    color: darkorange;
+}</pre></code>
+            <a href="#">This is a link.</a>
+            <p>This is a paragraph.</p>
+            <code>This is a code.</code><br><br>
+            <a href="#">This is another link.</a>
+            <p>This is another paragraph.</p>
+            <code>This is another code.</code><br><br>
+            <a href="#">This is also a link.</a>
+            <p>This is also a paragraph.</p>
+            <code>This is also a code.</code>
+        </div>
+        
+        <p>References:</p>
+        <p>Celik, T., Etemad, E. J., Glazman, D., Hickson, I., Linss, P., & Williams, J. (September 29, 2011). Selectors Level 3. Retrieved from <a href="https://www.w3.org/TR/css3-selectors" target="_blank">https://www.w3.org/TR/css3-selectors</a></p>
+        <p>CSS Pseudo-classes. n.d. In W3Schools. Retrieved from <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">https://www.w3schools.com/css/css_pseudo_classes.asp</a></p>
+        <p>Pseudo-classes. (September 4, 2015). In Mozilla Developer Network. Retrieved from <a href="https://developer.mozilla.org/en/docs/Web/CSS/Pseudo-classes" target="_blank">https://developer.mozilla.org/en/docs/Web/CSS/Pseudo-classes</a></p><!--references in APA format-->
+        <!--new paragraph for every reference-->
+        
+        <div class="page-nav-bottom">
+            <a href="http%20fundamentals.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+            </div>
+        </div>    
+    </div>    
+    <footer>
+        <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>
