@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Syntax</title> <!--paki update na rin to :D -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="styles/main.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link href="styles/lessons-styles.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="pictures/logo.png" id="logo" alt="WebTek Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+    <!-- - - - - - - - - - - - - wag kalimutan palitan yung topic na may class active- - - - - - - - - - - - - - - - -->    
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><label for="sub">Prelims</label>
+                <input type="checkbox" id="sub"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li><a href="internet.html" class="sub">Internet</a></li>
+                    <li><a href="world-wide-web.html" class="sub">World Wide Web</a></li>
+                    <li>
+                        <label for="sub0">HTTP</label>
+                        <input type="checkbox" id="sub0"/>
+                        <div class="sub-topic">
+                        <ul>        
+                            <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                            <li><a href="resource-accessing.html" class="sub">Resource Accessing</a></li>
+                            <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                            <li><a href="response-message.html" class="sub">Response Message</a></li>
+                            <li>
+                                <label for="sub2">Message Header</label>
+                                <input type="checkbox" id="sub2"/>
+                                <div class="sub-topic">
+                                <ul>
+                                    <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                                    <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                                    <li><a href="response-header.html">Response Header Fields</a></li>
+                                    <li><a href="entity-header.html">Entity Header Fields</a></li>
+                                </ul>
+                                </div>
+                            </li>
+                            <li><a href="http-status-codes.html" class="sub">Status Codes</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub1">Midterms</label> <!-------------------------midterms-->
+                <input type="checkbox" id="sub1"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li>
+                        <label for="sub4" class="active">HTML</label>
+                        <input type="checkbox" id="sub4"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#" class="sub">topic</a></li>  
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub5">CSS</label>
+                        <input type="checkbox" id="sub5"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub6">JavaScript</label>
+                        <input type="checkbox" id="sub6"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub3">Finals</label>
+                <input type="checkbox" id="sub3"/>
+                <div class="sub-topic">
+                    <ul>        
+                        <li>
+                            <label for="sub2">HTML</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">CSS</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">JavaScript</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>    
+    <h1>HTML Syntax</h1> <!-- - - - - - - - - - - - -  wag kalimutan- -->
+    <div class="notes">
+    <div class="notes-con">
+        <div class="page-nav-top">
+            <a href="http%20fundamentals.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+            </div>
+        </div>
+        <h4>Simple Text Formatting</h4>
+       <table>
+            <tr>
+                <th>Description</th>
+                <th>Example Syntax</th>
+                <th>Result</th>
+           </tr>
+           <tr>
+               <td>Bolded Text</td>
+               <td><xmp><b>Bolded Text</b></xmp></td>
+               <td><b>Bolded Text</b></td>
+           </tr>
+           <tr>
+                <td>Italicized Text</td>
+                <td><xmp><i>Italicized Text</i></xmp></td>
+                <td><i>Italicized Text</i></td>
+           </tr>        
+           <tr>
+                <td>Deleted Text</td>
+                <td><xmp><del>Deleted Text</del></xmp></td>
+                <td><del>Deleted Text</del></td>
+           </tr>     
+           <tr>
+                <td>Big Text</td>
+                <td><xmp><big>Big Text</big></xmp></td>
+                <td><big>Big Text</big></td>
+           </tr>
+           <tr>
+                <td></td>
+                <td><xmp></xmp></td>
+                <td></td>
+           </tr>
+           <tr>
+                <td>Small Text</td>
+                <td><xmp><small>Small Text</small></xmp></td>
+                <td><small>Small Text</small></td>
+           </tr>
+           <tr>
+                <td>Subscript</td>
+                <td><xmp>H<sub>2</sub>O</xmp></td>
+                <td>H<sub>2</sub>O</td>
+           </tr>
+           <tr>
+                <td>Superscript</td>
+                <td><xmp>3 x 10<sup>8</sup></xmp></td>
+                <td>3 x 10<sup>8</sup></td>
+           </tr>
+           <tr>
+                <td>HTML Ignore</td>
+                <td><xmp><xmp><b>Text</b>&#60;</xmp></xmp></td>
+                <td><xmp><b>Text</b>&#60;</xmp></td>
+           </tr>
+           <tr>
+                <td>Hyperlink</td>
+                <td><xmp><a href="http://www.google.com">Google</a></xmp></td>
+                <td><a href="http://www.google.com">Google</a></td>
+           </tr>
+           
+           <tr>
+                <td>Email Hyperlink</td>
+                <td><xmp><a href="mailto:mail@mail.com">mail@mail.com</a></xmp></td>
+               <td><a href="mailto:mail@mail.com">mail@mail.com</a></td>
+           </tr>
+           
+        </table>
+        <h4>HTML Terminology</h4>
+            <dl><dt>Element</dt><dd>Contains Start Tag, Content and End Tag</dd>
+                <dt>Tag</dt><dd>Start tag contain angle bar . The end bar contains front slash and angle bar. </dd>
+                <dt>Attribute</dt><dd>Contain an equal sign, the name of attribute and the attribute value.</dd>
+            </dl>
+            
+        <p>References:</p>
+        <p>Author/s (Year). Title. Retrieved from <a href="URL" target="_blank">URL</a></p> <!--references in APA format-->
+        <!--new paragraph for every reference-->
+        <p>HTML Terminology. Retrieved from http://library.usask.ca/cil99/session2/tsld002.htm</p>
+        <p>HTML Syntax Reference Sheet. Retrieved from http://pbar.fnal.gov/htmlref.html</p>
+        <p>Common HTML terms.Retrieved from http://www.scriptingmaster.com/html/HTML-terms-glossary.asp</p>
+        
+        <div class="page-nav-bottom">
+            <a href="http%20fundamentals.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+            </div>
+        </div>    
+    </div>    
+    <footer>
+        <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>
