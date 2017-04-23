@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>HTML</title> 
+    <title>HTML</title> <!--paki update na rin to :D -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1" />
-    <link href="styles/main.css" rel="stylesheet"> 
-    <link href="styles/lessons-styles.css" rel="stylesheet"> 
+    <link href="styles/main.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link href="styles/lessons-styles.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <img src="pictures/logo.png" id="logo">
+        <img src="pictures/logo.png" id="logo" alt="WebTek Logo">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -20,55 +20,151 @@
         </ul>
     </nav>
     </header>
-    
+    <!-- - - - - - - - - - - - - wag kalimutan palitan yung topic na may class active- - - - - - - - - - - - - - - - -->    
     <div class="content">
     <nav>
         <h2 class="nav-title">Topics</h2>
         <ul>
-            <li><a href="internet.html">Internet</a></li>
-            <li><a href="world-wide-web.html">WWW</a></li>
-            <li>
-                <label for="sub">HTTP</label>
+            <li><label for="sub">Prelims</label>
                 <input type="checkbox" id="sub"/>
                 <div class="sub-topic">
                 <ul>        
-                    <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
-                    <li><a href="resource-accessing.html" class="sub">Resource Accessing</a></li>
-                    <li><a href="http-request-message.html" class="sub">Request Message</a></li>
-                    <li><a href="response-message.html" class="sub">Response Message</a></li>
+                    <li><a href="internet.html" class="sub">Internet</a></li>
+                    <li><a href="world-wide-web.html" class="sub">World Wide Web</a></li>
                     <li>
-                        <label for="sub2">Message Header</label>
-                        <input type="checkbox" id="sub2"/>
+                        <label for="sub0">HTTP</label>
+                        <input type="checkbox" id="sub0"/>
                         <div class="sub-topic">
-                        <ul>
-                            <li><a href="general-header-fields.html">General Header Fields</a></li>  
-                            <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
-                            <li><a href="response-header.html">Response Header Fields</a></li>
-                            <li><a href="entity-header.html">Entity Header Fields</a></li>
+                        <ul>        
+                            <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                            <li><a href="resource-accessing.html" class="sub">Resource Accessing</a></li>
+                            <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                            <li><a href="response-message.html" class="sub">Response Message</a></li>
+                            <li>
+                                <label for="sub2">Message Header</label>
+                                <input type="checkbox" id="sub2"/>
+                                <div class="sub-topic">
+                                <ul>
+                                    <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                                    <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                                    <li><a href="response-header.html">Response Header Fields</a></li>
+                                    <li><a href="entity-header.html">Entity Header Fields</a></li>
+                                </ul>
+                                </div>
+                            </li>
+                            <li><a href="http-status-codes.html" class="sub">Status Codes</a></li>
                         </ul>
                         </div>
                     </li>
-                    <li><a href="http-status-codes.html" class="sub">Status Codes</a></li>
                 </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub1">Midterms</label> <!-------------------------midterms-->
+                <input type="checkbox" id="sub1"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li>
+                        <label for="sub4" class="active">HTML</label>
+                        <input type="checkbox" id="sub4"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#" class="sub">topic</a></li>  
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub5">CSS</label>
+                        <input type="checkbox" id="sub5"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub6">JavaScript</label>
+                        <input type="checkbox" id="sub6"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub3">Finals</label>
+                <input type="checkbox" id="sub3"/>
+                <div class="sub-topic">
+                    <ul>        
+                        <li>
+                            <label for="sub2">HTML</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">CSS</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">JavaScript</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </li>
         </ul>
     </nav>    
-    <h1>HTML</h1> 
-    <div class="notes"-->
-        <div class="notes-con">
+    <h1>HTML</h1> <!-- - - - - - - - - - - - -  wag kalimutan- -->
+    <div class="notes">
+    <div class="notes-con">
         <div class="page-nav-top">
-            <a href=""><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a>
+            <a href="http%20fundamentals.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
             <div class="next">
-                <a href=""><p class="next">Next</p><i class="fa fa-chevron-right"></i></a>
+                <a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
             </div>
         </div>
-            <p>Hyper Text Markup Language known as HTML .  Markup is a way of document to have designated meaning and at is a language that is used to create or design a web page.HTML is focused on structure and content while the CSS handle the presentation or aesthetic  and JavaScript handles the behavioral aspects of the site.HTML was created by Tim Berners-Lee and W3c is responsible for evolving HTML</p>
+        
+        <p>Hyper Text Markup Language known as HTML .  Markup is a way of document to have designated meaning and at is a language that is used to create or design a web page.HTML is focused on structure and content while the CSS handle the presentation or aesthetic  and JavaScript handles the behavioral aspects of the site.HTML was created by Tim Berners-Lee and W3c is responsible for evolving HTML</p>
             <dl>
                 <dt><h3>Sample  HTML Document</h3></dt>
                      <img src= "pictures/samplehtml.PNG">
                 <dd><dl>
-                    <dt>< ! DOCTYPE html ></dt>
+                    <dt>< !DOCTYPE html ></dt>
                         <dd>Rendering a web page using standards will make the presentation of the web page consistent throughout different browsers.When not indicated in the HTML document, the web page will be rendered using quirks and the presentation might differ from one browser to another. </dd>
                     <dt>< head > </dt>
                         <dd>Contains metadata such as links, information of author, and others.</dd>
@@ -120,19 +216,20 @@
             </dl>
 
         <p>References:</p>
-            <p>https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started</p>
-        
+        <p>Author/s (Year). Title. Retrieved from <a href="URL" target="_blank">URL</a></p> <!--references in APA format-->
+        <!--new paragraph for every reference-->
+        <p>https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started</p>
         <div class="page-nav-bottom">
-            <a href=""><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a>
+            <a href="http%20fundamentals.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
             <div class="next">
-                <a href=""><p class="next">Next</p><i class="fa fa-chevron-right"></i></a>
+                <a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
             </div>
         </div>    
-    </div>   
-        <footer>
-            <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
-        </footer>
+    </div>    
+    <footer>
+        <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+    </footer>
     </div>
-    
-    
-    </div></body></html>
+    </div>
+</body>
+</html>

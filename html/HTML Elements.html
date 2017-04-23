@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>HTML Elements</title> 
+    <title>HTML Elements</title> <!--paki update na rin to :D -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1" />
-    <link href="styles/main.css" rel="stylesheet"> 
-    <link href="styles/lessons-styles.css" rel="stylesheet"> 
+    <link href="styles/main.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link href="styles/lessons-styles.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <img src="pictures/logo.png" id="logo">
+        <img src="pictures/logo.png" id="logo" alt="WebTek Logo">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -20,12 +20,12 @@
         </ul>
     </nav>
     </header>
-    
+    <!-- - - - - - - - - - - - - wag kalimutan palitan yung topic na may class active- - - - - - - - - - - - - - - - -->    
     <div class="content">
     <nav>
         <h2 class="nav-title">Topics</h2>
         <ul>
-            <li><label for="sub" class="active">Prelims</label>
+            <li><label for="sub">Prelims</label>
                 <input type="checkbox" id="sub"/>
                 <div class="sub-topic">
                 <ul>        
@@ -65,11 +65,11 @@
                 <div class="sub-topic">
                 <ul>        
                     <li>
-                        <label for="sub4">HTML</label>
+                        <label for="sub4" class="active">HTML</label>
                         <input type="checkbox" id="sub4"/>
                         <div class="sub-topic">
                         <ul>
-                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>  
                             <li><a href="#" class="sub">topic</a></li>
                             <li><a href="#" class="sub">topic</a></li>
                             <li><a href="#" class="sub">topic</a></li>
@@ -93,9 +93,9 @@
                         <input type="checkbox" id="sub6"/>
                         <div class="sub-topic">
                         <ul>
-                            <li><a href="js-variables.html" class="sub">JavaScript Variables</a></li>  
-                            <li><a href="js-functions.html" class="sub">JavaScript Functions and Methods</a></li>
-                            <li><a href="js-objects.html" class="sub">Javscript Objects</a></li>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
                             <li><a href="#">topic</a></li>
                         </ul>
                         </div>
@@ -149,15 +149,16 @@
             </li>
         </ul>
     </nav>    
-    <h1>HTML Elements</h1> 
-    <div class="notes"-->
-        <div class="notes-con">
+    <h1>HTML Elements</h1> <!-- - - - - - - - - - - - -  wag kalimutan- -->
+    <div class="notes">
+    <div class="notes-con">
         <div class="page-nav-top">
-            <a href=""><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a>
+            <a href="http%20fundamentals.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
             <div class="next">
-                <a href=""><p class="next">Next</p><i class="fa fa-chevron-right"></i></a>
+                <a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
             </div>
         </div>
+        
         <p>HTML elements consist of start tag, content and end tag. </p>  
             <table>
             <tr><th>Start Tag</th>
@@ -172,7 +173,6 @@
                 
             </table>
         
-	       <p>Empty elements are html element with no content and it doesn't have end tag. Example < br >, br element indicates a line break</p>
             <h3>List of Html Elements and Group by Function</h3>
             <h4>Main Root</h4>
                 <ul id = "listelements">
@@ -200,57 +200,65 @@
                     </dl></li>    
                 </ul>
             <h4>Content Sectioning</h4>
-                <p></p>
+                <p>Used in organizing document content into logical pieces.</p>
                 <ul id = "listelements">
                     <li><dl>
-                        <dt>< address ></dt><dd>Specify the base URL  and it can be only one base element in a document</dd>
+                        <dt>< address ></dt><dd>Represent the contact information for its nearest article or body elements ancestors. Contact information of the owner or author of the site.
+                        </dd>
                     
                     </dl></li>
                     <li><dl>
-                        <dt>< article ></dt><dd>Contains information such as title, styles , and scripts.</dd>
+                        <dt>< article ></dt><dd>Content of a page that can be reusable and it is possible to use it independently to the rest if the site. Example of this are the forum post, blog post, news story, and comments.</dd>
                     
                     </dl></li>    
                     
                     <li><dl>
-                        <dt>< aside ></dt><dd>Specify the relation between a html document to other resources. </dd>
+                        <dt>< aside ></dt><dd>Content aside from the page content.</dd>
                     
                     </dl></li>
                     <li><dl>
-                        <dt>< footer ></dt><dd>Specify the relation between a html document to other resources. </dd>
+                        <dt>< footer ></dt><dd>Usually contains information such as copyright , links to the related documents and author of the section.</dd>
                     
                     </dl></li>    
                     <li><dl>
-                        <dt>< h1 - h6 ></dt><dd>Specify the relation between a html document to other resources. </dd>
+                        <dt>< h1 - h6 ></dt><dd>Section heading of the site. Heading are numbered by the decreasing importance. <h1>H1 Sample</h1>  <h2>H2 Sample</h2> <h3>H3 Sample</h3> <h4>H4 Sample</h4> <h5>H5 Sample</h5> <h6>H6 Sample</h6></dd>
                     
                     </dl></li> 
                     <li><dl>
-                        <dt>< header ></dt><dd>Specify the relation between a html document to other resources. </dd>
+                        <dt>< header ></dt><dd>Represents a group introductory or navigational aids. </dd>
                     
                     </dl></li> 
                     <li><dl>
-                        <dt>< nav ></dt><dd>Specify the relation between a html document to other resources. </dd>
+                        <dt>< nav ></dt><dd>A section with a navigation links. </dd>
                     
                     </dl></li>
                     <li><dl>
-                        <dt>< section ></dt><dd>Specify the relation between a html document to other resources. </dd>
+                        <dt>< section ></dt><dd>Defines the section such as chapter, header, footers, and others.</dd>
                     
                     </dl></li> 
                 </ul>
-            
         <p>References:</p>
+        <p>Author/s (Year). Title. Retrieved from <a href="URL" target="_blank">URL</a></p> <!--references in APA format-->
+        <!--new paragraph for every reference-->
+        https://www.w3.org/TR/html4/intro/intro.html#h-2.2.1
+        http://www.scriptingmaster.com/html/versions-of-HTML.asp
+        http://www.htmlref.com/reference/appa/xhtml.htm
+        https://www.thoughtco.com/history-of-html-1991418
+        https://www.w3.org/html/wg/wiki/History
+        http://www.landofcode.com/xhtml-tutorials/xhtml-history.php            https://www.w3.org/TR/xhtml2/introduction.html
         
         
         <div class="page-nav-bottom">
-            <a href=""><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a>
+            <a href="http%20fundamentals.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
             <div class="next">
-                <a href=""><p class="next">Next</p><i class="fa fa-chevron-right"></i></a>
+                <a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
             </div>
         </div>    
-    </div>   
-        <footer>
-            <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
-        </footer>
+    </div>    
+    <footer>
+        <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+    </footer>
     </div>
-    
-    
-    </div></body></html>
+    </div>
+</body>
+</html>
