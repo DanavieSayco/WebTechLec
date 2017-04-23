@@ -190,10 +190,16 @@
         <p>An “!important” declaration will always take precedence over a normal declaration. Styles with normal declaration are styles that are defined normally. Important declarations override the normal declarations regardless of where they are on the page. User important declarations overrides author declarations since this is to give users with special requirements control over the presentational aspect of the site.</p>
 
         <h3>Specificity</h3>
-
-        <p>Every selector has its place in the specificity hierarchy. When two selectors apply to the same element, the selector that is more specific will override the regular ones.</p>
-
-        <p>Hierarchy:</p>
+        <p>If two CSS selectors apply to the same element, the one with higher specificity wins.</p>
+        <ul>
+        <li>Every selector has its place in the specificity hierarchy. When two selectors apply to the same element, the selector that is more specific will override the regular ones.</li>       
+        <li>Specificity determines, which CSS rule is applied by the browsers.</li>
+        <li>Specificity is usually the reason why your CSS-rules don’t apply to some elements, although you think they should.</li>
+        <li>Every selector has its place in the specificity hierarchy.</li>
+        <li>If two selectors apply to the same element, the one with higher specificity wins.</li>
+        <li>There are four distinct categories which define the specificity level of a given selector: inline styles, IDs, classes, attributes, and elements.</li>
+        </ul>
+        <h3>Hierarchy:</h3>
         <ul>
         <li>Inline styles</li>
         <p>Inline styles always overwrite any styles since they are attached directly to the HTML element to be styled, therefore having higher specificity.</p>
@@ -210,17 +216,17 @@
         <p>Lastly, If two declarations have the same properties, origin and specificity, the latter specified wins. Rules that are last defined in the document tree will take precedence over the ones that have been defined earlier.</p>
   
         <p>References:</p> 
-
-        <p>Friedman, V. (2007). CSS Specificity: Things You Should Know. Retrieved from <a href="https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/" target="_blank">https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/</a></p>
-
-        <p>Vemulapalli, P. (2013). User vs Author vs User Agent style sheets. Retrieved from <a href="http://praveen-vemulapalli.blogspot.com/2013/01/user-vs-author-vs-user-agent-style.html" target="_blank">http://praveen-vemulapalli.blogspot.com/2013/01/user-vs-author-vs-user-agent-style.html</a></p> 
+        <p>Friedman, V. (2017, March 30). CSS Specificity: Things You Should Know – Smashing Magazine. Retrieved April 22, 2017, from <a href="https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/ " target="_blank">https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/ </a></p>
+        
+       <p>Vemulapalli, P. (2013). User vs Author vs User Agent style sheets. Retrieved from <a href="http://praveen-vemulapalli.blogspot.com/2013/01/user-vs-author-vs-user-agent-style.html" target="_blank">http://praveen-vemulapalli.blogspot.com/2013/01/user-vs-author-vs-user-agent-style.html</a></p> 
 
         <p>Ahmed, Z. (2014). Precedence Order of CSS rules. Retrieved from <a href="http://conceptf1.blogspot.com/2014/05/precedence-order-of-css-rules.html" target="_blank">http://conceptf1.blogspot.com/2014/05/precedence-order-of-css-rules.html</a></p>
 
         <p>Kurtus, R. (2014). Order of Precedence for CSS Rules. Retrieved from <a href="http://www.school-for-champions.com/web/css_cascade_order.htm#.WPsePtJ97IV" target="_blank">http://www.school-for-champions.com/web/css_cascade_order.htm#.WPsePtJ97IV</a></p>
 
         <p>Jenkov, J. (2014). CSS Precedence. Retrieved from <a href="http://tutorials.jenkov.com/css/precedence.html#specificity" target="_blank">http://tutorials.jenkov.com/css/precedence.html#specificity</a></p>
-
+       
+        
         <p>Assigning property values, Cascading, and Inheritance. (n.d.). Retrieved from <a href="https://www.w3.org/TR/CSS21/cascade.html" target="_blank">https://www.w3.org/TR/CSS21/cascade.html</a></p>
         
         <div class="page-nav-bottom">
