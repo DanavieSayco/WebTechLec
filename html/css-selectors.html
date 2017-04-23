@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Selectors</title> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="styles/main.css" rel="stylesheet"> 
+    <link href="styles/lessons-styles.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="pictures/logo.png" id="logo" alt="WebTek Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+       
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><label for="sub">Prelims</label>
+                <input type="checkbox" id="sub"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li><a href="internet.html" class="sub">Internet</a></li>
+                    <li><a href="world-wide-web.html" class="sub">World Wide Web</a></li>
+                    <li>
+                        <label for="sub0">HTTP</label>
+                        <input type="checkbox" id="sub0"/>
+                        <div class="sub-topic">
+                        <ul>        
+                            <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                            <li><a href="resource-accessing.html" class="sub">Resource Accessing</a></li>
+                            <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                            <li><a href="response-message.html" class="sub">Response Message</a></li>
+                            <li>
+                                <label for="sub2">Message Header</label>
+                                <input type="checkbox" id="sub2"/>
+                                <div class="sub-topic">
+                                <ul>
+                                    <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                                    <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                                    <li><a href="response-header.html">Response Header Fields</a></li>
+                                    <li><a href="entity-header.html">Entity Header Fields</a></li>
+                                </ul>
+                                </div>
+                            </li>
+                            <li><a href="http-status-codes.html" class="sub">Status Codes</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub1">Midterms</label>
+                <input type="checkbox" id="sub1"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li>
+                        <label for="sub4">HTML</label>
+                        <input type="checkbox" id="sub4"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#" class="sub">topic</a></li>  
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub5" class = "active">CSS</label>
+                        <input type="checkbox" id="sub5"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub6">JavaScript</label>
+                        <input type="checkbox" id="sub6"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub3">Finals</label>
+                <input type="checkbox" id="sub3"/>
+                <div class="sub-topic">
+                    <ul>        
+                        <li>
+                            <label for="sub2">HTML</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">CSS</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">JavaScript</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>    
+    <h1>CSS Selectors</h1> 
+    <div class="notes">
+    <div class="notes-con">
+        <div class="page-nav-top">
+            <a href="#"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a>
+            <div class="next">
+                <a href="#"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> 
+            </div>
+        </div>
+
+        <p>Selectors are like indicators or patterns that are used to determine which elements are to be formatted. They target specific HTML elements and apply styles to those elements. They are separated by combinators which can be whitespaces, “>”, and “+”. The elements that match a selector are called subjects.</p>
+
+        <h3>Syntax</h3>
+
+        <p>Simple selectors can be a type selector or a universal selector followed immediately by attribute selectors, ID selectors, or pseudo-classes. A selector with one simple selector matches any element that will satisfy its requirements. Chain of sequences of simple selectors are separated by combinators, with one pseudo-element possibly appended to the last sequence.</p>
+
+        <p>For the sequence of simple selectors, always start with a type selector or a universal selector. It cannot contain other type selectors or universal selectors in one sequence.</p>
+
+        <h3>Universal selector</h3>
+
+        <p>A universal selector represents all the elements on a page. It is represented by an asterisk (*). The properties inside the curly braces will be applied to all the elements on the HTML page.</p>
+
+        <h3>Type selectors</h3>
+
+        <p>Type selectors chooses one or more elements that matches same name.</p>
+
+        <p>Example:</p>
+
+        <img src="pictures/typeselector.png" alt="Type Selectors">
+
+        <h3>ID selectors</h3>
+
+        <p>ID selectors are represented by a pound sign (#) followed by a string of characters. ID selectors in HTML assigns an identifier to one element, therefore no two such attributes can have the same value in the HTML document since it is used to uniquely identify an element. In CSS, the ID selector chooses these elements based on the value of its id attribute.</p>
+
+        <p>Example:</p>
+
+        <img src="pictures/idselector.png" alt="ID Selectors">
+
+        <p>This matches an HTML element like:</p>
+        
+        <img src="pictures/idselector2.png" alt="ID Selectors">
+
+        <h3>Class Selectors</h3>
+
+        </p>Class selectors starts with a dot (.) followed by a string of characters. It selects elements based on their specific class attribute.</p>
+
+        <p>Example:</p>
+
+        <img src="pictures/classselector.png" alt="Class Selectors">
+
+        <p>This matches an HTML element like:</p>
+
+        <img src="pictures/classselector2.png" alt="Class Selectors">
+
+        <h3>Attribute Selectors</h3>
+        <p>Attribute selectors targets elements based on their attributes.</p>
+
+        <h4>Syntax:</h4>
+
+        <ul>
+            <li>[attr]</li>
+            <p>]-Selects all elements with a specific attribute.</p>
+            <li>[attr=value]</li>
+            <p>Selects an element with an attribute with a value. The attribute must be exact.</p>
+            <li>[attr~=value]</li>
+            <p>Selects an element with an attribute whose value is separated with whitespaces. If the value contains white space, it will never represent anything.</p>
+            <li>[attr|=value]</li>
+            <p>Used for targeting the "lang" attribute.</p>
+            <li>[attr^=value]</li>
+            <p>(i.e. a[href^=”http”) Selects all < a > elements with an href attribute whose value starts with “http”.</p>
+            <li>[attr$=value]</li>
+            <p>(i.e. a[href$=”.html”) Selects all < a > elements with an href attribute whose value ends with “.html”.</p>
+            <li>[attr*=value]</li>
+            <p>Selects all elements with an attribute whose value contains whatever substring value has. If value has an empty string then it will not represent anything.</p>
+        </ul>
+
+        <p>References:</p>
+        <p>Roberts, A. (2014). CSS Selectors. Retrieved from <a href="https://www.sitepoint.com/web-foundations/css-selectors/" target="_blank">https://www.sitepoint.com/web-foundations/css-selectors/</a></p>
+
+        <p>Selectors Level 3. (n.d.). Retrieved from <a href="https://www.w3.org/TR/css3-selectors/" target="_blank">https://www.w3.org/TR/css3-selectors/</a></p>
+
+        <p>CSS Selectors. (n.d.). Retrieved from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors</a></p>
+
+        <p>CSS Selector Reference. (n.d.). Retrieved from <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">https://www.w3schools.com/cssref/css_selectors.asp</a></p> 
+        
+        <div class="page-nav-bottom">
+            <a href="#"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> 
+            <div class="next">
+                <a href="#"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> 
+            </div>
+        </div>    
+    </div>    
+    <footer>
+        <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>
