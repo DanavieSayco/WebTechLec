@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>WebTek | Combinators</title> <!--paki update na rin to :D -->
+    <title>WebTek | Pseudo-elements</title> <!--paki update na rin to :D -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <link href="styles/main.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
     <link href="styles/lessons-styles.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
-    <link href="styles/combinators-style.css" rel="stylesheet">
+    <link href="styles/pseudo-el-style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -150,89 +150,67 @@
             </li>
         </ul>
     </nav>    
-    <h1>CSS Combinators</h1> <!-- - - - - - - - - - - - -  wag kalimutan- -->
+    <h1>CSS Pseudo-elements</h1> <!-- - - - - - - - - - - - -  wag kalimutan- -->
     <div class="notes">
     <div class="notes-con">
         <div class="page-nav-top">
-            <a href="pseudo-element.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <a href="pseudo-class.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
             <div class="next">
-                <a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+                <a href="combinators.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
             </div>
         </div>
         
-        <p>Combinators are used to select elements based on relationships with other elements.</p>
+        <p>Pseudo-elements enables an author to refer to a content that does not exist in the document. It can also enable the author to refer to the first letter or first line of an element’s content. Only one pseudo-element can be used in a selector.</p>
         
-        <h2>Descendant</h2>
-        <p>A descendant combinator is whitespace (ie. Space, tab, line feed, carriage return, form feed) that separates two sequence of simple selectors. It selects the specified descendants or children of an element.</p>
-        <div id="descendant" class="samp">
-            <code><pre>div p {
-    color: coral;                    
+        <p>The double colon notation (::) was introduced in CSS3 to help differentiate pseudo-classes from pseudo-elements. In previous versions of CSS, a single colon notation was used for both pseudo-classes and pseudo-elements. For compatibility sake, single colon notation is still accepted but future pseudo-elements should follow the double colon notation. </p>
+        
+        <h2>::first-letter</h2>
+        <p>The ::first-letter pseudo-element refers to the first letter of an element. It must not be preceded by other content to be selected. Punctuation after the first letter is included as well. If the first letter is a digit, the pseudo-element still works. This pseudo-element only applies to block-level elements.</p>
+        <div id="first-letter" class="samp">
+            <code><pre>p::first-letter {
+    color: coral;
+    font-size: 30px;
 }</pre></code>
-            <div>
-                <p>This is a paragraph.</p>
-                <p>This is another paragraph.</p>
-                <code>This is a code.</code>
-            </div>
+            <p>This is a paragraph.</p>
         </div>
         
-        <h2>Child</h2>
-        <p>The child combinator (>) selects elements that are direct children of an element.</p>
-        <div id="child" class="samp">
-            <code><pre>div > p {
-    color: orange;                    
+        <h2>::first-line</h2>
+        <p>The ::first-line pseudo-element selects the first line of a text. Just like the previous pseudo-element, it only applies to block-level elements.</p>
+        <div id="first-line" class="samp">
+            <code><pre>p::first-line {
+    color: orange;
 }</pre></code>
-            <div>
-                <p>This is a paragraph.</p>
-                <p>This is another paragraph.</p>
-                <code>This is a code.</code>
-                <span><p>This is a paragraph that is a descendant of the div but is inside a span.</p></span>
-            </div>
-            
+            <p>This is a paragraph. A paragraph this is. Paragraphs are made up of words. Words are made up of letters. Letters are made up of lines and curves. Lines and curves are made up of points. Points have no dimension but they matter. Toblerone and on and on and on and on and on and on and on and on and on.</p>
         </div>
         
-        <h2>Sibling</h2>
-        <p>Sibling elements must have the same parent to be considered as siblings.</p>
-        
-        <h4>Adjacent Sibling</h4>
-        <p>The adjacent sibling combinator (+) selects elements that are the adjacent sibling of an element. This sibling must immediately follow the element.</p>
-        <div id="adjacent" class="samp">
-            <code><pre>div + p {
-    color: blurywood;                    
+        <h2>::before</h2>
+        <p>The ::before pseudo-element is used to insert a content before an element.</p>
+        <div id="before" class="samp">
+            <code><pre>p::before {
+    content: url('pictures/tardis.gif');
 }</pre></code>
-            <div>
-                <p>This is a paragraph.</p>
-                <p>This is another paragraph.</p>
-                <code>This is a code.</code>
-            </div>
-            <p>This is a paragraph outside the div. It immediately follows the div element. Both the div element and this p element are children of the body element.</p>
-            <p>This is just another paragraph outside the div.</p>
+            <p>This is a paragraph with an image before it.</p>
         </div>
         
-        <h4>General Sibling</h4>
-        <p>The general sibling combinatory (~) selects elements that precedes the element in the first sequence. </p>
-        <div id="general" class="samp">
-            <code><pre>div ~ p {
-    color: bisque;                    
+        <h2>::after</h2>
+        <p>The ::after pseudo-element is used to insert a content after an element.</p>
+        <div id="after" class="samp">
+            <code><pre>p::after {
+    content: url('pictures/tardis.gif');
 }</pre></code>
-            <div>
-                <p>This is a paragraph.</p>
-                <p>This is another paragraph.</p>
-                <code>This is a code.</code>
-            </div>
-            <p>This is a paragraph outside the div.</p>
-            <code>This is a code outside the div.</code><br>
-            <p>This is another paragraph outside the div. The paragraphs outside the div element precede the div element. The two paragraphs and the div share the same parent, the body element.</p>
+            <p>This is a paragraph with an image after it.</p>
         </div>
         
         <p>References:</p>
-        <p>CSS Combinators. n.d. In W3Schools. Retrieved from <a href="https://www.w3schools.com/css/css_combinators.asp" target="_blank">https://www.w3schools.com/css/css_combinators.asp</a></p>
-        <p>Celik, T., Etemad, E. J., Glazman, D., Hickson, I., Linss, P., & Williams, J. (September 29, 2011). Selectors Level 3. Retrieved from <a href="https://www.w3.org/TR/css3-selectors" target="_blank">https://www.w3.org/TR/css3-selectors</a></p><!--references in APA format-->
+        <p>Celik, T., Etemad, E. J., Glazman, D., Hickson, I., Linss, P., & Williams, J. (September 29, 2011). Selectors Level 3. Retrieved from <a href="https://www.w3.org/TR/css3-selectors" target="_blank">https://www.w3.org/TR/css3-selectors</a></p>
+        <p>CSS Pseudo-elements. n.d. In W3Schools. Retrieved from <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">https://www.w3schools.com/css/css_pseudo_elements.asp</a></p>
+        <!--references in APA format-->
         <!--new paragraph for every reference-->
         
         <div class="page-nav-bottom">
-            <a href="pseudo-element.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <a href="pseudo-class.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
             <div class="next">
-                <a href="http-request-message.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+                <a href="combinators.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
             </div>
         </div>    
     </div>    
