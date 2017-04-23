@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WebTek | Functions</title> <!--paki update na rin to :D -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="styles/main.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link href="styles/lessons-styles.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="pictures/logo.png" id="logo" alt="WebTek Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+    <!-- - - - - - - - - - - - - wag kalimutan palitan yung topic na may class active- - - - - - - - - - - - - - - - -->    
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><label for="sub">Prelims</label>
+                <input type="checkbox" id="sub"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li><a href="internet.html" class="sub">Internet</a></li>
+                    <li><a href="world-wide-web.html" class="sub">World Wide Web</a></li>
+                    <li>
+                        <label for="sub0">HTTP</label>
+                        <input type="checkbox" id="sub0"/>
+                        <div class="sub-topic">
+                        <ul>        
+                            <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                            <li><a href="resource-accessing.html" class="sub">Resource Accessing</a></li>
+                            <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                            <li><a href="response-message.html" class="sub">Response Message</a></li>
+                            <li>
+                                <label for="sub2">Message Header</label>
+                                <input type="checkbox" id="sub2"/>
+                                <div class="sub-topic">
+                                <ul>
+                                    <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                                    <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                                    <li><a href="response-header.html">Response Header Fields</a></li>
+                                    <li><a href="entity-header.html">Entity Header Fields</a></li>
+                                </ul>
+                                </div>
+                            </li>
+                            <li><a href="http-status-codes.html" class="sub">Status Codes</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub1">Midterms</label> <!-------------------------midterms-->
+                <input type="checkbox" id="sub1"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li>
+                        <label for="sub4">HTML</label>
+                        <input type="checkbox" id="sub4"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#" class="sub">topic</a></li>  
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                            <li><a href="#" class="sub">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub5">CSS</label>
+                        <input type="checkbox" id="sub5"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub6">JavaScript</label>
+                        <input type="checkbox" id="sub6"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="#">topic</a></li>  
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                            <li><a href="#">topic</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub3">Finals</label>
+                <input type="checkbox" id="sub3"/>
+                <div class="sub-topic">
+                    <ul>        
+                        <li>
+                            <label for="sub2">HTML</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">CSS</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">JavaScript</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>    
+    <h1>JavaScript Functions</h1> <!-- - - - - - - - - - - - -  wag kalimutan- -->
+    <div class="notes">
+    <div class="notes-con">
+        <div class="page-nav-top">
+            <a href="js-functions.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <a href="js-objects.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+            </div>
+        </div>
+        
+        <p>A JavaScript function is a block of code designed to perform a particular task. It is executed when invoked or called upon. It uses lexicographical order, and so, false is less than true. A function can be recursive, which means that a function can be called inside another function.</p>
+        
+        <h2>Syntax</h2>
+        <p>A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().</p>
+        <code><pre>function name(parameter 1, parameter 2) {
+    codes are placed here;
+}
+</pre></code>
+        <p>It can also use the arrow syntax if used as a value to a variable.</p>
+        <code><pre>var multiply = (a, b) => {body}</pre></code>
+        <p>In this syntax, if it only contains one statement and it is a return statement, the braces and the return keyword can be dropped. If there is no argument, parentheses must be placed.</p>
+        
+        <h2>Invocation</h2>
+        <h4>Invoking as a Function</h4>
+        <p>There is always a default global object in JavaScript. In HTML, the default global object is the HTML page itself. When a function is called without an owner object, the value of this becomes the global object. In a web browser the global object is the browser window.</p>
+        <code><pre>function myFunction(a, b) {
+    return a + b;
+}
+myFunction(5, 7);
+</pre></code>
+        
+        <h4>Invoking as a Method</h4>
+        <p>To invoke a function as a method, the function must belong to an object. In this type of invocation, the value of this is the object which the function belongs to.</p>
+        <code><pre>var person = {
+    firstName:"Juan",
+    lastName: "Dela Cruz",
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
+    }
+}
+person.fullName();
+</pre></code>
+        
+        <h4>Invoking with a Function Constructor</h4>
+        <p>If the new keyword is used in the invocation of a function, then it is a constructor invocation. The value of this in this invocation is null.</p>
+        <code><pre>function person(arg1, arg2) {
+    this.firstName = arg1;
+    this.lastName  = arg2;
+}
+var a = new person("Juan", "Dela Cruz");
+a.firstName;
+</pre></code>
+        
+        <p>References:</p>
+        <p>JavaScript Functions. n.d. In W3Schools. Retrieved from <a href="https://www.w3schools.com/js/js_functions.asp" target="_blank">https://www.w3schools.com/js/js_functions.asp</a></p>
+        <p>JavaScript Function Invocation. n.d. In W3Schools. Retrieved from <a href="https://www.w3schools.com/js/js_function_invocation.asp" target="_blank">https://www.w3schools.com/js/js_function_invocation.asp</a></p><!--references in APA format-->
+        <!--new paragraph for every reference-->
+        
+        <div class="page-nav-bottom">
+            <a href="js-functions.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <a href="js-objects.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+            </div>
+        </div>    
+    </div>    
+    <footer>
+        <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>
