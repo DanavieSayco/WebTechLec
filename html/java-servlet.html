@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTTP Request Message</title> <!--paki update na rin to :D -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="styles/main.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link href="styles/lessons-styles.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="pictures/logo.png" id="logo" alt="WebTek Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+    <!-- - - - - - - - - - - - - wag kalimutan palitan yung topic na may class active- - - - - - - - - - - - - - - - -->    
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><label for="sub">Prelims</label>
+                <input type="checkbox" id="sub"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li><a href="internet.html" class="sub">Internet</a></li>
+                    <li><a href="world-wide-web.html" class="sub">World Wide Web</a></li>
+                    <li>
+                        <label for="sub0">HTTP</label>
+                        <input type="checkbox" id="sub0"/>
+                        <div class="sub-topic">
+                        <ul>        
+                            <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                            <li><a href="resource-accessing.html" class="sub">Resource Accessing</a></li>
+                            <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                            <li><a href="response-message.html" class="sub">Response Message</a></li>
+                            <li>
+                                <label for="sub2">Message Header</label>
+                                <input type="checkbox" id="sub2"/>
+                                <div class="sub-topic">
+                                <ul>
+                                    <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                                    <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                                    <li><a href="response-header.html">Response Header Fields</a></li>
+                                    <li><a href="entity-header.html">Entity Header Fields</a></li>
+                                </ul>
+                                </div>
+                            </li>
+                            <li><a href="http-status-codes.html" class="sub">Status Codes</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub1" class="active">Midterms</label> <!-------------------------midterms-->
+                <input type="checkbox" id="sub1"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li>
+                        <label for="sub4" class="sub">HTML</label>
+                            <input type="checkbox" id="sub4"/>
+                            <div class="sub-topic">
+                            <ul>
+                                   <li><a href="HTML.html" class="sub">About</a></li>  
+                                    <li><a href="HTML%20History.html" class="sub">History</a></li>
+                                    <li><a href="HTML%20Elements.html" class="sub">Elements</a></li>
+                                    <li><a href="HTML%20Syntax.html" class="sub">Syntax and Terminology</a></li>
+                            </ul>
+                            </div>
+                    </li>
+                    <li>
+                         <label for="sub5" >CSS</label>
+                        <input type="checkbox" id="sub5"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="cascading-style-sheets.html">Cascading Style Sheets</a></li>
+                            <li><a href="css-preprocessors.html">CSS Preprocessors</a></li>  
+                            <li><a href="css-precedence.html">CSS Precedence</a></li>
+                            <li><a href="css-declarations.html">CSS Declarations</a></li>
+<<<<<<< HEAD
+                            <li><a href="css-declarations.html">CSS Declarations</a></li>
+                            <li><a href="css-statements.html">CSS Statements</a></li>
+                            <li><a href="css-selectors.html">CSS Selectors</a></li>
+                            <li><a href="pseudo-class.html">CSS Pseudo-classes</a></li>
+                            <li><a href="pseudo-class.html">CSS Pseudo-elements</a></li>
+=======
+                            <li><a href="css-statements.html">CSS Statements</a></li>
+                            <li><a href="css-selectors.html">CSS Selectors</a></li>
+                            <li><a href="pseudo-class.html">Pseudo-classes</a></li>
+>>>>>>> 5a79520f72bfc1a85e14b989fa28170018db89b9
+                            <li><a href="combinators.html">CSS Combinators</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub6" class="active">JavaScript</label>
+                        <input type="checkbox" id="sub6"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="client-side-scripting.html">Client-side Scripting</a></li>  
+                            <li><a href="js-variables.html">JavaScript Variables</a></li>
+                            <li><a href="js-functions.html">JavaScript Functions and Methods</a></li>
+                            <li><a href="functions.html" class="sub">JavaScript Functions</a></li>
+                            <li><a href="js-objects.html">JavaScript Objects</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub3">Finals</label>
+                <input type="checkbox" id="sub3"/>
+                <div class="sub-topic">
+                    <ul>        
+                        <li>
+                            <label for="sub2">HTML</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">CSS</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="sub2">JavaScript</label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>    
+    <h1>Java Servlet</h1> <!-- - - - - - - - - - - - -  wag kalimutan- -->
+    <div class="notes">
+    <div class="notes-con">
+        <div class="page-nav-top">
+            <a href="js-variables.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <a href="functions.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+            </div>
+        </div>
+                <dd>Java Object based on the Servlet API
+<dd> Runs in a server application to answer client requests; technically, servlets are not tied to a specific client-server protocol, but they are most commonly used with HTTP and the term „servlet‟ is often used in the context of an “HTTP Servlet”</dd>
+<dd> Web-tier components in the Java EE architecture.</dd>
+<dd> Runs in, and is managed by, a web-tier container called the „Servlet Container‟</dd>
+<dd> Mapped to URLs to which clients send requests</dd>
+            <ul>
+                <details><summary><li>Typically asked with (among other things)</li></summary>
+                <ul>
+                    <li>Processing and/or storing data submitted vial HTML forms</li>
+                    <li>Generating dynamic content</li>
+                </ul>
+                </details>
+
+                <details><summary><li>javax.servlet</li></summary>
+                <ul>
+                    <li>Servlet, GenericServlet</li>
+                    <li>ServletRequest, ServletResponse</li>
+                    <li>ServletConfig, ServletContext</li>
+                    <li>RequestDispatcher</li>
+                </ul>
+                </details>
+
+                <details><summary><li>javax.servlet.http</li></summary>
+                <ul>
+                    <li>HttpServlet</li>
+                    <li>HttpServletRequest</li>
+                    <li>HttpServletResponse</li>
+                    <li>HttpSession</li>
+                    <li>Cookie</li>
+                </ul>
+                </details>
+
+                <details><summary><li>Servlet Processing</li></summary>
+                <ul>
+                    <li>Client sends a request to a web server URL that is mapped to a servlet. Web server passes on the request to the servlet container</li>
+                    <li>Servlet container checks if servlet is already loaded</li>
+                    <li>If it is not yet loaded, servlet container loads the servlet class and instantiates the servlet, and calls its init method.</li>
+                    <li>Servlet container invokes the servlet‟s service method, passing request and response objects as arguments</li>
+                    <li>Servlet processes the request using the response object to create the response, which is returned by the servlet container to the web server, which in turn sends the response to the client</li>
+                    <li>Subsequent request to the servlet will not require servlet re-instantiation, unless the servlet has been unloaded; before a servlet is unloaded, the servlet container invokes its destroy method.anchor()    </li>
+                   
+                </details>
+
+                <details><summary><li>init(config)</li></summary>
+                <ul>
+                    <li>Invoked once on the servlet by the servlet container when the servlet is instantiated.</li>
+                    <li>Can be used by the servlet for one-time startup initialization. </li>
+                </details>
+
+                <details><summary><li>service(request, response)/li></summary>
+                <ul>
+                    <li>Invoked each time the servlet is called upon to process a request (typically on a separate thread for each call).</li>
+                    <li>In HttpServlet, the default Service implementation maps the call to a specific doXXX() method (e.g. doGet, doPost) which is typically overridden to affect the servlet‟s functionality.</li>
+                </ul>
+                </details>
+
+                <details><summary><li>Destroy()</li></summary>
+                <ul>
+                    <li>Invoked on the servlet by the servlet container when the servlet is to be unloaded (e.g. when the application is stopped or undeployed); can be used by the servlet for clean-up processing (e.g. resource deallocation)</li>
+                 </details>
+
+                <details><summary><li>Servlet Request Processing (HttpServletRequest)</li></summary>
+                <ul>
+                    <li>Retrieving user-supplied request parameters</li>
+                    <li>Retrieving request header values.</li>
+                </ul>
+                </details>
+
+                <details><summary><li>Servlet Response Processing (HttpServletResponse)</li></summary>
+                <ul>
+                    <li>Setting response status code.</li>
+                    <li>Setting response headers.</li>
+                    <li>Obtaining output object for sending the response.</li>
+                </ul>
+                </details>
+
+              <details><summary><li>Servlet Request Dispatching (RequestDispatcher)</li></summary>
+                <ul>
+                    <li>Obtain a RequestDispatcher to a resource (static or dynamic) from the request object</li>
+                     <dd>RequestDispatcher rqstDsp;</dd>
+                    <dd>rqstDsp = request.getRequestDispatcher(res);<dd>
+                     <li>Include the dispatcher resource (or its output) in the current response; one or more resources can be included (e.g. use for banners, footers, etc.)</li>
+                     <dd>rqstDsp.include(request, response);</dd>
+                    <li>Forwards the processing of the current request to the dispatcher resource; the servlet processing the current request must not generate a response ( e.g. use in MVC “controller” servlets)</li>
+                    <dd>rqstDsp.forward(request, response);</dd>
+                </ul>
+                </details>
+             <details><summary><li>Session Tracking(HttpSession)</li></summary>
+                <ul>
+                    <li>Session tracking support is implemented either cookies or URL-rewriting.</li>
+                    <li>Obtaining session object from the current request.</li>
+                     <dd>HttpSession session;</dd>
+                    <dd>session = request.getSession(createNew);<dd>
+                     <li>Obtaining session information (HttpSession)</li>
+                     <dd>getCreationTime(), getLastAccessedTime(), getMaxInactiveInternal(), getId(), isNew(), setMaxInactiveInterval(int val)</dd>
+                    <li>Destroying Sessions</li>
+                    <dd>invalidate()</dd>
+                    <li>URL-rewriting(HttpServletResponse)</li>
+                    <dd>encodeURL(String url), encodeRedirectURL(String url)</dd>
+                </ul>
+                </details>
+            </ul>
+                    
+                    
+                  
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <!--your notes comes here-->
+        <p>References:</p>
+        <p>Author/s (Year). Title. Retrieved from <a href="URL" target="_blank">URL</a></p> <!--references in APA format-->
+        <!--new paragraph for every reference-->
+        
+        <div class="page-nav-bottom">
+            <a href="js-variables.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <a href="functions.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+            </div>
+        </div>    
+    </div>    
+    <footer>
+        <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>
