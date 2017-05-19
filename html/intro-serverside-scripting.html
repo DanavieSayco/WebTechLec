@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTTP Request Message</title> <!--paki update na rin to :D -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="styles/main.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link href="styles/lessons-styles.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="pictures/logo.png" id="logo" alt="WebTek Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+    <!-- - - - - - - - - - - - - wag kalimutan palitan yung topic na may class active- - - - - - - - - - - - - - - - -->    
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><label for="sub">Prelims</label>
+                <input type="checkbox" id="sub"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li><a href="internet.html" class="sub">Internet</a></li>
+                    <li><a href="world-wide-web.html" class="sub">World Wide Web</a></li>
+                    <li>
+                        <label for="sub0">HTTP</label>
+                        <input type="checkbox" id="sub0"/>
+                        <div class="sub-topic">
+                        <ul>        
+                            <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                            <li><a href="resource-accessing.html" class="sub">Resource Accessing</a></li>
+                            <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                            <li><a href="response-message.html" class="sub">Response Message</a></li>
+                            <li>
+                                <label for="sub2">Message Header</label>
+                                <input type="checkbox" id="sub2"/>
+                                <div class="sub-topic">
+                                <ul>
+                                    <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                                    <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                                    <li><a href="response-header.html">Response Header Fields</a></li>
+                                    <li><a href="entity-header.html">Entity Header Fields</a></li>
+                                </ul>
+                                </div>
+                            </li>
+                            <li><a href="http-status-codes.html" class="sub">Status Codes</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub1">Midterms</label> <!-------------------------midterms-->
+                <input type="checkbox" id="sub1"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li>
+                        <label for="sub4" class="sub">HTML</label>
+                            <input type="checkbox" id="sub4"/>
+                            <div class="sub-topic">
+                            <ul>
+                                   <li><a href="HTML.html" class="sub">About</a></li>  
+                                    <li><a href="HTML%20History.html" class="sub">History</a></li>
+                                    <li><a href="HTML%20Elements.html" class="sub">Elements</a></li>
+                                    <li><a href="HTML%20Syntax.html" class="sub">Syntax and Terminology</a></li>
+                            </ul>
+                            </div>
+                    </li>
+                    <li>
+                         <label for="sub5" >CSS</label>
+                        <input type="checkbox" id="sub5"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="cascading-style-sheets.html">Cascading Style Sheets</a></li>
+                            <li><a href="css-preprocessors.html">CSS Preprocessors</a></li>  
+                            <li><a href="css-precedence.html">CSS Precedence</a></li>
+                            <li><a href="css-declarations.html">CSS Declarations</a></li>
+                            <li><a href="css-statements.html">CSS Statements</a></li>
+                            <li><a href="css-selectors.html">CSS Selectors</a></li>
+                            <li><a href="pseudo-class.html">CSS Pseudo-classes</a></li>
+                            <li><a href="pseudo-class.html">CSS Pseudo-elements</a></li>
+                            <li><a href="pseudo-class.html">Pseudo-classes</a></li>
+                            <li><a href="combinators.html">CSS Combinators</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub6">JavaScript</label>
+                        <input type="checkbox" id="sub6"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="client-side-scripting.html">Client-side Scripting</a></li>  
+                            <li><a href="js-variables.html" class="active">JavaScript Variables</a></li>
+                            <li><a href="js-functions.html">JavaScript Functions and Methods</a></li>
+                            <li><a href="functions.html" class="sub">JavaScript Functions</a></li>
+                            <li><a href="js-objects.html">JavaScript Objects</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub3" class="active">Finals</label>
+                <input type="checkbox" id="sub3"/>
+                <div class="sub-topic">
+                    <ul>        
+                        <li class="active"><a href="intro-serverside-scripting.html">Introduction to Server-Side Scripting</a>
+<!--
+                            <label for="sub2"></label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+-->
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>    
+    <h1>Introduction to Server-Side Scripting</h1> <!-- - - - - - - - - - - - -  wag kalimutan- -->
+    <div class="notes">
+    <div class="notes-con">
+        <div class="page-nav-top">
+            <a href="js-objects.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <a href="#"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+            </div>
+        </div>
+        <dd>Most large-scale websites use server-side code to dynamically display different data when needed, generally pulled out of a database stored on a server and sent to the client to be displayed via some code (e.g. HTML and JavaScript). Perhaps the most significant benefit of server-side code is that it allows you to tailor website content for individual users. Dynamic sites can highlight content that is more relevant based on user preferences and habits. It can also make sites easier to use by storing personal preferences and information.</dd>
+        
+        <center><h2>What is server-side website programming?</h2></center>
+        <p>Web browsers communicate with web servers using the HyperText Transport Protocol (HTTP). When you click a link on a web page, submit a form, or run a search, an HTTP request is sent from your browser to the target server. The request includes a URL identifying the affected resource, a method that defines the required action (for example to get, delete, or post the resource), and may include additional information encoded in URL parameters (the field-value pairs sent via a query string), as POST data (data sent by the HTTP POST method), or in associated cookies.</p>
+        
+        <center><h2>Difference of Client-Side and Serve-Side Scripting</h2></center>
+        <p><strong>Client-side scripting</strong> is written using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> — it is run inside a web browser and has little or no access to the underlying operating system (including limited access to the file system). Web developers can't control what browser every user might be using to view a website  — browsers provide inconsistent levels of compatibility with client-side code features, and part of the challenge of client-side programming is handling differences in browser support gracefully.</p>
+
+        <p><strong>Server-side</strong> scripting can be written in any number of programming languages — examples of popular server-side web languages include <strong>PHP</strong>, <strong>Python</strong>, <strong>Ruby</strong> and <strong>C#</strong>. Server-side code has full access to the server operating system and the developer can choose what programming language (and specific version) they wish to use.</p>
+        
+        <center><h2>Server-Side Advantages</h2></center>
+        <h3>Efficient storage and delivery of information</h3>
+        <dd>Server-side programming allows us to instead store the information in a database and dynamically construct and return HTML and other types of files (e.g. PDFs, images, etc.). It is also possible to simply return data (JSON, XML, etc.) for rendering by appropriate client-side web frameworks (this reduces the processing burden on the server and the amount of data that needs to be sent).</dd>
+        
+        <h3>Customised user experience</h3>
+        <dd>Servers can store and use information about clients to provide a convenient and tailored user experience. For example, many sites store credit cards so that details don't have to be entered again. Sites like Google Maps use home and current location for providing routing information, and to highlight local businesses in search results.</dd>
+        
+        <h3>Controlled access to content</h3>
+        <dd>Server-side programming allows sites to restrict access to authorized users and serve only the information that a user is permitted to see.</dd>
+        
+        <h3>Store session/state information</h3>
+        <dd>Server-side programming allows developers to make use of sessions — basically a mechanism that allows a server to store information on the current user of a site and send different responses based on that information. This allows, for example, a site to know that a user has previously logged in and display links to their emails or order history, or perhaps save the state of a simple game so that the user can go to a site again and carry on where they left it.</dd>
+        
+        <h3>Notifications and communication</h3>
+        <dd>Servers can send general or user-specific notifications through the website itself or via email, SMS, instant messaging, video conversations, or other communications services.</dd>
+        
+        <h3>Data analysis</h3>
+        <dd>A website may collect a lot of data about users: what they search for, what they buy, what they recommend, how long they stay on each page. Server-side programming can be used to refine responses based on analysis of this data.</dd>
+        
+        <p>References:</p>
+        <p>Wikipedia. Server-side Scripting. Retrieved from <a href="https://en.wikipedia.org/wiki/Server-side_scripting" target="_blank">https://en.wikipedia.org/wiki/Server-side_scripting</a></p> <!--references in APA format-->
+        <!--new paragraph for every reference-->
+        <p>Mozilla Developer Network. April 23, 2017. Introduction to the Server-Side. Retrieved from <a href="https://en.wikipedia.org/wiki/Server-side_scripting" target="_blank">https://en.wikipedia.org/wiki/Server-side_scripting</a></p>
+        
+        <div class="page-nav-bottom">
+            <a href="js-objects.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <a href="#"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+            </div>
+        </div>    
+    </div>    
+    <footer>
+        <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>
