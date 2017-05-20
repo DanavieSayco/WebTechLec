@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>JSP Actions</title> 
+    <title>Node.js</title> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <link href="styles/main.css" rel="stylesheet"> 
@@ -110,7 +110,7 @@
                 </ul>
                 </div>
             </li>
-             <li>
+            <li>
                 <label for="sub3" class="active">Finals</label>
                 <input type="checkbox" id="sub3"/>
                 <div class="sub-topic">
@@ -137,10 +137,10 @@
                         <ul>
                             
                             <li><a href="jsp.html">Java Server Pages</a></li>
-                            <li class="active"><a href="jsp-actions.html">JSP Actions</a></li>  
+                            <li><a href="jsp-actions.html">JSP Actions</a></li>  
                             <li><a href="jsp-el.html">JSP Expression Language</a></li>
                             <li><a href="scriptlets.html">JSP Scriptlets</a></li>
-                            <li><a href="nodejs.html">Node.js</a></li>
+                            <li class="active"><a href="nodejs.html">Node.js</a></li>
                             <li><a href="java-servlet.html">Java Servlet</a>
                         <li>
                             <li><a href="jstl">JSTL</a>
@@ -159,7 +159,7 @@
             </li>
         </ul>
     </nav>    
-    <h1>JSP Actions</h1> 
+    <h1>Node.js</h1> 
     <div class="notes">
     <div class="notes-con">
         <div class="page-nav-top">
@@ -168,68 +168,98 @@
                 <a href="#"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
             </div>
         </div>
-       
-        <p>JSP actions are special XML tags which control the behavior of servlet engine. They allow you to insert a file dynamically, reuse external JavaBean components, forward the request to the other page and generate HTML for Java Applet plugin.</p>
+        <p>Node.js is a very powerful JavaScript-based framework/platform built on Google Chrome's JavaScript V8 Engine. It is used to develop I/O intensive web applications like video streaming sites, single-page applications, and other web applications. Node.js is open source, completely free, and used by thousands of developers around the world.</p>
         
-        <p>Syntax: </p>
+        <h3>Features: </h3>
+        <ul>
+        <li>Asynchronous and Event Driven</li>
+            <p>All APIs of Node.js library are asynchronous, that is, non-blocking. A Node.js based server never waits for an API to return data. The server moves to the next API after calling it and a notification mechanism of Events of Node.js helps the server to get a response from the previous API call.</p>
         
-        <pre><jsp:action_name attribute = "value" /></pre>
+        <li>Very Fast</li>
+        <p>Node.js library is very fast in code execution.</p>
+            
+        <li>Single Threaded but Highly Scalable</li>
+        <p>Node.js uses a single threaded model with event looping. Event mechanism helps the server to respond in a non-blocking way and makes the server highly scalable as opposed to traditional servers which create limited threads to handle requests. Node.js uses a single threaded program and the same program can provide service to a much larger number of requests than traditional servers like Apache HTTP Server.</p>
+            
+        <li>No Buffering</li>
+        <p>Node.js applications never buffer any data. These applications simply output the data in chunks.</p>
+        </ul>
         
-        <h3>Action Elements</h3>
+        <h3>Components</h3>
         
         <ul>
-        <li><pre>jsp:include</pre></li>
-        <p>Includes the response from the jsp page while processing.</p>
-            
-        <li><pre>jsp:useBean</pre></li>
-        <p>Loads a JavaBean component into the page and use it later. jsp useBean action allows you to reuse other Java classes.</p>
-            
-        <li><pre>jsp:setProperty</pre></li>
-        <p>Sets the property of a JavaBean.</p>
-            
-        <li><pre>jsp:getProperty</pre></li>
-        <p>Get a property value from JavaBeans component and adds to the response</p>
-            
-        <li><pre>jsp:forward</pre></li> 
-        <p>Forwards the request to the other page.</p>
-            
-        <li><pre>jsp:plugin</pre></li>
-        <p>Generates browser-specific code that makes an OBJECT or EMBED tag for the Java plugin.</p>
-            
-        <li><pre>jsp:param</pre></li>
-        <p>Passes the parameters to other JSP action tags such as JSP include and JSP forward tag.</p>
-            
-        <li><pre>jsp:element</pre></li>
-        <p>Dynamically defines XML elements.</p>
-            
-        <li><p>jsp:attribute</p></li>
-        <p>Sets the value of the action element based on the body of this element.</p>
+        <li>Import required modules</li>
+        <p>The require directive is used to load Node.js modules.</p>
         
-        <li><pre>jsp:body</pre></li>
-        <p>Sets action element body based on the body of this element.</p>
+        <pre>var http = require("http");</pre>
+            
+        <li>Create Server</li>
+        <p>A server which will listen to client's requests similar to Apache HTTP Server.</p>
         
-        <li><pre>jsp:text</pre></li>
-        <p>Used to write template text in JSP pages and documents.</p>
+        <p>We use the created http instance and call http.createServer() method to create a server instance and then we bind it at port 8081 using the listen method associated with the server instance. Pass it a function with parameters request and response. Write the sample implementation to always return "Hello World".</p>
+            
+        <p>Example: </p>
+            
+        <pre>
+        http.createServer(function (request, response) {
+           // Send the HTTP header 
+           // HTTP Status: 200 : OK
+           // Content Type: text/plain
+           response.writeHead(200, {'Content-Type': 'text/plain'});
+   
+           // Send the response body as "Hello World"
+           response.end('Hello World\n');
+        }).listen(8081);
+
+        // Console will print the message
+        console.log('Server running at http://127.0.0.1:8081/');
         
-        <li><pre>jsp:fallback</pre></li>
-        <p>Used in jsp:plugin. It can be used to print the message if the plugin is working</p>
+        
+        </pre>
+            
+        <li>Read request and return response</li>
+        <p>The server created in an earlier step will read the HTTP request made by the client which can be a browser or a console and return the response.</p>
+            
+        <p>Combine the other two in a file called main.js to start HTTP server: </p>
+        
+            <pre>
+            var http = require("http");
+
+http.createServer(function (request, response) {
+
+   // Send the HTTP header 
+   // HTTP Status: 200 : OK
+   // Content Type: text/plain
+   response.writeHead(200, {'Content-Type': 'text/plain'});
+   
+   // Send the response body as "Hello World"
+   response.end('Hello World\n');
+}).listen(8081);
+
+// Console will print the message
+console.log('Server running at http://127.0.0.1:8081/');
+            </pre>
+        
         </ul>
         
         
         
+        
+       <!-----Notes--->
+        
         <p>References:</p>
-        <p>JSP Actions. (n.d.) Retrieved from <a href="https://www.tutorialspoint.com/jsp/jsp_actions.htm" target="_blank">https://www.tutorialspoint.com/jsp/jsp_actions.htm</a></p> 
+        <p>Node.js. (n.d.) Retrieved from <a href="https://www.w3schools.com/nodejs/">https://www.w3schools.com/nodejs/</a></p>
         
-        <p>JSP Standard Actions. (n.d.) Retrieved from <a href="http://www.zentut.com/jsp-tutorial/jsp-standard-actions/" target="_blank">http://www.zentut.com/jsp-tutorial/jsp-standard-actions/</a></p>
         
-         <p>Standard Actions in JSP. (n.d.) Retrieved from <a href="https://www.hscripts.com/tutorials/jsp/jspelements/standard-actions.php" target="_blank">https://www.hscripts.com/tutorials/jsp/jspelements/standard-actions.php</a></p>
+        <p>Node.js - First Application. (n.d.) Retrieved from <a href="https://www.tutorialspoint.com/nodejs/nodejs_first_application.htm">https://www.tutorialspoint.com/nodejs/nodejs_first_application.htm</a></p>
         
-         <p>Singh, C. (n.d.). JSP Actions - Java Server Pages. Retrieved from <a href="http://beginnersbook.com/2013/06/jsp-tutorial-actions/" target="_blank">http://beginnersbook.com/2013/06/jsp-tutorial-actions/</a></p>
+        <p>What is Node.js. (n.d.) Retrieved from <a href="https://www.javatpoint.com/what-is-nodejs">https://www.javatpoint.com/what-is-nodejs</a></p>
+        
         
         <div class="page-nav-bottom">
             <a href="js-objects.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
             <div class="next">
-                <a href="#"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+                <a href="#"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a>
             </div>
         </div>    
     </div>    
