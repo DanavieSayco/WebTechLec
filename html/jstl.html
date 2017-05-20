@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JSP Standard Tag Libriary</title> <!--paki update na rin to :D -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="styles/main.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link href="styles/lessons-styles.css" rel="stylesheet"> <!-- - - - - - pakiupdate yung filepath pag natapos niyo na :D - - - - - -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="pictures/logo.png" id="logo" alt="WebTek Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+    <!-- - - - - - - - - - - - - wag kalimutan palitan yung topic na may class active- - - - - - - - - - - - - - - - -->    
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><label for="sub">Prelims</label>
+                <input type="checkbox" id="sub"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li><a href="internet.html" class="sub">Internet</a></li>
+                    <li><a href="world-wide-web.html" class="sub">World Wide Web</a></li>
+                    <li>
+                        <label for="sub0">HTTP</label>
+                        <input type="checkbox" id="sub0"/>
+                        <div class="sub-topic">
+                        <ul>        
+                            <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                            <li><a href="resource-accessing.html" class="sub">Resource Accessing</a></li>
+                            <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                            <li><a href="response-message.html" class="sub">Response Message</a></li>
+                            <li>
+                                <label for="sub2">Message Header</label>
+                                <input type="checkbox" id="sub2"/>
+                                <div class="sub-topic">
+                                <ul>
+                                    <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                                    <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                                    <li><a href="response-header.html">Response Header Fields</a></li>
+                                    <li><a href="entity-header.html">Entity Header Fields</a></li>
+                                </ul>
+                                </div>
+                            </li>
+                            <li><a href="http-status-codes.html" class="sub">Status Codes</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub1">Midterms</label> <!-------------------------midterms-->
+                <input type="checkbox" id="sub1"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li>
+                        <label for="sub4" class="active">HTML</label>
+                            <input type="checkbox" id="sub4"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="HTML.html" class="active">About</a></li>  
+                                <li><a href="HTML%20History.html" class="sub">History</a></li>
+                                <li><a href="HTML%20Elements.html" class="sub">Elements</a></li>
+                                <li><a href="HTML%20Syntax.html" class="sub">Syntax and Terminology</a></li>
+                            </ul>
+                            </div>
+                        
+                    </li>
+                    <li>
+                       <label for="sub5" class = "sub">CSS</label>
+                        <input type="checkbox" id="sub5"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="cascading-style-sheets.html">Cascading Style Sheets</a></li>
+                            <li><a href="css-preprocessors.html">CSS Preprocessors</a></li>  
+                            <li><a href="css-precedence.html">CSS Precedence</a></li>
+                            <li><a href="css-declarations.html">CSS Declarations</a></li>
+                            <li><a href="css-statements.html">CSS Statements</a></li>
+                            <li><a href="css-selectors.html">CSS Selectors</a></li>
+                            <li><a href="pseudo-class.html">CSS Pseudo-classes</a></li>
+                            <li><a href="pseudo-class.html">CSS Pseudo-elements</a></li>
+                            <li><a href="combinators.html">CSS Combinators</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub6" class="sub">JavaScript</label>
+                        <input type="checkbox" id="sub6"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="client-side-scripting.html">Client-side Scripting</a></li>  
+                            <li><a href="js-variables.html">JavaScript Variables</a></li>
+                            <li><a href="js-functions.html">JavaScript Functions and Methods</a></li>
+                            <li><a href="functions.html" class="sub">JavaScript Functions</a></li>
+                            <li><a href="js-objects.html " class="active">JavaScript Objects</a></li>
+                            
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub3" class="active">Finals</label>
+                <input type="checkbox" id="sub3"/>
+                <div class="sub-topic">
+                    <ul>        
+                        <li><a href="intro-serverside-scripting.html">Introduction to Server-Side Scripting</a></li>
+                        <li  class="active"><a href="PHP.html">PHP</a></li> 
+                          <label for="sub7" class="sub">Java</label>
+                            <input type="checkbox" id="sub7"/>
+                        <div class="sub-topic">
+                                <li><a href="intro-java.html" class="sub">About</a></li>
+                                <li><a href="java-servlet.html" class="sub">Java Servlet</a></li>
+                                <li><a href="jstl.html" class="sub">JSP Standard Tag Library</a></li>
+                        </div>
+                    </ul>
+                </div>
+                        </li>
+            </ul>
+               
+        </nav>     
+    </div>
+    <h1>JSP Standard Library</h1> <!-- - - - - - - - - - - - -  wag kalimutan- -->
+    <div class="notes">
+    <div class="notes-con">
+        <div class="page-nav-top">
+            <a href="http-status-codes.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <a href="HTML%20History.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+            </div>
+        </div>
+        
+        <p>JSTL  was developed under the Java Community Process(JCP). Java Specification Request (JSR) 52. It  encapsulates as simple tags the core functionality common to many Web applications. It also support for common, structural tasks such as iteration and conditionals, tags for manipulating XML documents, internationalization tags, and SQL tags. It also provides a framework for integrating existing custom tags with JSTL tags. </p>
+        <p>5 Types of JSP Tag Library </p>
+        
+        <dl>                               
+            <details>               
+                <summary><dt>1.Core Tags</dt><dd>
+                    <p>Provides variable support , URL management, etc. URL of core tag  is http://java.sun.com/jsp/jstl/core and it's prefix is c.</p>
+                </dd></summary>
+                <dd>
+                    <dl>
+                        <dt>&lt;c:out&gt; </dt><dd>It display the result of an expression, similar to the way &lt;%=...%&gt; tag work.</dd>
+                        <dt>&lt;c:set&gt; </dt><dd>It sets the result of an expression under evaluation in a 'scope' variable.</dd>
+                        <dt>&lt;c:remove&gt; </dt><dd>It is used for removing the specified scoped variable from a particular scope.</dd>
+                        <dt>&lt;c:catch &gt; </dt><dd>It is used for Catches any Throwable exceptions that occurs in the body.</dd>
+                        <dt>&lt;c:if&gt; </dt><dd>It is conditional tag used for testing the condition and display the body content only if the expression evaluates is true.</dd>
+                        <dt>&lt;c:choose&gt;, &lt;c:when&gt;,&lt;c:otherwise &gt; </dt><dd>It is the simple conditional tag that includes its body content if the evaluated condition is true.</dd>
+                        <dt>&lt;c:import&gt; </dt><dd>It Retrives relative or an absolute URL and display the contents to either a String in 'var',a Reader in 'varReader' or the page.</dd>
+                        <dt>&lt;c:forEach &gt; </dt><dd>It is the basic iteration tag. It repeats the nested body content for fixed number of times or over collection.</dd>
+                        <dt>&lt;c:forTokens &gt; </dt><dd>	It iterates over tokens which is separated by the supplied delimeters.</dd>
+                        <dt>&lt;c:param&gt; </dt><dd>It adds a parameter in a containing 'import' tag's URL.</dd>
+                        <dt>&lt;c:redirect &gt; </dt><dd>	It redirects the browser to a new URL and supports the context-relative URLs.</dd>
+                        <dt>&lt;c:url &gt; </dt><dd>	It creates a URL with optional query parameters.</dd>
+                    </dl>   
+
+                </dd>
+            </details>
+            <details><summary>
+                <dt>2.Function Tags</dt><dd>
+                    <p>Provides support for string manipulation and string length.URL of function tag is http://java.sun.com/jsp/jstl/functions and it's prefix is fn.  </p>
+                </dd></summary>
+                 <dd>
+                    <dl>
+                        <dt>&lt;fn:contains()&gt; </dt><dd>It is used to test if an input string containing the specified substring in a program.</dd>
+                        
+                        <dt>&lt;fn:containsIgnoreCase() &gt; </dt><dd>	It is used to test if an input string contains the specified substring as a case insensitive way.</dd>
+                        
+                        <dt>&lt;fn:endsWith()&gt; </dt><dd>It is used to test if an input string ends with the specified suffix.</dd>
+                        
+                        <dt>&lt;fn:escapeXml()&gt; </dt><dd>It escapes the characters that would be interpreted as XML markup.</dd>
+                        
+                        <dt>&lt;fn:indexOf()&gt; </dt><dd>	It returns an index within a string of first occurrence of a specified substring.</dd>
+                        
+                        <dt>&lt;fn:join()&gt; </dt><dd>Joins all elements of an array into a string.</dd>
+                        
+                        <dt>&lt;fn:length()&gt; </dt><dd>It returns the number of characters inside a string, or the number of items in a collection.</dd>
+                        
+                        <dt>&lt;fn:replace()&gt; </dt><dd>It replaces all the occurrence of a string with
+                        another string sequence.</dd>
+                        
+                        <dt>&lt;fn:split()&gt; </dt><dd>It splits the string into an array of substrings.</dd>
+                        
+                        <dt>&lt;fn:startsWith()&gt; </dt><dd>Tests if an input string starts with the specified prefix.</dd>
+                        
+                        <dt>&lt;fn:substring()&gt; </dt><dd>It returns the subset of a string according to the given start and end position.</dd>
+                        
+                        <dt>&lt;fn:substringAfter()&gt; </dt><dd>It returns the subset of string after a specific substring.</dd>
+                        
+                        <dt>&lt;fn:substringBefore() &gt; </dt><dd>	It returns the subset of string before a specific substring.</dd>
+                        
+                        <dt>&lt;fn:toLowerCase()&gt; </dt><dd>It converts all the characters of a string to lower case.</dd>
+                        
+                        <dt>&lt;fn:toUpperCase()&gt; </dt><dd>	It converts all the characters of a string to upper case.</dd>
+                        
+                        <dt>&lt;fn:trim()&gt; </dt><dd>It removes the blank spaces from both the ends of a string.</dd>
+                        
+                    </dl>   
+
+                </dd>
+                
+            </details>
+            <details><summary>
+                <dt>3.Formatting Tags</dt><dd>
+                    <p>Provides support for messaging formatting , number ,etc . URL of formatting  tag is  http://java.sun.com/jsp/jstl/fmt and it's prefix is fmt. </p>
+                </dd></summary>
+                <dd>
+                    <dl>
+                        <dt>&lt;fmt:formatNumber&gt; </dt><dd>It is used to format the numerical value with specific format or precision.</dd>
+                        <dt>&lt;fmt:parseNumber&gt; </dt><dd>It is used to Parses the string representation of a currency, percentage or number.</dd>
+                        <dt>&lt;fmt:formatDate&gt; </dt><dd>Formats a date and/or time using the supplied styles and pattern.</dd>
+                        <dt>&lt;fmt:parseDate&gt; </dt><dd>Parses the string representation of a date and/or time</dd>
+                        <dt>&lt;fmt:bundle&gt; </dt><dd>It is used for creating the ResourceBundle objects which will be used by their tag body.</dd>
+                        <dt>&lt;fmt:setLocale&gt; </dt><dd>Stores the given locale in the locale configuration variable.</dd>
+                        <dt>&lt;fmt:setBundle&gt; </dt><dd>It loads the resource bundle and stores it in a bundle configuration variable or the named scoped variable.</dd>
+                        <dt>&lt;fmt:timeZone&gt; </dt><dd>It specifies a parsing action nested in its body or the time zone for any time formatting.</dd>
+                        <dt>&lt;fmt:setTimeZone&gt; </dt><dd>It stores the time zone inside a time zone configuration variable.</dd>
+                        <dt>&lt;fmt:message&gt; </dt><dd>Displays an internationalized message.</dd>
+                        <dt>&lt;fmt:requestEncoding&gt; </dt><dd>Sets the request character encoding</dd>
+                        
+                    </dl>   
+
+                </dd>
+            </details>    
+            <details><summary>
+                <dt>4.XML Tags</dt><dd>
+                    <p>Provides flow control, transformation, etc. URL  of XML tags is http://java.sun.com/jsp/jstl/xml and it's  prefix is x. </p>
+                </dd></summary>
+                <dd>
+                    <dl>
+                        <dt>&lt;x:out&gt; </dt><dd>Similar to &lt;%= ... &gt; tag, but for XPath expressions.</dd>
+                        <dt>&lt;x:parse&gt; </dt><dd>It is used for parse the XML data specified either in the tag body or an attribute.</dd>
+                        <dt>&lt;x:set&gt; </dt><dd>It is used to sets a variable to the value of an XPath expression.</dd>
+                        <dt>&lt;x:if&gt; </dt><dd>It is used for evaluating the test XPath expression and if it is true, it will processes its body content.</dd>
+                        <dt>&lt;x:foreach&gt; </dt><dd>To loop over nodes in an XML document.</dd>
+                        <dt>&lt;x:choose&gt; </dt><dd>Simple conditional tag that establishes a context for mutually exclusive conditional operations, marked by &lt;when&gt; and &lt;otherwise&gt; tags.</dd>
+                        <dt>&lt;x:when&gt; </dt><dd>Subtag of &lt;choose&gt; that includes its body if its expression evalutes to 'true'.</dd>
+                        <dt>&lt;x:otherwise&gt; </dt><dd>Subtag of &lt;choose&gt; that follows the &lt;when&gt; tags and runs only if all of the prior conditions evaluates to 'false'.</dd>
+                        <dt>&lt;x:transform&gt; </dt><dd>It is used in a XML document for providing the XSL(Extensible Stylesheet Language) transformation.</dd>
+                        <dt>&lt;x:param&gt; </dt><dd>It is used along with the transform tag for setting the parameter in the XSLT style sheet.</dd>               
+                    </dl>   
+
+                </dd>
+            </details>
+            <details><summary>
+                <dt>5.SQL Tags</dt><dd>
+                    <p>Provides SQL support. URL of SQL tag is http://java.sun.com/jsp/jstl/sql and it's prefix is sql.</p>
+                </dd></summary>
+                <dd>
+                    <dl>
+                        <dt>&lt;sql:setDataSource&gt; </dt><dd>It is used for creating a simple data source suitable only for prototyping.</dd>
+                        <dt>&lt;sql:query&gt; </dt><dd>It is used for executing the SQL query defined in its sql attribute or the body.</dd>
+                        <dt>&lt;sql:update&gt; </dt><dd>It is used for executing the SQL update defined in its sql attribute or in the tag body.</dd>
+                        <dt>&lt;sql:param&gt; </dt><dd>It is used for sets the parameter in an SQL statement to the specified value.</dd>
+                        <dt>&lt;sql:dataParam&gt; </dt><dd>It is used for sets the parameter in an SQL statement to a specified java.util.Date value.</dd>
+                        <dt>&lt;sql:transaction&gt; </dt><dd>It is used to provide the nested database action with a common connection.</dd>
+                              
+                    </dl>   
+
+                </dd>
+            </details>
+            
+        </dl>
+                
+                
+                 
+        <p>References:</p>
+        <p>JavaServer Pages Standard Tag Library. Retrieved  from <a href="https://en.wikipedia.org/wiki/JavaServer_Pages_Standard_Tag_Library" target="_blank">https://en.wikipedia.org/wiki/JavaServer_Pages_Standard_Tag_Library</a></p> <!--references in APA format-->
+        <!--new paragraph for every reference-->
+        <p>JavaServer Pages Standard Tag Library. Retrieved from <a href="http://www.oracle.com/technetwork/java/jstl-137486.html" target="_blank">http://www.oracle.com/technetwork/java/jstl-137486.html</a></p>
+        
+        <p>JSTL (JSP Standard Tag Library). Retrieved from <a href="https://www.javatpoint.com/jstl" target="_blank">https://www.javatpoint.com/jstl</a></p>
+        
+        <p>JSP - Standard Tag Library (JSTL) Tutorial. Retrieved from <a href="https://www.tutorialspoint.com/jsp/jsp_standard_tag_library.htm" target="_blank">https://www.tutorialspoint.com/jsp/jsp_standard_tag_library.htm</a></p>
+        
+        <p>JSTL Core Tags. Retrieved from <a href="https://www.javatpoint.com/jstl-core-tags" target="_blank">https://www.javatpoint.com/jstl-core-tags</a></p>
+        
+        
+        <p>JSTL Function Tags. Retrieved from <a href="https://www.javatpoint.com/jstl-function-tags" target="_blank">https://www.javatpoint.com/jstl-function-tags</a></p>
+        
+        <p>JSTL Formatting tags. Retrieved from <a href="https://www.javatpoint.com/jstl-formatting-tags" target="_blank">https://www.javatpoint.com/jstl-formatting-tags</a></p>
+        
+        <p>JSTL XML tags. Retrieved from <a href="https://www.javatpoint.com/jstl-xml-tags" target="_blank">https://www.javatpoint.com/jstl-xml-tags</a></p>
+        
+        <p>JSTL SQL Tags. Retrieved from <a href="https://www.javatpoint.com/jstl-sql-tags" target="_blank">https://www.javatpoint.com/jstl-sql-tags</a></p>
+        
+    <footer>
+        <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>
