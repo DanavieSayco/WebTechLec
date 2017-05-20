@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Client-Side Scripting</title> 
+    <title>Cascading Style Sheets</title> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <link href="styles/main.css" rel="stylesheet">
@@ -61,7 +61,7 @@
                 </div>
             </li>
             <li>
-                <label for="sub1">Midterms</label> 
+                <label for="sub1" class="active">Midterms</label> 
                 <input type="checkbox" id="sub1"/>
                 <div class="sub-topic">
                 <ul>        
@@ -82,7 +82,7 @@
                         <input type="checkbox" id="sub5"/>
                         <div class="sub-topic">
                         <ul>
-                            <li><a href="cascading-style-sheets.html">Cascading Style Sheets</a></li>
+                            <li><a href="cascading-style-sheets.html" class="active">Cascading Style Sheets</a></li>
                             <li><a href="css-preprocessors.html">CSS Preprocessors</a></li>  
                             <li><a href="css-precedence.html">CSS Precedence</a></li>
                             <li><a href="css-declarations.html">CSS Declarations</a></li>
@@ -110,47 +110,24 @@
                 </ul>
                 </div>
             </li>
-            <li>
-                <label for="sub3">Finals</label>
+             <li>
+                <label for="sub3" class="sub">Finals</label>
                 <input type="checkbox" id="sub3"/>
                 <div class="sub-topic">
                     <ul>        
-                        <li>
-                            <label for="sub2">HTML</label>
-                            <input type="checkbox" id="sub2"/>
+                        <ul>        
+                        <li><a href="intro-serverside-scripting.html">Introduction to Server-Side Scripting</a></li>
+                        <li ><a href="PHP.html">PHP</a></li> 
+                          <label for="sub7" class="sub">Java</label>
+                            <input type="checkbox" id="sub7"/>
                             <div class="sub-topic">
-                            <ul>
-                                <li><a href="#">topic</a></li>  
-                                <li><a href="#">topic</a></li>
-                                <li><a href="#">topic</a></li>
-                                <li><a href="#">topic</a></li>
-                            </ul>
+                                    <li><a href="intro-java.html" class="sub">About</a></li>
+                                    <li><a href="java-servlet.html" class="sub">Java Servlet</a></li>
+                                    <li><a href="jstl.html">JSP Standard Tag Library</a></li>
                             </div>
-                        </li>
-                        <li>
-                            <label for="sub2">CSS</label>
-                            <input type="checkbox" id="sub2"/>
-                            <div class="sub-topic">
-                            <ul>
-                                <li><a href="#">topic</a></li>  
-                                <li><a href="#">topic</a></li>
-                                <li><a href="#">topic</a></li>
-                                <li><a href="#">topic</a></li>
-                            </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <label for="sub2">JavaScript</label>
-                            <input type="checkbox" id="sub2"/>
-                            <div class="sub-topic">
-                            <ul>
-                                <li><a href="#">topic</a></li>  
-                                <li><a href="#">topic</a></li>
-                                <li><a href="#">topic</a></li>
-                                <li><a href="#">topic</a></li>
-                            </ul>
-                            </div>
-                        </li>
+                        
+                        <li><a href="session-handling.html" class="sub">Session Handling</a></li>
+                        </ul>
                     </ul>
                 </div>
             </li>
