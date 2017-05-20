@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Node.js</title> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link href="styles/main.css" rel="stylesheet"> 
+    <link href="styles/lessons-styles.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="pictures/logo.png" id="logo" alt="WebTek Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active">Lessons</a></li>
+            <li><a href="glossary.html">Glossary of Terms</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+    <div class="content">
+    <nav>
+        <h2 class="nav-title">Topics</h2>
+        <ul>
+            <li><label for="sub">Prelims</label>
+                <input type="checkbox" id="sub"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li><a href="internet.html" class="sub">Internet</a></li>
+                    <li><a href="world-wide-web.html" class="sub">World Wide Web</a></li>
+                    <li>
+                        <label for="sub0">HTTP</label>
+                        <input type="checkbox" id="sub0"/>
+                        <div class="sub-topic">
+                        <ul>        
+                            <li><a href="http%20fundamentals.html" class="sub">Fundamentals</a></li>
+                            <li><a href="resource-accessing.html" class="sub">Resource Accessing</a></li>
+                            <li><a href="http-request-message.html" class="sub">Request Message</a></li>
+                            <li><a href="response-message.html" class="sub">Response Message</a></li>
+                            <li>
+                                <label for="sub2">Message Header</label>
+                                <input type="checkbox" id="sub2"/>
+                                <div class="sub-topic">
+                                <ul>
+                                    <li><a href="general-header-fields.html">General Header Fields</a></li>  
+                                    <li><a href="request%20header%20fields.html">Request Header Fields</a></li>
+                                    <li><a href="response-header.html">Response Header Fields</a></li>
+                                    <li><a href="entity-header.html">Entity Header Fields</a></li>
+                                </ul>
+                                </div>
+                            </li>
+                            <li><a href="http-status-codes.html" class="sub">Status Codes</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub1">Midterms</label> <!-------------------------midterms-->
+                <input type="checkbox" id="sub1"/>
+                <div class="sub-topic">
+                <ul>        
+                    <li>
+                        <label for="sub4" class="sub">HTML</label>
+                            <input type="checkbox" id="sub4"/>
+                            <div class="sub-topic">
+                            <ul>
+                                   <li><a href="HTML.html" class="sub">About</a></li>  
+                                    <li><a href="HTML%20History.html" class="sub">History</a></li>
+                                    <li><a href="HTML%20Elements.html" class="sub">Elements</a></li>
+                                    <li><a href="HTML%20Syntax.html" class="sub">Syntax and Terminology</a></li>
+                            </ul>
+                            </div>
+                    </li>
+                    <li>
+                         <label for="sub5" >CSS</label>
+                        <input type="checkbox" id="sub5"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="cascading-style-sheets.html">Cascading Style Sheets</a></li>
+                            <li><a href="css-preprocessors.html">CSS Preprocessors</a></li>  
+                            <li><a href="css-precedence.html">CSS Precedence</a></li>
+                            <li><a href="css-declarations.html">CSS Declarations</a></li>
+                            <li><a href="css-statements.html">CSS Statements</a></li>
+                            <li><a href="css-selectors.html">CSS Selectors</a></li>
+                            <li><a href="pseudo-class.html">CSS Pseudo-classes</a></li>
+                            <li><a href="pseudo-class.html">CSS Pseudo-elements</a></li>
+                            <li><a href="pseudo-class.html">Pseudo-classes</a></li>
+                            <li><a href="combinators.html">CSS Combinators</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sub6">JavaScript</label>
+                        <input type="checkbox" id="sub6"/>
+                        <div class="sub-topic">
+                        <ul>
+                            <li><a href="client-side-scripting.html">Client-side Scripting</a></li>  
+                            <li><a href="js-variables.html" class="active">JavaScript Variables</a></li>
+                            <li><a href="js-functions.html">JavaScript Functions and Methods</a></li>
+                            <li><a href="functions.html" class="sub">JavaScript Functions</a></li>
+                            <li><a href="js-objects.html">JavaScript Objects</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+            <li>
+                <label for="sub3" class="active">Finals</label>
+                <input type="checkbox" id="sub3"/>
+                <div class="sub-topic">
+                    <ul>        
+                        <li><a href="intro-serverside-scripting.html">Introduction to Server-Side Scripting</a>
+<!--
+                            <label for="sub2"></label>
+                            <input type="checkbox" id="sub2"/>
+                            <div class="sub-topic">
+                            <ul>
+                                <li><a href="#">topic</a></li>  
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                                <li><a href="#">topic</a></li>
+                            </ul>
+                            </div>
+-->
+                        </li>
+                         <li><a href="PHP.html">PHP</a>
+                        <li>
+                        <label for="sub7" class="active">Java</label>
+                        <input type="checkbox" id="sub7"/>
+                        <div class="sub-topic">
+                        <ul>
+                            
+                            <li><a href="jsp.html">Java Server Pages</a></li>
+                            <li><a href="jsp-actions.html">JSP Actions</a></li>  
+                            <li><a href="jsp-el.html">JSP Expression Language</a></li>
+                            <li><a href="scriptlets.html">JSP Scriptlets</a></li>
+                            <li class="active"><a href="nodejs.html">Node.js</a></li>
+                            <li><a href="java-servlet.html">Java Servlet</a>
+                        <li>
+                            <li><a href="jstl">JSTL</a>
+                        <li>
+                            
+                        </ul>
+                        </div>
+                    </li>
+                        
+                    <li><a href="session-handling.html">Session Handling</a>
+                        <li>
+                    <li><a href="security-risks.html">Security</a>
+                        <li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>    
+    <h1>Node.js</h1> 
+    <div class="notes">
+    <div class="notes-con">
+        <div class="page-nav-top">
+            <a href="scriptlets.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <a href="java-servlet.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+            </div>
+        </div>
+        <p>Node.js is a very powerful JavaScript-based framework/platform built on Google Chrome's JavaScript V8 Engine. It is used to develop I/O intensive web applications like video streaming sites, single-page applications, and other web applications. Node.js is open source, completely free, and used by thousands of developers around the world.</p>
+        
+        <h3>Features: </h3>
+        <ul>
+        <li>Asynchronous and Event Driven</li>
+            <p>All APIs of Node.js library are asynchronous, that is, non-blocking. A Node.js based server never waits for an API to return data. The server moves to the next API after calling it and a notification mechanism of Events of Node.js helps the server to get a response from the previous API call.</p>
+        
+        <li>Very Fast</li>
+        <p>Node.js library is very fast in code execution.</p>
+            
+        <li>Single Threaded but Highly Scalable</li>
+        <p>Node.js uses a single threaded model with event looping. Event mechanism helps the server to respond in a non-blocking way and makes the server highly scalable as opposed to traditional servers which create limited threads to handle requests. Node.js uses a single threaded program and the same program can provide service to a much larger number of requests than traditional servers like Apache HTTP Server.</p>
+            
+        <li>No Buffering</li>
+        <p>Node.js applications never buffer any data. These applications simply output the data in chunks.</p>
+        </ul>
+        
+        <h3>Components</h3>
+        
+        <ul>
+        <li>Import required modules</li>
+        <p>The require directive is used to load Node.js modules.</p>
+        
+        <pre>var http = require("http");</pre>
+            
+        <li>Create Server</li>
+        <p>A server which will listen to client's requests similar to Apache HTTP Server.</p>
+        
+        <p>We use the created http instance and call http.createServer() method to create a server instance and then we bind it at port 8081 using the listen method associated with the server instance. Pass it a function with parameters request and response. Write the sample implementation to always return "Hello World".</p>
+            
+        <p>Example: </p>
+            
+        <pre>
+        http.createServer(function (request, response) {
+           // Send the HTTP header 
+           // HTTP Status: 200 : OK
+           // Content Type: text/plain
+           response.writeHead(200, {'Content-Type': 'text/plain'});
+   
+           // Send the response body as "Hello World"
+           response.end('Hello World\n');
+        }).listen(8081);
+
+        // Console will print the message
+        console.log('Server running at http://127.0.0.1:8081/');
+        
+        
+        </pre>
+            
+        <li>Read request and return response</li>
+        <p>The server created in an earlier step will read the HTTP request made by the client which can be a browser or a console and return the response.</p>
+            
+        <p>Combine the other two in a file called main.js to start HTTP server: </p>
+        
+            <pre>
+            var http = require("http");
+
+http.createServer(function (request, response) {
+
+   // Send the HTTP header 
+   // HTTP Status: 200 : OK
+   // Content Type: text/plain
+   response.writeHead(200, {'Content-Type': 'text/plain'});
+   
+   // Send the response body as "Hello World"
+   response.end('Hello World\n');
+}).listen(8081);
+
+// Console will print the message
+console.log('Server running at http://127.0.0.1:8081/');
+            </pre>
+        
+        </ul>
+        
+        
+        
+        
+       <!-----Notes--->
+        
+        <p>References:</p>
+        <p>Node.js. (n.d.) Retrieved from <a href="https://www.w3schools.com/nodejs/">https://www.w3schools.com/nodejs/</a></p>
+        
+        
+        <p>Node.js - First Application. (n.d.) Retrieved from <a href="https://www.tutorialspoint.com/nodejs/nodejs_first_application.htm">https://www.tutorialspoint.com/nodejs/nodejs_first_application.htm</a></p>
+        
+        <p>What is Node.js. (n.d.) Retrieved from <a href="https://www.javatpoint.com/what-is-nodejs">https://www.javatpoint.com/what-is-nodejs</a></p>
+        
+        
+        <div class="page-nav-bottom">
+            <a href="scriptlets.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
+            <div class="next">
+                <a href="java-servlets.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a>
+            </div>
+        </div>    
+    </div>    
+    <footer>
+        <p>Contact us through email: <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=webteklec.tf.1130@gmail.com">webteklec.tf.1130@gmail.com</a></p>
+    </footer>
+    </div>
+    </div>
+</body>
+</html>
