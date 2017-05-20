@@ -60,24 +60,25 @@
                 </div>
             </li>
             <li>
-                <label for="sub1" class="active">Midterms</label> <!-------------------------midterms-->
+                <label for="sub1">Midterms</label> <!-------------------------midterms-->
                 <input type="checkbox" id="sub1"/>
                 <div class="sub-topic">
                 <ul>        
                     <li>
-                        <label for="sub4" class="sub">HTML</label>
+                        <label for="sub4">HTML</label>
                             <input type="checkbox" id="sub4"/>
                             <div class="sub-topic">
                             <ul>
-                                   <li><a href="HTML.html" class="sub">About</a></li>  
-                                    <li><a href="HTML%20History.html" class="sub">History</a></li>
-                                    <li><a href="HTML%20Elements.html" class="sub">Elements</a></li>
-                                    <li><a href="HTML%20Syntax.html" class="sub">Syntax and Terminology</a></li>
+                                <li><a href="HTML.html">About</a></li>  
+                                <li><a href="HTML%20History.html" class="sub">History</a></li>
+                                <li><a href="HTML%20Elements.html" class="sub">Elements</a></li>
+                                <li><a href="HTML%20Syntax.html" class="sub">Syntax and Terminology</a></li>
                             </ul>
                             </div>
+                        
                     </li>
                     <li>
-                         <label for="sub5" >CSS</label>
+                       <label for="sub5" class = "sub">CSS</label>
                         <input type="checkbox" id="sub5"/>
                         <div class="sub-topic">
                         <ul>
@@ -88,22 +89,22 @@
                             <li><a href="css-statements.html">CSS Statements</a></li>
                             <li><a href="css-selectors.html">CSS Selectors</a></li>
                             <li><a href="pseudo-class.html">CSS Pseudo-classes</a></li>
-                            <li><a href="pseudo-class.html">CSS Pseudo-elements</a></li>
-                            <li><a href="pseudo-class.html">Pseudo-classes</a></li>
+                            <li><a href="pseudo-element.html">CSS Pseudo-elements</a></li>
                             <li><a href="combinators.html">CSS Combinators</a></li>
                         </ul>
                         </div>
                     </li>
                     <li>
-                        <label for="sub6" class="active">JavaScript</label>
+                        <label for="sub6" class="sub">JavaScript</label>
                         <input type="checkbox" id="sub6"/>
                         <div class="sub-topic">
                         <ul>
-                            <li><a href="client-side-scripting.html" class="active">Client-side Scripting</a></li>  
-                            <li><a href="js-variables.html" class="sub">JavaScript Variables</a></li>
+                            <li><a href="client-side-scripting.html">Client-side Scripting</a></li>  
+                            <li><a href="js-variables.html">JavaScript Variables</a></li>
                             <li><a href="js-functions.html">JavaScript Functions and Methods</a></li>
                             <li><a href="functions.html" class="sub">JavaScript Functions</a></li>
                             <li><a href="js-objects.html">JavaScript Objects</a></li>
+                            
                         </ul>
                         </div>
                     </li>
@@ -111,39 +112,30 @@
                 </div>
             </li>
             <li>
-                <label for="sub3" class="sub">Finals</label>
+                 <label for="sub3" class="active">Finals</label>
                 <input type="checkbox" id="sub3"/>
                 <div class="sub-topic">
                     <ul>        
-                        <li><a href="intro-serverside-scripting.html">Introduction to Server-Side Scripting</a>
+                        <li><a href="intro-serverside-scripting.html"  class="active">Introduction to Server-Side Scripting</a>
+                        <li><a href="PHP.html">PHP</a></li> 
+                        <li>
+                            <label for="sub7" class="sub">Java</label>
+                            <input type="checkbox" id="sub7"/>
+                            <div class="sub-topic">
+                                <ul>
+                                    <li><a href="intro-java.html" class="sub">About</a></li>
+                                    <li><a href="jsp.html">Java Server Pages</a></li>
+                                    <li><a href="jsp-actions.html">JSP Actions</a></li>  
+                                    <li><a href="jsp-el.html">JSP Expression Language</a></li>
+                                    <li><a href="scriptlets.html">JSP Scriptlets</a></li>
+                                    <li><a href="nodejs.html">Node.js</a></li>
+                                    <li><a href="java-servlet.html">Java Servlet</a></li>
+                                    <li><a href="jstl.html">JSP Standard Tag Library</a></li>
+                                </ul>
+                            </div>
                         </li>
-                         <li><a href="PHP.html">PHP</a>
-                        <li>
-                        <label for="sub7" class="sub">Java</label>
-                        <input type="checkbox" id="sub7"/>
-                        <div class="sub-topic">
-                        <ul>
-                            
-                            <li><a href="intro-java">About</a>
-                            <li><a href="java-servlet.html">Java Servlet</a>
-                            </li>
-                            <li><a href="jsp.html">Java Server Pages</a></li>
-                            <li class="sub"><a href="jsp-actions.html">JSP Actions</a></li>  
-                            <li><a href="jsp-el.html">JSP Expression Language</a></li>
-                            <li><a href="scriptlets.html">JSP Scriptlets</a></li>
-                            <li><a href="nodejs.html">Node.js</a></li>
-                            
-                            <li><a href="jstl">JSTL</a>
-                        <li>
-                            
-                        </ul>
-                        </div>
-                    </li>
-                        
-                    <li><a href="session-handling.html">Session Handling</a>
-                        <li>
-                    <li><a href="security-risks.html">Security</a>
-                        <li>
+                        <li><a href="session-handling.html">Session Handling</a></li>
+                        <li><a href="security-risks.html">Security Risks</a></li>
                     </ul>
                 </div>
             </li>
@@ -155,7 +147,7 @@
         <div class="page-nav-top">
             <a href="js-objects.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
             <div class="next">
-                <a href="#"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+                <a href="PHP.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
             </div>
         </div>
         <dd>Most large-scale websites use server-side code to dynamically display different data when needed, generally pulled out of a database stored on a server and sent to the client to be displayed via some code (e.g. HTML and JavaScript). Perhaps the most significant benefit of server-side code is that it allows you to tailor website content for individual users. Dynamic sites can highlight content that is more relevant based on user preferences and habits. It can also make sites easier to use by storing personal preferences and information.</dd>
@@ -195,7 +187,7 @@
         <div class="page-nav-bottom">
             <a href="js-objects.html"><i class="fa fa-chevron-left"></i><p class="previous">Previous</p></a> <!--yung link dapat yung topic before ng topic mo-->
             <div class="next">
-                <a href="#"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
+                <a href="PHP.html"><p class="next">Next</p><i class="fa fa-chevron-right"></i></a> <!--yung link dapat yung topic after ng topic mo-->
             </div>
         </div>    
     </div>    
